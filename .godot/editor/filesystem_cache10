@@ -1,0 +1,78 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1752354429
+::res://enemy/::1752354543
+::res://enemy/zombie/::1752354543
+Zombie_ColorPalette.jpg::CompressedTexture2D::2743041556714310435::1752354582::1752354583::1::::<><><>0<>0<>8e75254903db418a99c7a07c4468fdf1<>res://.godot/imported/Zombie_ColorPalette.jpg-82cf13654a947cac323b8fa379b28022.s3tc.ctex::
+Zombie.glb::PackedScene::6577773693125870858::1752354525::1752354583::1::::<><><>0<>0<>629d45d0fb1c4c8d0902c2ae17326251<>res://.godot/imported/Zombie.glb-278d14dcbb3af7eee3201d15c5715b5b.scn::uid://bfc0q1xouv47h::::res://enemy/zombie/Zombie_ColorPalette.jpg
+::res://levels/::1752354322
+level_1.tscn::PackedScene::1236481688842749732::1752354322::0::1::::<><><>0<>0<><>::uid://1eyqjsdfdlms::::res://levels/level_geometry.tscn<>uid://oc13h3au02ro::::res://Player_Controller/player_character.tscn<>uid://x8nhs2cer2to::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn<>uid://br4s165quwlyu::::res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://cd8msvjysh2uv::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterM.tres
+level_geometry.tscn::PackedScene::1834653726793704350::1752353640::0::1::::<><><>0<>0<><>::
+::res://Player_Controller/::1752354095
+player_character.tscn::PackedScene::988401621427553860::1752354095::0::1::::<><><>0<>0<><>::uid://cp4va87ory710::::res://Player_Controller/scripts/Player_Character/player_character.gd<>uid://2268d7k2nrfu::::res://Player_Controller/scripts/Player_Character/HUD.gd<>uid://bjh5ic6qy4jtl::::res://Player_Controller/HUD ASSETS/crosshair001.png<>uid://uidicgaojgdi::::res://Player_Controller/HUD ASSETS/crosshair046.png<>uid://k583cvioy4da::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd<>uid://yc1f2j7pl4vr::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres<>uid://br4s165quwlyu::::res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://uybino34n0sj::::res://Player_Controller/weapon_animation.res
+weapon_animation.res::AnimationLibrary/AnimationLibrary::1453397647944387721::1727904344::0::1::::<><><>0<>0<><>::
+world_environment.tres::Environment/Environment::3542282129581286666::1727904344::0::1::::<><><>0<>0<><>::
+::res://Player_Controller/HUD ASSETS/::1752312903
+crosshair001.png::CompressedTexture2D/CompressedTexture2D::3034406870543870941::1727904344::1752312902::1::::<><><>0<>0<>9de8a061c5fce8a8b911b37009deb9e1<>res://.godot/imported/crosshair001.png-1586a70203e25314f8c3057d1df1a1fb.ctex::
+crosshair046.png::CompressedTexture2D/CompressedTexture2D::1420488446457260718::1727904344::1752312903::1::::<><><>0<>0<>77180b197463c2cccb0edafe43044253<>res://.godot/imported/crosshair046.png-adf558f9d87ef20104f2ce22346ed1b7.s3tc.ctex::
+::res://Player_Controller/scripts/::1727904343
+::res://Player_Controller/scripts/Player_Character/::1752353640
+HUD.gd::GDScript::1952778343055868122::1752353640::0::1::::<>CanvasLayer<><>0<>0<><>::
+player_character.gd::GDScript/GDScript::5886817817036608029::1727904344::0::1::::<>CharacterBody3D<><>0<>0<><>::
+::res://Player_Controller/scripts/Projectiles/::1752312902
+melee_weapon_projectile.gd::GDScript/GDScript::434844937024072670::1727904344::0::1::::<>Projectile<><>0<>0<><>::
+Projectile.gd::GDScript/GDScript::8133549283080390111::1727904344::0::1::::Projectile<>Node3D<><>0<>0<><>::
+rocket_launcher_projectile.gd::GDScript/GDScript::9031570130286273826::1727904344::0::1::::<>Projectile<><>0<>0<><>::
+shotgun_projectile.gd::GDScript/GDScript::4866495661596083824::1727904344::0::1::::<>Projectile<><>0<>0<><>::
+::res://Player_Controller/scripts/Weapon_State_Machine/::1752320240
+bullet.gd::GDScript/GDScript::3795535453537365024::1727904344::0::1::::<>RigidBody3D<><>0<>0<><>::
+hit_debug.gd::GDScript/GDScript::5992236091919532995::1727904344::0::1::::<>Sprite3D<><>0<>0<><>::
+WeaponSlot.gd::GDScript/GDScript::3640638992241267424::1727904344::0::1::::WeaponSlot<>Resource<><>0<>0<><>::
+weapon_resource.gd::GDScript::8576951053854211772::1752320240::0::1::::WeaponResource<>Resource<><>0<>0<><>::
+weapon_resource_icon.svg::CompressedTexture2D/CompressedTexture2D::3722951221083975908::1727904344::1752312902::1::::<><><>0<>0<>d1008deef08dcd48dd278a54066b2032<>res://.godot/imported/weapon_resource_icon.svg-9e82c923a97a9a9a8c5d0df819e023d2.ctex::
+Weapon_State_Machine.gd::GDScript::765873569863509562::1752354549::0::1::::<>Node3D<><>0<>0<><>::
+::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/::1752312902
+reload_clip.gd::GDScript/GDScript::3289242478169764498::1727904344::0::1::::<>RigidBody3D<><>0<>0<><>::
+Weapon_Pick_Up.gd::GDScript/GDScript::731345247009132480::1727904344::0::1::::WeaponPickUp<>RigidBody3D<><>0<>0<><>::
+::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/::1752354556
+blasterI.tres::Resource/WeaponResource::1690250007110488151::1752353025::0::1::::<><>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource_icon.svg<>0<>0<><>::uid://dug0epe7i1eoa::::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://dc48o4niy1mok::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/basic_hitscan_projectile.tscn<>uid://cvbk5bxenpxey::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_I.tscn<>uid://ciu0xkaw0ioef::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_1.tscn
+blasterL.tres::Resource/WeaponResource::3966821733617405030::1727904344::0::1::::<><>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource_icon.svg<>0<>0<><>::uid://bpxa3je174q43::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/basic_rigid_body_projectile.tscn<>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://gtthejj2wmyj::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_n.tscn<>uid://3mb12hvruajh::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_2.tscn
+blasterM.tres::Resource/WeaponResource::5052294230396161601::1752354095::0::1::::<><>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource_icon.svg<>0<>0<><>::uid://dug0epe7i1eoa::::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://brvfyahytwd8m::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/shotgun_projectile.tscn<>uid://x8nhs2cer2to::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn<>uid://ceuaamuau8pl8::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_3.tscn
+blasterM_slot.tres::::-1::1752354556::0::1::::<><><>0<>0<><>::
+blasterN.tres::Resource/WeaponResource::6616740077111018050::1727904344::0::1::::<><>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource_icon.svg<>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://dc48o4niy1mok::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/basic_hitscan_projectile.tscn<>uid://gtthejj2wmyj::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_n.tscn<>uid://3mb12hvruajh::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_2.tscn
+blasterQ.tres::Resource/WeaponResource::7581868933100020654::1727904344::0::1::::<><>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource_icon.svg<>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://ddfiivxgnakti::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/rocket_launcher_projectile.tscn<>uid://dwgt7gwe3gfyy::::res://Player_Controller/Spawnable_Objects/Weapons/blasterQ.tscn
+MeleeWeapon.tres::Resource/WeaponResource::5520157355516658606::1727904344::0::1::::<><>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource_icon.svg<>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://6rfh1ejt4m6m::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/melee_projectile.tscn
+::res://Player_Controller/Spawnable_Objects/::1752322146
+bullet.tscn::PackedScene/PackedScene::258733281609629675::1727904344::0::1::::<><><>0<>0<><>::
+enemy_health_bar.tscn::PackedScene::-1::1752322146::0::1::::<><><>0<>0<><>::
+hit_debug.tscn::PackedScene/PackedScene::7622678305914583034::1727904344::0::1::::<><><>0<>0<><>::uid://clfvflhvcccy1::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/debug_sprite.png<>res://Player_Controller/scripts/Weapon_State_Machine/hit_debug.gd
+hit_debug_2.tscn::PackedScene/PackedScene::3073640932202172743::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/hit_debug.gd
+rocket.tscn::PackedScene/PackedScene::5910991634306542708::1727904344::0::1::::<><><>0<>0<><>::
+::res://Player_Controller/Spawnable_Objects/Clips/::1727904343
+blaster_i_clip.tscn::PackedScene/PackedScene::7988832975893632125::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/Weapon_Pick_Up.gd<>res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://yc1f2j7pl4vr::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
+blaster_L_clip.tscn::PackedScene/PackedScene::3644041227101055074::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/Weapon_Pick_Up.gd<>res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://bwrs8ensewkgc::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterL.tres
+blaster_m_clip.tscn::PackedScene/PackedScene::5234857652746329028::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/Weapon_Pick_Up.gd<>res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://cd8msvjysh2uv::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterM.tres
+blaster_n_clip.tscn::PackedScene/PackedScene::5453327069681432731::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/Weapon_Pick_Up.gd<>res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://c1jg0ifn7yvve::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterN.tres
+::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/::1752312903
+basic_hitscan_projectile.tscn::PackedScene/PackedScene::7361536898755266598::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Projectiles/Projectile.gd
+basic_rigid_body_projectile.tscn::PackedScene/PackedScene::3486784508950910814::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Projectiles/Projectile.gd<>uid://dxlkgbr1p580::::res://Player_Controller/Spawnable_Objects/bullet.tscn
+debug_sprite.png::CompressedTexture2D/CompressedTexture2D::5556525111519858274::1727904344::1752312903::1::::<><><>0<>0<>2fd9bed1cb7e0fa4c83161770aebeb5d<>res://.godot/imported/debug_sprite.png-6e7c9ad13e2fccfaa83dfbf22e408eca.s3tc.ctex::
+melee_projectile.tscn::PackedScene/PackedScene::2211266032340972050::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Projectiles/melee_weapon_projectile.gd
+rocket_launcher_projectile.tscn::PackedScene/PackedScene::7380651631867921798::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Projectiles/rocket_launcher_projectile.gd<>uid://cqhlfy6ccomm3::::res://Player_Controller/Spawnable_Objects/rocket.tscn
+shotgun_projectile.tscn::PackedScene/PackedScene::3623329414322797466::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Projectiles/shotgun_projectile.gd
+::res://Player_Controller/Spawnable_Objects/SprayProfiles/::1752312902
+spray_profile.gd::GDScript/GDScript::1247499839730755140::1727904344::0::1::::Spray_Profile<>Node<><>0<>0<><>::
+spray_profile_1.tscn::PackedScene/PackedScene::5377199195917450837::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile.gd
+spray_profile_2.tscn::PackedScene/PackedScene::1990168732469650633::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile.gd
+spray_profile_3.tscn::PackedScene/PackedScene::5094884958223858715::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile.gd
+::res://Player_Controller/Spawnable_Objects/Weapons/::1727904343
+blasterQ.tscn::PackedScene/PackedScene::8717013995253093324::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/Weapon_Pick_Up.gd
+blaster_I.tscn::PackedScene/PackedScene::6249532293537335556::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/Weapon_Pick_Up.gd
+blaster_L.tscn::PackedScene/PackedScene::4813509815139620111::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/Weapon_Pick_Up.gd
+blaster_m.tscn::PackedScene/PackedScene::1683270678248953800::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/Weapon_Pick_Up.gd
+blaster_n.tscn::PackedScene/PackedScene::461522587017746729::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/Weapon_Pick_Up.gd
+::res://Player_Controller/Weapon_Models/::1752312903
+blasterA.glb::PackedScene/PackedScene::8380450958432519639::1727904344::1752312903::1::::<><><>0<>0<>20b6b88223d4f4166bded74e63a07a1f<>res://.godot/imported/blasterA.glb-5c1b8be4992f9e1b85bd43a237d2ae90.scn::
+blasterD.glb::PackedScene/PackedScene::7057011685208720596::1727904344::1752312903::1::::<><><>0<>0<>f72a4694bb3a50d96b5994d955ab5e3f<>res://.godot/imported/blasterD.glb-a30555817f53842606b00c3c373c6436.scn::
+blasterL.glb::PackedScene/PackedScene::7658920681249816163::1727904344::1752312903::1::::<><><>0<>0<>69efaad7909c7d0e3dec71c354eb92a9<>res://.godot/imported/blasterL.glb-59ddd6860bd693709182dc70ee92e810.scn::
+blasterN.glb::PackedScene/PackedScene::3883894984375497527::1727904344::1752312903::1::::<><><>0<>0<>43dc4871fb3d0733b69c32e34f21598e<>res://.godot/imported/blasterN.glb-c211cec0f10aaf19f2b09f0c9d4f0551.scn::
+foamBulletA.glb::PackedScene/PackedScene::5330692767018787457::1727904344::1752312903::1::::<><><>0<>0<>c5ecf45df3080e3a1886e088d9ef7066<>res://.godot/imported/foamBulletA.glb-fef335175d9691aee84d5702cd642f09.scn::

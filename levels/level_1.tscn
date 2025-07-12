@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://ru7w4yjomiqe"]
+
+[ext_resource type="PackedScene" uid="uid://1eyqjsdfdlms" path="res://levels/level_geometry.tscn" id="1_vn7o3"]
+[ext_resource type="PackedScene" uid="uid://oc13h3au02ro" path="res://Player_Controller/player_character.tscn" id="2_jirdo"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jirdo"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_bt44k"]
+sky_material = SubResource("ProceduralSkyMaterial_jirdo")
+
+[sub_resource type="Environment" id="Environment_kx6l7"]
+background_mode = 2
+sky = SubResource("Sky_bt44k")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="level_1" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_kx6l7")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.49839, 0.0400995, 0, 0.0801989, 0.996779, -0.5, 0.863236, -0.0694543, 0, 0, 0)
+shadow_enabled = true
+
+[node name="LevelGeometry" parent="." instance=ExtResource("1_vn7o3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.29643, 0, 0)
+
+[node name="Player_Character" parent="." instance=ExtResource("2_jirdo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.694563, 8.76543, 9.35141)
