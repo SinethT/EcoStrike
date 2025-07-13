@@ -7,3 +7,4 @@ res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterM.tres
 res://enemy/zombie/zombie.tscn
 res://scripts/enemy/zombie.gd
+res://Player_Controller/Spawnable_Objects/enemy_health_bar.tscn
