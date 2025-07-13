@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cdmmp2fbmo4ks"]
+[gd_scene load_steps=4 format=3 uid="uid://cdmmp2fbmo4ks"]
 
+[ext_resource type="Script" uid="uid://dpphunomadbfd" path="res://scripts/enemy/zombie.gd" id="1_32ick"]
 [ext_resource type="PackedScene" uid="uid://3xf1vrisg2pj" path="res://enemy/zombie/zombie.fbx" id="1_fo461"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fo461"]
@@ -7,6 +8,7 @@ points = PackedVector3Array(0.308079, 4.28816, -0.326292, -1.47772, 1.85993, 0.1
 
 [node name="zombie" type="CharacterBody3D"]
 transform = Transform3D(0.45, 0, 0, 0, 0.45, 0, 0, 0, 0.45, 0, 0, 0)
+script = ExtResource("1_32ick")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)

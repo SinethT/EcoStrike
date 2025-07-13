@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1752405241
 ::res://enemy/::1752354543
-::res://enemy/zombie/::1752405241
+::res://enemy/zombie/::1752405639
+zombie.tscn::PackedScene::5008937248087319146::1752405639::0::1::::<><><>0<>0<><>::uid://3xf1vrisg2pj::::res://enemy/zombie/zombie.fbx
 zombie_0.png::CompressedTexture2D::6862270317277716545::1752405241::1752405242::1::::<><><>0<>0<>1cd700d64e56f367629611ee9f4e3ca5<>res://.godot/imported/zombie_0.png-ced42aea3d089e9e9664f1f4fdec7651.s3tc.ctex::
-zombie.fbx::PackedScene::2013119455453474307::1644638960::1752405242::1::::<><><>0<>0<>6a697fbf9b5c09063e268c0941e63a14<>res://.godot/imported/zombie.fbx-4829515507f1e2eee03fe80ed9dd9627.scn::uid://c41eubrdjmxrt::::res://enemy/zombie/zombie_0.png
-zombo_0.png::CompressedTexture2D/CompressedTexture2D::7099692512262170553::1752405127::1752405241::1::::<><><>0<>0<>bee9d6054fd953223e8c2070b11a8238<>res://.godot/imported/zombo_0.png-3b156e44030336776f889aab2e037027.s3tc.ctex::
-::res://levels/::1752355618
-level_1.tscn::PackedScene/PackedScene::1236481688842749732::1752355618::0::1::::<><><>0<>0<><>::uid://1eyqjsdfdlms::::res://levels/level_geometry.tscn<>uid://oc13h3au02ro::::res://Player_Controller/player_character.tscn
+zombie.fbx::PackedScene::2013119455453474307::1644638960::1752405249::1::::<><><>0<>0<>6a697fbf9b5c09063e268c0941e63a14<>res://.godot/imported/zombie.fbx-4829515507f1e2eee03fe80ed9dd9627.scn::uid://c41eubrdjmxrt::::res://enemy/zombie/zombie_0.png
+::res://levels/::1752405639
+level_1.tscn::PackedScene::1236481688842749732::1752405639::0::1::::<><><>0<>0<><>::uid://1eyqjsdfdlms::::res://levels/level_geometry.tscn<>uid://oc13h3au02ro::::res://Player_Controller/player_character.tscn<>uid://cdmmp2fbmo4ks::::res://enemy/zombie/zombie.tscn
 level_geometry.tscn::PackedScene/PackedScene::1834653726793704350::1752353640::0::1::::<><><>0<>0<><>::
 ::res://Player_Controller/::1752355314
 player_character.tscn::PackedScene/PackedScene::988401621427553860::1752355314::0::1::::<><><>0<>0<><>::uid://cp4va87ory710::::res://Player_Controller/scripts/Player_Character/player_character.gd<>uid://2268d7k2nrfu::::res://Player_Controller/scripts/Player_Character/HUD.gd<>uid://bjh5ic6qy4jtl::::res://Player_Controller/HUD ASSETS/crosshair001.png<>uid://uidicgaojgdi::::res://Player_Controller/HUD ASSETS/crosshair046.png<>uid://k583cvioy4da::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd<>uid://yc1f2j7pl4vr::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres<>uid://br4s165quwlyu::::res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://uybino34n0sj::::res://Player_Controller/weapon_animation.res
@@ -77,3 +77,5 @@ blasterD.glb::PackedScene/PackedScene::7057011685208720596::1727904344::17523129
 blasterL.glb::PackedScene/PackedScene::7658920681249816163::1727904344::1752312903::1::::<><><>0<>0<>69efaad7909c7d0e3dec71c354eb92a9<>res://.godot/imported/blasterL.glb-59ddd6860bd693709182dc70ee92e810.scn::
 blasterN.glb::PackedScene/PackedScene::3883894984375497527::1727904344::1752312903::1::::<><><>0<>0<>43dc4871fb3d0733b69c32e34f21598e<>res://.godot/imported/blasterN.glb-c211cec0f10aaf19f2b09f0c9d4f0551.scn::
 foamBulletA.glb::PackedScene/PackedScene::5330692767018787457::1727904344::1752312903::1::::<><><>0<>0<>c5ecf45df3080e3a1886e088d9ef7066<>res://.godot/imported/foamBulletA.glb-fef335175d9691aee84d5702cd642f09.scn::
+::res://scripts/::0
+::res://scripts/zombie/::0
