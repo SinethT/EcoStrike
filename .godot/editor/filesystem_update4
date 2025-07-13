@@ -5,3 +5,4 @@ res://Player_Controller/player_character.tscn
 res://Player_Controller/scripts/Player_Character/HUD.gd
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterM.tres
+res://enemy/zombie/zombie.tscn

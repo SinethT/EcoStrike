@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://ru7w4yjomiqe"]
+[gd_scene load_steps=7 format=3 uid="uid://ru7w4yjomiqe"]
 
 [ext_resource type="PackedScene" uid="uid://1eyqjsdfdlms" path="res://levels/level_geometry.tscn" id="1_vn7o3"]
 [ext_resource type="PackedScene" uid="uid://oc13h3au02ro" path="res://Player_Controller/player_character.tscn" id="2_jirdo"]
+[ext_resource type="PackedScene" uid="uid://cdmmp2fbmo4ks" path="res://enemy/zombie/zombie.tscn" id="3_bt44k"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jirdo"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -30,3 +31,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.29643, 0, 0)
 
 [node name="Player_Character" parent="." instance=ExtResource("2_jirdo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.694563, 8.76543, 9.35141)
+
+[node name="zombie" parent="." instance=ExtResource("3_bt44k")]
+transform = Transform3D(0.45, 0, 0, 0, 0.45, 0, 0, 0, 0.45, 0, 1.41118, 0)

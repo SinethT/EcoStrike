@@ -1,14 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1752354429
+::res://::1752405241
 ::res://enemy/::1752354543
-::res://enemy/zombie/::1752354543
-Zombie_ColorPalette.jpg::CompressedTexture2D::2743041556714310435::1752354582::1752354583::1::::<><><>0<>0<>8e75254903db418a99c7a07c4468fdf1<>res://.godot/imported/Zombie_ColorPalette.jpg-82cf13654a947cac323b8fa379b28022.s3tc.ctex::
-Zombie.glb::PackedScene::6577773693125870858::1752354525::1752354583::1::::<><><>0<>0<>629d45d0fb1c4c8d0902c2ae17326251<>res://.godot/imported/Zombie.glb-278d14dcbb3af7eee3201d15c5715b5b.scn::uid://bfc0q1xouv47h::::res://enemy/zombie/Zombie_ColorPalette.jpg
-::res://levels/::1752354322
-level_1.tscn::PackedScene::1236481688842749732::1752354322::0::1::::<><><>0<>0<><>::uid://1eyqjsdfdlms::::res://levels/level_geometry.tscn<>uid://oc13h3au02ro::::res://Player_Controller/player_character.tscn<>uid://x8nhs2cer2to::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn<>uid://br4s165quwlyu::::res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://cd8msvjysh2uv::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterM.tres
-level_geometry.tscn::PackedScene::1834653726793704350::1752353640::0::1::::<><><>0<>0<><>::
-::res://Player_Controller/::1752354095
-player_character.tscn::PackedScene::988401621427553860::1752354095::0::1::::<><><>0<>0<><>::uid://cp4va87ory710::::res://Player_Controller/scripts/Player_Character/player_character.gd<>uid://2268d7k2nrfu::::res://Player_Controller/scripts/Player_Character/HUD.gd<>uid://bjh5ic6qy4jtl::::res://Player_Controller/HUD ASSETS/crosshair001.png<>uid://uidicgaojgdi::::res://Player_Controller/HUD ASSETS/crosshair046.png<>uid://k583cvioy4da::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd<>uid://yc1f2j7pl4vr::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres<>uid://br4s165quwlyu::::res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://uybino34n0sj::::res://Player_Controller/weapon_animation.res
+::res://enemy/zombie/::1752405241
+zombie_0.png::CompressedTexture2D::6862270317277716545::1752405241::1752405242::1::::<><><>0<>0<>1cd700d64e56f367629611ee9f4e3ca5<>res://.godot/imported/zombie_0.png-ced42aea3d089e9e9664f1f4fdec7651.s3tc.ctex::
+zombie.fbx::PackedScene::2013119455453474307::1644638960::1752405242::1::::<><><>0<>0<>6a697fbf9b5c09063e268c0941e63a14<>res://.godot/imported/zombie.fbx-4829515507f1e2eee03fe80ed9dd9627.scn::uid://c41eubrdjmxrt::::res://enemy/zombie/zombie_0.png
+zombo_0.png::CompressedTexture2D/CompressedTexture2D::7099692512262170553::1752405127::1752405241::1::::<><><>0<>0<>bee9d6054fd953223e8c2070b11a8238<>res://.godot/imported/zombo_0.png-3b156e44030336776f889aab2e037027.s3tc.ctex::
+::res://levels/::1752355618
+level_1.tscn::PackedScene/PackedScene::1236481688842749732::1752355618::0::1::::<><><>0<>0<><>::uid://1eyqjsdfdlms::::res://levels/level_geometry.tscn<>uid://oc13h3au02ro::::res://Player_Controller/player_character.tscn
+level_geometry.tscn::PackedScene/PackedScene::1834653726793704350::1752353640::0::1::::<><><>0<>0<><>::
+::res://Player_Controller/::1752355314
+player_character.tscn::PackedScene/PackedScene::988401621427553860::1752355314::0::1::::<><><>0<>0<><>::uid://cp4va87ory710::::res://Player_Controller/scripts/Player_Character/player_character.gd<>uid://2268d7k2nrfu::::res://Player_Controller/scripts/Player_Character/HUD.gd<>uid://bjh5ic6qy4jtl::::res://Player_Controller/HUD ASSETS/crosshair001.png<>uid://uidicgaojgdi::::res://Player_Controller/HUD ASSETS/crosshair046.png<>uid://k583cvioy4da::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd<>uid://yc1f2j7pl4vr::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres<>uid://br4s165quwlyu::::res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://uybino34n0sj::::res://Player_Controller/weapon_animation.res
 weapon_animation.res::AnimationLibrary/AnimationLibrary::1453397647944387721::1727904344::0::1::::<><><>0<>0<><>::
 world_environment.tres::Environment/Environment::3542282129581286666::1727904344::0::1::::<><><>0<>0<><>::
 ::res://Player_Controller/HUD ASSETS/::1752312903
@@ -16,7 +17,7 @@ crosshair001.png::CompressedTexture2D/CompressedTexture2D::3034406870543870941::
 crosshair046.png::CompressedTexture2D/CompressedTexture2D::1420488446457260718::1727904344::1752312903::1::::<><><>0<>0<>77180b197463c2cccb0edafe43044253<>res://.godot/imported/crosshair046.png-adf558f9d87ef20104f2ce22346ed1b7.s3tc.ctex::
 ::res://Player_Controller/scripts/::1727904343
 ::res://Player_Controller/scripts/Player_Character/::1752353640
-HUD.gd::GDScript::1952778343055868122::1752353640::0::1::::<>CanvasLayer<><>0<>0<><>::
+HUD.gd::GDScript/GDScript::1952778343055868122::1752353640::0::1::::<>CanvasLayer<><>0<>0<><>::
 player_character.gd::GDScript/GDScript::5886817817036608029::1727904344::0::1::::<>CharacterBody3D<><>0<>0<><>::
 ::res://Player_Controller/scripts/Projectiles/::1752312902
 melee_weapon_projectile.gd::GDScript/GDScript::434844937024072670::1727904344::0::1::::<>Projectile<><>0<>0<><>::
@@ -27,9 +28,9 @@ shotgun_projectile.gd::GDScript/GDScript::4866495661596083824::1727904344::0::1:
 bullet.gd::GDScript/GDScript::3795535453537365024::1727904344::0::1::::<>RigidBody3D<><>0<>0<><>::
 hit_debug.gd::GDScript/GDScript::5992236091919532995::1727904344::0::1::::<>Sprite3D<><>0<>0<><>::
 WeaponSlot.gd::GDScript/GDScript::3640638992241267424::1727904344::0::1::::WeaponSlot<>Resource<><>0<>0<><>::
-weapon_resource.gd::GDScript::8576951053854211772::1752320240::0::1::::WeaponResource<>Resource<><>0<>0<><>::
+weapon_resource.gd::GDScript/GDScript::8576951053854211772::1752320240::0::1::::WeaponResource<>Resource<><>0<>0<><>::
 weapon_resource_icon.svg::CompressedTexture2D/CompressedTexture2D::3722951221083975908::1727904344::1752312902::1::::<><><>0<>0<>d1008deef08dcd48dd278a54066b2032<>res://.godot/imported/weapon_resource_icon.svg-9e82c923a97a9a9a8c5d0df819e023d2.ctex::
-Weapon_State_Machine.gd::GDScript::765873569863509562::1752354549::0::1::::<>Node3D<><>0<>0<><>::
+Weapon_State_Machine.gd::GDScript/GDScript::765873569863509562::1752354549::0::1::::<>Node3D<><>0<>0<><>::
 ::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/::1752312902
 reload_clip.gd::GDScript/GDScript::3289242478169764498::1727904344::0::1::::<>RigidBody3D<><>0<>0<><>::
 Weapon_Pick_Up.gd::GDScript/GDScript::731345247009132480::1727904344::0::1::::WeaponPickUp<>RigidBody3D<><>0<>0<><>::
@@ -43,7 +44,7 @@ blasterQ.tres::Resource/WeaponResource::7581868933100020654::1727904344::0::1:::
 MeleeWeapon.tres::Resource/WeaponResource::5520157355516658606::1727904344::0::1::::<><>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource_icon.svg<>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://6rfh1ejt4m6m::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/melee_projectile.tscn
 ::res://Player_Controller/Spawnable_Objects/::1752322146
 bullet.tscn::PackedScene/PackedScene::258733281609629675::1727904344::0::1::::<><><>0<>0<><>::
-enemy_health_bar.tscn::PackedScene::-1::1752322146::0::1::::<><><>0<>0<><>::
+enemy_health_bar.tscn::PackedScene/PackedScene::-1::1752322146::0::1::::<><><>0<>0<><>::
 hit_debug.tscn::PackedScene/PackedScene::7622678305914583034::1727904344::0::1::::<><><>0<>0<><>::uid://clfvflhvcccy1::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/debug_sprite.png<>res://Player_Controller/scripts/Weapon_State_Machine/hit_debug.gd
 hit_debug_2.tscn::PackedScene/PackedScene::3073640932202172743::1727904344::0::1::::<><><>0<>0<><>::res://Player_Controller/scripts/Weapon_State_Machine/hit_debug.gd
 rocket.tscn::PackedScene/PackedScene::5910991634306542708::1727904344::0::1::::<><><>0<>0<><>::
