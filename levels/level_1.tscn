@@ -17,7 +17,7 @@ sky = SubResource("Sky_bt44k")
 tonemap_mode = 2
 glow_enabled = true
 
-[node name="level_1" type="Node3D"]
+[node name="level_1" type="Node3D" groups=["World"]]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_kx6l7")
