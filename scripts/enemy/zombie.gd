@@ -10,9 +10,14 @@ var current_health: float
 var is_dead: bool = false
 
 @onready var animation_player = $zombie/AnimationPlayer
+@onready var health_bar = $SubViewport/health_bar
 
 func _ready():
 	current_health = max_health
+	
+	health_bar.max_value = max_health
+	health_bar.value = current_health
+	
 	animation_player.play("Armature|Idle")
 	# Add zombie to Target group so it can be hit by bullets
 	add_to_group("Target")
@@ -25,6 +30,7 @@ func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_posi
 		
 	# Apply damage
 	current_health -= damage
+	health_bar.value -= damage
 	
 	# Check if zombie should die
 	if current_health <= 0:
@@ -42,7 +48,8 @@ func die():
 	
 	is_dead = true
 	current_health = 0
-	print("Zombie died!")
+	
+	health_bar.queue_free()
 	
 	# Stop any current animation and play death animation if available
 	animation_player.stop()
@@ -56,6 +63,3 @@ func die():
 	# Queue for deletion after a delay
 	await get_tree().create_timer(5.0).timeout
 	queue_free()
-
-func get_health_percentage() -> float:
-	return current_health / max_health

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cdmmp2fbmo4ks"]
+[gd_scene load_steps=7 format=3 uid="uid://cdmmp2fbmo4ks"]
 
 [ext_resource type="Script" uid="uid://dpphunomadbfd" path="res://scripts/enemy/zombie.gd" id="1_32ick"]
 [ext_resource type="PackedScene" uid="uid://3xf1vrisg2pj" path="res://enemy/zombie/zombie.fbx" id="1_fo461"]
@@ -6,9 +6,30 @@
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fo461"]
 points = PackedVector3Array(0.308079, 4.28816, -0.326292, -1.47772, 1.85993, 0.102094, -0.906056, -0.0693173, 0.030827, 0.736681, 0.145043, 0.530871, 0.736681, -0.0693173, -0.469217, -0.120237, 4.43047, 0.387848, 1.45111, 2.14544, 0.316385, -0.691898, -0.0693173, -0.469217, -0.763284, 0.0738881, 0.530871, -0.120237, 4.43047, -0.469217, 1.0939, 2.57327, -0.254829, -1.47772, 2.07429, 0.316385, -1.1205, 2.57327, -0.254829, 0.879453, -0.0693173, 0.316385, -0.0488512, 3.93104, 0.459409, 1.45111, 1.85993, -0.040538, -0.406068, 4.35931, -0.040538, 0.236693, 4.35931, 0.316385, -1.40604, 1.85993, -0.112001, -0.906056, -0.0693173, 0.245118, 0.022248, 4.35931, -0.469217, 0.379465, 4.28816, -0.183464, 0.879453, -0.0693173, -0.112001, 1.45111, 1.85993, 0.316385, -0.406068, 4.35931, 0.102094, -1.47772, 2.14544, 0.245118, 0.022248, 3.93104, 0.459409, 0.379465, 4.28816, 0.102094, -1.47772, 1.85993, 0.316385, 0.16502, 4.43047, -0.397755, 0.808067, 0.00273299, 0.459409, 0.16502, 4.28816, 0.387848)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_32ick"]
+bg_color = Color(0.345098, 0, 0, 0.509804)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6dvuw"]
+bg_color = Color(0.753389, 4.64462e-06, 2.5028e-06, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+anti_aliasing = false
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_5r16j"]
+viewport_path = NodePath("SubViewport")
+
 [node name="zombie" type="CharacterBody3D"]
 transform = Transform3D(0.45, 0, 0, 0, 0.45, 0, 0, 0, 0.45, 0, 0, 0)
 script = ExtResource("1_32ick")
+metadata/_edit_vertical_guides_ = [160.0]
+metadata/_edit_horizontal_guides_ = [25.0]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
@@ -58,5 +79,29 @@ bones/52/rotation = Quaternion(-0.125719, 0.390255, 0.908092, 0.0852349)
 bones/53/rotation = Quaternion(-0.424457, 0.0750023, -0.0427573, 0.901323)
 bones/54/rotation = Quaternion(0.525416, 0.026451, -0.0180628, 0.850242)
 bones/55/rotation = Quaternion(0.364423, 0.0386368, -0.0151368, 0.930308)
+
+[node name="AnimationPlayer" parent="zombie" index="1"]
+autoplay = "Armature|Idle"
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+size = Vector2i(150, 25)
+
+[node name="health_bar" type="ProgressBar" parent="SubViewport"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_right = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_32ick")
+theme_override_styles/fill = SubResource("StyleBoxFlat_6dvuw")
+show_percentage = false
+
+[node name="health_bar_sprite" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.8, 0)
+texture_filter = 0
+texture = SubResource("ViewportTexture_5r16j")
 
 [editable path="zombie"]

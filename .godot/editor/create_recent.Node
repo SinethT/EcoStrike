@@ -1,2 +1,6 @@
+Panel
+Sprite3D
+SubViewport
+ProgressBar
 CharacterBody3D
 DirectionalLight3D
