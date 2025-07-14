@@ -30,7 +30,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.29643, 0, 0)
 
 [node name="Player_Character" parent="." instance=ExtResource("2_jirdo")]
-transform = Transform3D(-0.99986, 0, 0.0167368, 0, 1, 0, -0.0167368, 0, -0.99986, -1.42498, 3.18079, 4.85397)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42498, 3.18079, 4.85397)
 
 [node name="zombie" parent="." instance=ExtResource("3_bt44k")]
 transform = Transform3D(0.45, 0, 0, 0, 0.45, 0, 0, 0, 0.45, 0, 1.41118, 0)
