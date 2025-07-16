@@ -61,5 +61,5 @@ func die():
 	set_collision_mask_value(1, false)
 	
 	# Queue for deletion after a delay
-	await get_tree().create_timer(5.0).timeout
+	await get_tree().create_timer(3.5).timeout
 	queue_free()
