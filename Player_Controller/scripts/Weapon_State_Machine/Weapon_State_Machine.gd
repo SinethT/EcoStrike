@@ -39,7 +39,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	if not event.is_pressed():
 		return
 		
-	if range(KEY_1, KEY_4).has(event.keycode):
+	if range(KEY_1, KEY_5).has(event.keycode):  # Changed from KEY_4 to KEY_5 to support 6 weapons
 		var _slot_number = (event.keycode - KEY_1)
 		if weapon_stack.size()-1>=_slot_number:
 			exit(weapon_stack[_slot_number])
@@ -284,8 +284,7 @@ func _on_pick_up_detection_body_entered(body: RigidBody3D):
 				
 		if body.Pick_Up_Ready == true:
 			print("✅ Adding new weapon to stack")
-			var weapon_index = weapon_stack.find(current_weapon_slot)
-			weapon_stack.insert(weapon_index,weapon_slot)
+			weapon_stack.append(weapon_slot)
 			print("New weapon stack size: ", weapon_stack.size())
 			update_weapon_stack.emit(weapon_stack)
 			exit(weapon_slot)
