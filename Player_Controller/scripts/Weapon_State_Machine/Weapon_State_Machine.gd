@@ -10,7 +10,7 @@ signal connect_weapon_to_hud
 
 @export var animation_player: AnimationPlayer
 @export var melee_hitbox: ShapeCast3D
-@export var max_weapons: int
+@export var max_weapons: int = 6  # Maximum number of weapons player can carry
 @onready var bullet_point = get_node("%BulletPoint")
 @onready var debug_bullet = preload("res://Player_Controller/Spawnable_Objects/hit_debug.tscn")
 
@@ -95,14 +95,25 @@ func initialize(_weapon_slot: WeaponSlot):
 	connect_weapon_to_hud.emit(_weapon_slot.weapon)
 
 func enter() -> void:
+	if current_weapon_slot == null:
+		print("Error: current_weapon_slot is null in enter()")
+		return
+	if current_weapon_slot.weapon == null:
+		print("Error: current_weapon_slot.weapon is null in enter()")
+		return
+		
 	animation_player.queue(current_weapon_slot.weapon.pick_up_animation)
 	weapon_changed.emit(current_weapon_slot.weapon.weapon_name)
 	update_ammo.emit([current_weapon_slot.current_ammo, current_weapon_slot.reserve_ammo])
 
 func exit(_next_weapon: WeaponSlot) -> void:
 	if _next_weapon != current_weapon_slot:
-		if animation_player.get_current_animation() != current_weapon_slot.weapon.change_animation:
-			animation_player.queue(current_weapon_slot.weapon.change_animation)
+		if current_weapon_slot != null and current_weapon_slot.weapon != null:
+			if animation_player.get_current_animation() != current_weapon_slot.weapon.change_animation:
+				animation_player.queue(current_weapon_slot.weapon.change_animation)
+				next_weapon = _next_weapon
+		else:
+			print("Warning: current_weapon_slot or weapon is null in exit()")
 			next_weapon = _next_weapon
 
 func change_weapon(weapon_slot: WeaponSlot) -> void:
@@ -115,6 +126,13 @@ func shot_count_update() -> void:
 	shot_tween.tween_property(self,"_count",0,1)
 	
 func shoot() -> void:
+	if current_weapon_slot == null:
+		print("Error: current_weapon_slot is null in shoot()")
+		return
+	if current_weapon_slot.weapon == null:
+		print("Error: current_weapon_slot.weapon is null in shoot()")
+		return
+		
 	if current_weapon_slot.current_ammo != 0 or not current_weapon_slot.weapon.has_ammo:
 		if current_weapon_slot.weapon.incremental_reload and animation_player.current_animation == current_weapon_slot.weapon.reload_animation:
 			animation_player.stop()
@@ -229,9 +247,22 @@ func _on_animation_finished(anim_name):
 			calculate_reload()
 
 func _on_pick_up_detection_body_entered(body: RigidBody3D):
+	print("=== WEAPON PICKUP DETECTED ===")
+	print("Body: ", body.name)
+	print("Body type: ", body.TYPE if "TYPE" in body else "Unknown")
+	print("Current weapon stack size: ", weapon_stack.size())
+	print("Max weapons: ", max_weapons)
+	
 	var weapon_slot = body.weapon
+	if weapon_slot == null:
+		print("❌ No weapon slot on pickup body")
+		return
+		
+	print("Weapon being picked up: ", weapon_slot.weapon.weapon_name if weapon_slot.weapon else "No weapon resource")
+	
 	for slot in weapon_stack:
 		if slot.weapon == weapon_slot.weapon:
+			print("🔄 Weapon already owned - adding ammo")
 			var remaining
 
 			remaining = add_ammo(slot, weapon_slot.current_ammo+weapon_slot.reserve_ammo)
@@ -239,20 +270,31 @@ func _on_pick_up_detection_body_entered(body: RigidBody3D):
 			weapon_slot.reserve_ammo = max(remaining - weapon_slot.current_ammo,0)
 
 			if remaining == 0:
+				print("🗑️ Pickup consumed - removing from world")
 				body.queue_free()
 			return
 		
 	if body.TYPE == "Weapon":
 		if weapon_stack.size() == max_weapons:
-				return
+			print("❌ WEAPON PICKUP FAILED: Already at max weapons (", max_weapons, ")")
+			print("Current weapons:")
+			for i in range(weapon_stack.size()):
+				print("  ", i+1, ": ", weapon_stack[i].weapon.weapon_name)
+			return
 				
 		if body.Pick_Up_Ready == true:
+			print("✅ Adding new weapon to stack")
 			var weapon_index = weapon_stack.find(current_weapon_slot)
 			weapon_stack.insert(weapon_index,weapon_slot)
+			print("New weapon stack size: ", weapon_stack.size())
 			update_weapon_stack.emit(weapon_stack)
 			exit(weapon_slot)
 			initialize(weapon_slot)
 			body.queue_free()
+		else:
+			print("❌ Pickup not ready yet")
+	else:
+		print("❌ Not a weapon pickup")
 
 func add_ammo(_weapon_slot: WeaponSlot, ammo: int)->int:
 	var weapon = _weapon_slot.weapon

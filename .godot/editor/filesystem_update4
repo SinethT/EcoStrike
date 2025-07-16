@@ -1,3 +1,5 @@
 res://levels/level_1.tscn
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
 res://Player_Controller/player_character.tscn
+res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/Weapon_Pick_Up.gd
+res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd
