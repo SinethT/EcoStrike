@@ -3,3 +3,8 @@ res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.t
 res://Player_Controller/player_character.tscn
 res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/Weapon_Pick_Up.gd
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd
+res://Player_Controller/Spawnable_Objects/Weapons/blaster_n.tscn
+res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn
+res://Player_Controller/Spawnable_Objects/Weapons/blaster_L.tscn
+res://Player_Controller/Spawnable_Objects/Weapons/blaster_I.tscn
+res://Player_Controller/Spawnable_Objects/Weapons/blasterQ.tscn
