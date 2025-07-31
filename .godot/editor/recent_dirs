@@ -1,5 +1,4 @@
-res://scripts/objects
-res://objects
+res://envs/Trailer_Park/Scenes
 res://scripts/enemy
 res://enemy/zombie
 res://levels

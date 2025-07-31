@@ -39,7 +39,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	if not event.is_pressed():
 		return
 		
-	if range(KEY_1, KEY_5).has(event.keycode):  # Changed from KEY_4 to KEY_5 to support 6 weapons
+	if range(KEY_1, KEY_6).has(event.keycode):  # Changed from KEY_4 to KEY_5 to support 6 weapons
 		var _slot_number = (event.keycode - KEY_1)
 		if weapon_stack.size()-1>=_slot_number:
 			exit(weapon_stack[_slot_number])
@@ -247,22 +247,22 @@ func _on_animation_finished(anim_name):
 			calculate_reload()
 
 func _on_pick_up_detection_body_entered(body: RigidBody3D):
-	print("=== WEAPON PICKUP DETECTED ===")
-	print("Body: ", body.name)
-	print("Body type: ", body.TYPE if "TYPE" in body else "Unknown")
-	print("Current weapon stack size: ", weapon_stack.size())
-	print("Max weapons: ", max_weapons)
+	# print("=== WEAPON PICKUP DETECTED ===")
+	# print("Body: ", body.name)
+	# print("Body type: ", body.TYPE if "TYPE" in body else "Unknown")
+	# print("Current weapon stack size: ", weapon_stack.size())
+	# print("Max weapons: ", max_weapons)
 	
 	var weapon_slot = body.weapon
 	if weapon_slot == null:
 		print("❌ No weapon slot on pickup body")
 		return
 		
-	print("Weapon being picked up: ", weapon_slot.weapon.weapon_name if weapon_slot.weapon else "No weapon resource")
+	# print("Weapon being picked up: ", weapon_slot.weapon.weapon_name if weapon_slot.weapon else "No weapon resource")
 	
 	for slot in weapon_stack:
 		if slot.weapon == weapon_slot.weapon:
-			print("🔄 Weapon already owned - adding ammo")
+			# print("🔄 Weapon already owned - adding ammo")
 			var remaining
 
 			remaining = add_ammo(slot, weapon_slot.current_ammo+weapon_slot.reserve_ammo)
@@ -270,22 +270,22 @@ func _on_pick_up_detection_body_entered(body: RigidBody3D):
 			weapon_slot.reserve_ammo = max(remaining - weapon_slot.current_ammo,0)
 
 			if remaining == 0:
-				print("🗑️ Pickup consumed - removing from world")
+				# print("🗑️ Pickup consumed - removing from world")
 				body.queue_free()
 			return
 		
 	if body.TYPE == "Weapon":
-		if weapon_stack.size() == max_weapons:
-			print("❌ WEAPON PICKUP FAILED: Already at max weapons (", max_weapons, ")")
-			print("Current weapons:")
-			for i in range(weapon_stack.size()):
-				print("  ", i+1, ": ", weapon_stack[i].weapon.weapon_name)
-			return
+		# if weapon_stack.size() == max_weapons:
+		# 	print("❌ WEAPON PICKUP FAILED: Already at max weapons (", max_weapons, ")")
+		# 	print("Current weapons:")
+		# 	for i in range(weapon_stack.size()):
+		# 		print("  ", i+1, ": ", weapon_stack[i].weapon.weapon_name)
+		# 	return
 				
 		if body.Pick_Up_Ready == true:
-			print("✅ Adding new weapon to stack")
+			# print("✅ Adding new weapon to stack")
 			weapon_stack.append(weapon_slot)
-			print("New weapon stack size: ", weapon_stack.size())
+			# print("New weapon stack size: ", weapon_stack.size())
 			update_weapon_stack.emit(weapon_stack)
 			exit(weapon_slot)
 			initialize(weapon_slot)

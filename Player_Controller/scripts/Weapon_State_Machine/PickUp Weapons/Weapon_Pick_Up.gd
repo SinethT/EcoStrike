@@ -8,30 +8,30 @@ var Pick_Up_Ready: bool = false
 
 func _ready():
 	# Debug: Print node information
-	print("WeaponPickUp _ready() called for node: ", name)
-	print("Current weapon slot: ", weapon)
+	# print("WeaponPickUp _ready() called for node: ", name)
+	# print("Current weapon slot: ", weapon)
 	
 	# Auto-configure weapon if no WeaponSlot is assigned
 	if weapon == null:
-		print("No weapon slot assigned, attempting auto-configuration...")
+		# print("No weapon slot assigned, attempting auto-configuration...")
 		auto_configure_weapon()
 		
 		# Verify the weapon was configured
-		if weapon != null:
-			print("Auto-configuration successful!")
-		else:
-			print("Auto-configuration failed - weapon is still null")
-	else:
-		print("Weapon slot already assigned")
+	# 	if weapon != null:
+	# 		print("Auto-configuration successful!")
+	# 	else:
+	# 		print("Auto-configuration failed - weapon is still null")
+	# else:
+	# 	print("Weapon slot already assigned")
 	
 	await get_tree().create_timer(2.0).timeout
 	Pick_Up_Ready = true
-	print("Weapon pickup ready for: ", name)
+	# print("Weapon pickup ready for: ", name)
 
 func auto_configure_weapon():
 	# Get the weapon name from the node name
 	var node_name = name
-	print("Trying to auto-configure weapon for node: ", node_name)
+	# print("Trying to auto-configure weapon for node: ", node_name)
 	
 	# Create a mapping of node names to resource names
 	var weapon_mapping = {
@@ -58,13 +58,13 @@ func auto_configure_weapon():
 				break
 	
 	if resource_name.is_empty():
-		print("Warning: Cannot find weapon mapping for node name: ", node_name)
+		# print("Warning: Cannot find weapon mapping for node name: ", node_name)
 		return
 	
 	# Try to load the corresponding WeaponResource
 	var resource_path = "res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/" + resource_name + ".tres"
 	
-	print("Attempting to load weapon resource: ", resource_path)
+	# print("Attempting to load weapon resource: ", resource_path)
 	
 	if ResourceLoader.exists(resource_path):
 		var weapon_resource = load(resource_path) as WeaponResource
@@ -76,16 +76,16 @@ func auto_configure_weapon():
 			weapon.reserve_ammo = weapon_resource.magazine
 			
 			# Verify the WeaponSlot was created properly
-			if weapon != null and weapon.weapon != null:
-				print("✅ Auto-configured weapon: ", resource_name, " with ", weapon.current_ammo, " ammo")
-				print("   - Weapon resource: ", weapon.weapon.weapon_name)
-				print("   - Magazine size: ", weapon.weapon.magazine)
-			else:
-				print("❌ WeaponSlot creation failed despite successful resource loading")
-		else:
-			print("❌ Failed to load WeaponResource at: ", resource_path)
-	else:
-		print("❌ WeaponResource not found at: ", resource_path)
+	# 		if weapon != null and weapon.weapon != null:
+	# 			print("✅ Auto-configured weapon: ", resource_name, " with ", weapon.current_ammo, " ammo")
+	# 			print("   - Weapon resource: ", weapon.weapon.weapon_name)
+	# 			print("   - Magazine size: ", weapon.weapon.magazine)
+	# 		else:
+	# 			print("❌ WeaponSlot creation failed despite successful resource loading")
+	# 	else:
+	# 		print("❌ Failed to load WeaponResource at: ", resource_path)
+	# else:
+	# 	print("❌ WeaponResource not found at: ", resource_path)
 
 # Remove the unused function
 # func get_scene_file_hint() -> String:

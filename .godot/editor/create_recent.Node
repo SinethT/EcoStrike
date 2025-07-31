@@ -1,3 +1,7 @@
+Node3D
+StaticBody3D
+Node
+CSGBox3D
 Panel
 Sprite3D
 SubViewport
