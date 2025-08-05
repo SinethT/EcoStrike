@@ -67,6 +67,9 @@ func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	calculate_movement_parameters()
 	
+	# Add player to Player group so enemies can find it
+	add_to_group("Player")
+	
 func update_camera_rotation() -> void:
 	var current_rotation = get_rotation()
 	camera_rotation.x = current_rotation.y

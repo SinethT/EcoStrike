@@ -4,3 +4,6 @@ res://levels/level_1.tscn
 res://enemy/zombie/zombie.tscn
 res://envs/Trailer_Park/Scenes/trailer_park.tscn
 res://Player_Controller/Spawnable_Objects/Weapons/blasterQ.tscn
+res://scripts/enemy/zombie.gd
+res://Player_Controller/scripts/Player_Character/HUD.gd
+res://Player_Controller/scripts/Player_Character/player_character.gd
