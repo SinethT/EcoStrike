@@ -4,6 +4,7 @@ extends CharacterBody3D
 const SPEED = 5.0
 const CHASE_SPEED = 0.08
 const JUMP_VELOCITY = 4.5
+const ATTACK_RADIUS = 1.0
 
 # Health system variables
 @export var max_health: float = 100.0
@@ -11,6 +12,7 @@ var current_health: float
 var is_dead: bool = false
 
 # AI movement variables
+
 @export var detection_radius: float = 8
 @onready var player = get_tree().get_first_node_in_group("Player")
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -41,7 +43,23 @@ func _physics_process(delta):
 	if player and is_instance_valid(player):
 		var distance_to_player = global_position.distance_to(player.global_position)
 		
-		if distance_to_player <= detection_radius:
+		
+
+		if distance_to_player > detection_radius and animation_player.current_animation != "Armature|Idle":
+			# If player is out of range, stop moving and play idle animation
+			velocity.x = 0
+			velocity.z = 0
+			if animation_player.current_animation != "Armature|Idle":
+				animation_player.play("Armature|Idle")
+		else:
+			# If player is not detected, stop moving
+			velocity.x = 0
+			velocity.z = 0
+		
+		if distance_to_player <= ATTACK_RADIUS:
+			attack()
+
+		elif distance_to_player <= detection_radius:
 			move_towards_player()
 		else:
 			# Stop moving and play idle animation
@@ -53,6 +71,11 @@ func _physics_process(delta):
 	move_and_slide()
 
 
+func attack():
+	animation_player.play("Armature|Attack")
+	await get_tree().create_timer(2.8).timeout
+	print("Zombie attacks!")
+	
 
 func move_towards_player():
 	# Calculate direction to player (only on horizontal plane)
@@ -70,8 +93,8 @@ func move_towards_player():
 		rotation.y += deg_to_rad(180)
 	
 	# Play walking animation if not already playing
-	if animation_player.current_animation != "Armature|Walk" and animation_player.current_animation != "Armature|Run":
-		animation_player.play("Armature|Walk")
+	if animation_player.current_animation != "Armature|Running_Crawl" and animation_player.current_animation != "Armature|Run":
+		animation_player.play("Armature|Running_Crawl")
 
 # Called by bullets/projectiles when they hit the zombie
 func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_position: Vector3 = Vector3.ZERO):
