@@ -11,7 +11,7 @@ var current_health: float
 var is_dead: bool = false
 
 # AI movement variables
-@export var detection_radius: float = 10
+@export var detection_radius: float = 8
 @onready var player = get_tree().get_first_node_in_group("Player")
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
