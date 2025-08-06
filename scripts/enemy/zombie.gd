@@ -13,7 +13,7 @@ var is_dead: bool = false
 
 # AI movement variables
 
-@export var detection_radius: float = 8
+@export var detection_radius: float = 1
 @onready var player = get_tree().get_first_node_in_group("Player")
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
@@ -45,7 +45,7 @@ func _physics_process(delta):
 		
 		
 
-		if distance_to_player > detection_radius and animation_player.current_animation != "Armature|Idle":
+		if distance_to_player > detection_radius and animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
 			# If player is out of range, stop moving and play idle animation
 			velocity.x = 0
 			velocity.z = 0
@@ -65,7 +65,7 @@ func _physics_process(delta):
 			# Stop moving and play idle animation
 			velocity.x = 0
 			velocity.z = 0
-			if animation_player.current_animation != "Armature|Idle":
+			if animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
 				animation_player.play("Armature|Idle")
 	
 	move_and_slide()

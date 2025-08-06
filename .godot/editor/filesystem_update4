@@ -8,3 +8,4 @@ res://scripts/enemy/zombie.gd
 res://Player_Controller/scripts/Player_Character/HUD.gd
 res://Player_Controller/scripts/Player_Character/player_character.gd
 res://Player_Controller/player_character.tscn
+res://scripts/core/game_manager.gd
