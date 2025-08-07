@@ -2,9 +2,10 @@ extends CharacterBody3D
 
 
 const SPEED = 5.0
-const CHASE_SPEED = 0.08
+const CHASE_SPEED = 1
 const JUMP_VELOCITY = 4.5
 const ATTACK_RADIUS = 1.0
+const DETECTION_RADIUS = 5.0
 
 # Health system variables
 @export var max_health: float = 100.0
@@ -12,12 +13,11 @@ var current_health: float
 var is_dead: bool = false
 
 # AI movement variables
-
-@export var detection_radius: float = 1
 @onready var player = get_tree().get_first_node_in_group("Player")
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 @onready var animation_player = $zombie/AnimationPlayer
+@onready var motion_player = $zombie/AnimationPlayer2
 @onready var health_bar = $SubViewport/health_bar
 
 func _ready():
@@ -45,7 +45,7 @@ func _physics_process(delta):
 		
 		
 
-		if distance_to_player > detection_radius and animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
+		if distance_to_player > DETECTION_RADIUS and animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
 			# If player is out of range, stop moving and play idle animation
 			velocity.x = 0
 			velocity.z = 0
@@ -59,7 +59,7 @@ func _physics_process(delta):
 		if distance_to_player <= ATTACK_RADIUS:
 			attack()
 
-		elif distance_to_player <= detection_radius:
+		elif distance_to_player <= DETECTION_RADIUS:
 			move_towards_player()
 		else:
 			# Stop moving and play idle animation
@@ -74,7 +74,6 @@ func _physics_process(delta):
 func attack():
 	animation_player.play("Armature|Attack")
 	await get_tree().create_timer(2.8).timeout
-	print("Zombie attacks!")
 	
 
 func move_towards_player():
@@ -93,8 +92,8 @@ func move_towards_player():
 		rotation.y += deg_to_rad(180)
 	
 	# Play walking animation if not already playing
-	if animation_player.current_animation != "Armature|Running_Crawl" and animation_player.current_animation != "Armature|Run":
-		animation_player.play("Armature|Running_Crawl")
+	if motion_player.current_animation != "Armature|Walk":
+		motion_player.play("Armature|Walk")
 
 # Called by bullets/projectiles when they hit the zombie
 func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_position: Vector3 = Vector3.ZERO):
