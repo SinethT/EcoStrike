@@ -2,9 +2,9 @@ extends CharacterBody3D
 
 
 const SPEED = 5.0
-const CHASE_SPEED = 1
+const CHASE_SPEED = 0.7
 const JUMP_VELOCITY = 4.5
-const ATTACK_RADIUS = 1.0
+const ATTACK_RADIUS = 1.2
 const DETECTION_RADIUS = 5.0
 
 # Health system variables
@@ -70,8 +70,19 @@ func _physics_process(delta):
 	
 	move_and_slide()
 
-
+func animation_stop(anim_player="b"):
+	anim_player = anim_player.to_lower()
+	match anim_player:
+		"motion", "m":
+			motion_player.stop()
+		"animation", "anim", "a":
+			animation_player.stop()
+		"both", "b":
+			motion_player.stop()
+			animation_player.stop()
+	
 func attack():
+	animation_stop("motion")
 	animation_player.play("Armature|Attack")
 	await get_tree().create_timer(2.8).timeout
 	
@@ -111,9 +122,10 @@ func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_posi
 		return
 	
 	# Play hit reaction animation if still alive
-	animation_player.stop()
+	animation_stop()
 	animation_player.play("Armature|Hit_reaction")
 	animation_player.seek(0.3)
+	await get_tree().create_timer(1.7).timeout
 
 func die():
 	if is_dead:
@@ -125,7 +137,7 @@ func die():
 	health_bar.queue_free()
 	
 	# Stop any current animation and play death animation if available
-	animation_player.stop()
+	animation_stop()
 	# You can add a death animation here when you have one
 	animation_player.play("Armature|Die")
 	

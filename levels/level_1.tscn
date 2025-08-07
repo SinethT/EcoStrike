@@ -35,5 +35,32 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42498, 3.18079, 4.85397)
 [node name="zombie" parent="." instance=ExtResource("3_bt44k")]
 transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.44, -7.86692, -0.753471, 0)
 
+[node name="zombie2" parent="." instance=ExtResource("3_bt44k")]
+transform = Transform3D(-0.44, 0, -3.8466e-08, 0, 0.44, 0, 3.8466e-08, 0, -0.44, -7.86692, -0.753471, 39.6488)
+
+[node name="zombie3" parent="." instance=ExtResource("3_bt44k")]
+transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.44, 15.8412, -0.753471, 0)
+
+[node name="zombie4" parent="." instance=ExtResource("3_bt44k")]
+transform = Transform3D(-0.44, 0, -3.8466e-08, 0, 0.44, 0, 3.8466e-08, 0, -0.44, 13.406, -0.753471, 41.0165)
+
+[node name="zombie5" parent="." instance=ExtResource("3_bt44k")]
+transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.44, 39.4858, -0.753471, 0)
+
+[node name="zombie6" parent="." instance=ExtResource("3_bt44k")]
+transform = Transform3D(-0.44, 0, -3.8466e-08, 0, 0.44, 0, 3.8466e-08, 0, -0.44, 38.4515, -0.753471, 44.3445)
+
+[node name="zombie7" parent="." instance=ExtResource("3_bt44k")]
+transform = Transform3D(-1.9233e-08, 0, -0.44, 0, 0.44, 0, 0.44, 0, -1.9233e-08, 45.4947, -0.753471, 19.3228)
+
+[node name="zombie8" parent="." instance=ExtResource("3_bt44k")]
+transform = Transform3D(-1.9233e-08, 0, -0.44, 0, 0.44, 0, 0.44, 0, -1.9233e-08, 38.8208, -0.753471, 23.8003)
+
+[node name="zombie9" parent="." instance=ExtResource("3_bt44k")]
+transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.44, -27.5658, -0.753471, -5.79655)
+
+[node name="zombie10" parent="." instance=ExtResource("3_bt44k")]
+transform = Transform3D(-0.44, 0, -3.8466e-08, 0, 0.44, 0, 3.8466e-08, 0, -0.44, -27.5658, -0.753471, 49.7053)
+
 [node name="blasterM" parent="." instance=ExtResource("4_kx6l7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4703, -0.363989, 7.32788)
