@@ -255,7 +255,7 @@ func _on_pick_up_detection_body_entered(body: RigidBody3D):
 	
 	var weapon_slot = body.weapon
 	if weapon_slot == null:
-		print("❌ No weapon slot on pickup body")
+		print("No weapon slot on pickup body")
 		return
 		
 	# print("Weapon being picked up: ", weapon_slot.weapon.weapon_name if weapon_slot.weapon else "No weapon resource")
@@ -270,20 +270,19 @@ func _on_pick_up_detection_body_entered(body: RigidBody3D):
 			weapon_slot.reserve_ammo = max(remaining - weapon_slot.current_ammo,0)
 
 			if remaining == 0:
-				# print("🗑️ Pickup consumed - removing from world")
 				body.queue_free()
 			return
 		
 	if body.TYPE == "Weapon":
 		# if weapon_stack.size() == max_weapons:
-		# 	print("❌ WEAPON PICKUP FAILED: Already at max weapons (", max_weapons, ")")
+		# 	print("WEAPON PICKUP FAILED: Already at max weapons (", max_weapons, ")")
 		# 	print("Current weapons:")
 		# 	for i in range(weapon_stack.size()):
 		# 		print("  ", i+1, ": ", weapon_stack[i].weapon.weapon_name)
 		# 	return
 				
 		if body.Pick_Up_Ready == true:
-			# print("✅ Adding new weapon to stack")
+			# print("Adding new weapon to stack")
 			weapon_stack.append(weapon_slot)
 			# print("New weapon stack size: ", weapon_stack.size())
 			update_weapon_stack.emit(weapon_stack)
@@ -291,9 +290,9 @@ func _on_pick_up_detection_body_entered(body: RigidBody3D):
 			initialize(weapon_slot)
 			body.queue_free()
 		else:
-			print("❌ Pickup not ready yet")
+			print("Pickup not ready yet")
 	else:
-		print("❌ Not a weapon pickup")
+		print("Not a weapon pickup")
 
 func add_ammo(_weapon_slot: WeaponSlot, ammo: int)->int:
 	var weapon = _weapon_slot.weapon

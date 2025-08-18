@@ -133,6 +133,8 @@ func die():
 	
 	is_dead = true
 	current_health = 0
+	GameManager.kill()
+	#print (GameManager.zombie_kills)
 	
 	health_bar.queue_free()
 	

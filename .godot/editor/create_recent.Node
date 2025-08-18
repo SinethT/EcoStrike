@@ -1,3 +1,7 @@
+Label
+RichTextLabel
+TextureRect
+CanvasLayer
 Node3D
 StaticBody3D
 Node

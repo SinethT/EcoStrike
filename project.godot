@@ -14,6 +14,10 @@ config/name="EcoStrike"
 run/main_scene="uid://ru7w4yjomiqe"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
+[autoload]
+
+GameManager="*res://scripts/core/game_manager.gd"
+
 [input]
 
 ui_left={

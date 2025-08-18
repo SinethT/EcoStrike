@@ -1,6 +1,9 @@
-res://enemy/zombie/zombie.tscn
-res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
-res://levels/level_0.tscn
 res://levels/level_1.tscn
-res://Player_Controller/player_character.tscn
+res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
 res://scripts/enemy/zombie.gd
+res://scripts/core/game_manager.gd
+res://levels/level_0.tscn
+res://scripts/UI/ui_manager.gd
+res://enemy/zombie/zombie.tscn
+res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd
+res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd
