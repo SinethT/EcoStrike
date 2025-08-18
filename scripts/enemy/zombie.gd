@@ -6,6 +6,7 @@ const CHASE_SPEED = 0.7
 const JUMP_VELOCITY = 4.5
 const ATTACK_RADIUS = 1.2
 const DETECTION_RADIUS = 5.0
+const MELEE_DAMAGE = 1.5
 
 # Health system variables
 @export var max_health: float = 100.0
@@ -67,6 +68,9 @@ func _physics_process(delta):
 			velocity.z = 0
 			if animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
 				animation_player.play("Armature|Idle")
+		
+		if Input.is_action_just_pressed("Melee") and distance_to_player < ATTACK_RADIUS:
+			Hit_Successful(MELEE_DAMAGE)
 	
 	move_and_slide()
 
