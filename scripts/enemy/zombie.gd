@@ -7,11 +7,13 @@ const JUMP_VELOCITY = 4.5
 const ATTACK_RADIUS = 1.2
 const DETECTION_RADIUS = 5.0
 const MELEE_DAMAGE = 1.5
+const IMMUNE_TIME = 0.3
 
 # Health system variables
 @export var max_health: float = 100.0
 var current_health: float
 var is_dead: bool = false
+var can_take_damage = true
 
 # AI movement variables
 @onready var player = get_tree().get_first_node_in_group("Player")
@@ -113,12 +115,13 @@ func move_towards_player():
 # Called by bullets/projectiles when they hit the zombie
 func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_position: Vector3 = Vector3.ZERO):
 	# Don't process hits if already dead
-	if is_dead:
+	if is_dead or !can_take_damage:
 		return
 		
 	# Apply damage
 	current_health -= damage
 	health_bar.value -= damage
+	immune_frames()
 	
 	# Check if zombie should die
 	if current_health <= 0:
@@ -130,6 +133,12 @@ func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_posi
 	animation_player.play("Armature|Hit_reaction")
 	animation_player.seek(0.3)
 	await get_tree().create_timer(1.7).timeout
+
+func immune_frames():
+	# Prevent taking damage within this timer
+	can_take_damage = false
+	await get_tree().create_timer(IMMUNE_TIME).timeout
+	can_take_damage = true
 
 func die():
 	if is_dead:
