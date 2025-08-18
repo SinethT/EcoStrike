@@ -1,9 +1,9 @@
 extends CharacterBody3D
+class_name Enemy
 
 
 const SPEED = 5.0
 const CHASE_SPEED = 0.7
-const JUMP_VELOCITY = 4.5
 const ATTACK_RADIUS = 1.2
 const DETECTION_RADIUS = 5.0
 const MELEE_DAMAGE = 1.5
