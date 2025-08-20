@@ -125,7 +125,7 @@ func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_posi
 	# Apply damage
 	current_health -= damage
 	health_bar.value -= damage
-	immune_frames(IMMUNE_TIME)
+	await get_tree().create_timer(0.001).timeout
 	
 	# Check if zombie should die
 	if current_health <= 0:
@@ -136,7 +136,8 @@ func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_posi
 	animation_stop()
 	animation_player.play("Armature|Hit_reaction")
 	animation_player.seek(0.3)
-	await get_tree().create_timer(1.7).timeout
+	immune_frames(IMMUNE_TIME)
+	await get_tree().create_timer(1.7-IMMUNE_TIME).timeout
 
 func immune_frames(time):
 	# Prevent taking damage within this timer

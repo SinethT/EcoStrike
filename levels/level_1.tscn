@@ -34,6 +34,36 @@ environment = SubResource("Environment_5722l")
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
 
+[node name="UIManager" type="CanvasLayer" parent="."]
+script = ExtResource("5_gwceb")
+
+[node name="skull_icon" type="TextureRect" parent="UIManager"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -46.0
+offset_right = 3.0
+offset_bottom = 49.0
+grow_horizontal = 2
+texture = ExtResource("5_n46q3")
+expand_mode = 5
+stretch_mode = 4
+
+[node name="Kill_Display" type="Label" parent="UIManager"]
+offset_left = 571.5
+offset_right = 620.5
+offset_bottom = 49.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_l53as")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_3sk1a")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+max_lines_visible = 1
+visible_characters = 1
+
 [node name="Trailer_Park" parent="." instance=ExtResource("1_bt44k")]
 
 [node name="Player_Character" parent="." instance=ExtResource("2_jirdo")]
@@ -72,38 +102,11 @@ transform = Transform3D(-0.44, 0, -3.8466e-08, 0, 0.44, 0, 3.8466e-08, 0, -0.44,
 [node name="blasterM" parent="." instance=ExtResource("4_kx6l7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4703, -0.363989, 7.32788)
 
-[node name="UIManager" type="CanvasLayer" parent="."]
-script = ExtResource("5_gwceb")
-
-[node name="skull_icon" type="TextureRect" parent="UIManager"]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -46.0
-offset_right = 3.0
-offset_bottom = 49.0
-grow_horizontal = 2
-texture = ExtResource("5_n46q3")
-expand_mode = 5
-stretch_mode = 4
-
-[node name="Kill_Display" type="Label" parent="UIManager"]
-offset_left = 571.5
-offset_right = 620.5
-offset_bottom = 49.0
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("7_l53as")
-theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_3sk1a")
-text = "0"
-horizontal_alignment = 1
-vertical_alignment = 1
-max_lines_visible = 1
-visible_characters = 1
-
 [node name="HealthUp" parent="." instance=ExtResource("8_l53as")]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 45.8402, 1.08352, -1.0516)
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 1.91297, 1.43124, 7.9392)
 
 [node name="HealthUp2" parent="." instance=ExtResource("8_l53as")]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, -6.9529, 1.02999, 9.86961)
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 22.8, 0.882587, -0.032093)
+
+[node name="HealthUp3" parent="." instance=ExtResource("8_l53as")]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 46.1941, 0.557872, 4.83227)
