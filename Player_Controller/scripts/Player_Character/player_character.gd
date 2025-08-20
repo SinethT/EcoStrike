@@ -138,7 +138,7 @@ func _set_health(new_health):
 	health = min(MAX_HEALTH, new_health)
 	
 	healthbar.health = health
-	
+
 	if health <= 0:
 		return
 	

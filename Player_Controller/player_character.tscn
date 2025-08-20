@@ -2348,10 +2348,14 @@ one_shot = true
 [node name="CoyoteTimer" type="Timer" parent="."]
 
 [node name="healthbar" parent="." instance=ExtResource("9_giihu")]
-offset_left = 758.0
-offset_top = 19.0
-offset_right = 1138.0
-offset_bottom = 36.0
+anchors_preset = -1
+anchor_left = 0.657986
+anchor_top = 0.029321
+anchor_right = 0.987847
+anchor_bottom = 0.0555556
+offset_right = 0.0
+offset_bottom = 0.0
+size_flags_horizontal = 8
 
 [connection signal="timeout" from="CanvasLayer/HitSight/HitSightTimer" to="CanvasLayer" method="_on_hit_sight_timer_timeout"]
 [connection signal="add_signal_to_hud" from="Camera/LeanPivot/MainCamera/Weapons_Manager" to="CanvasLayer" method="_on_weapons_manager_add_signal_to_hud"]

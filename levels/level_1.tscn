@@ -38,31 +38,42 @@ shadow_enabled = true
 script = ExtResource("5_gwceb")
 
 [node name="skull_icon" type="TextureRect" parent="UIManager"]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -46.0
-offset_right = 3.0
-offset_bottom = 49.0
+anchors_preset = -1
+anchor_left = 0.46
+anchor_right = 0.503
+anchor_bottom = 0.076
+offset_left = 0.0800171
+offset_right = -0.456055
+offset_bottom = -0.248005
 grow_horizontal = 2
+size_flags_vertical = 0
 texture = ExtResource("5_n46q3")
 expand_mode = 5
 stretch_mode = 4
+metadata/_edit_group_ = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Kill_Display" type="Label" parent="UIManager"]
-offset_left = 571.5
-offset_right = 620.5
-offset_bottom = 49.0
+anchors_preset = -1
+anchor_left = 0.497
+anchor_right = 0.539
+anchor_bottom = 0.076
+offset_left = -0.544006
+offset_right = 0.0719604
+offset_bottom = -0.248009
 size_flags_horizontal = 4
+size_flags_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("7_l53as")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 65
 theme_override_styles/normal = SubResource("StyleBoxFlat_3sk1a")
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 max_lines_visible = 1
 visible_characters = 1
+metadata/_edit_group_ = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Trailer_Park" parent="." instance=ExtResource("1_bt44k")]
 
