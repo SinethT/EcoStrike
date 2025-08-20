@@ -1,0 +1,69 @@
+[gd_scene load_steps=7 format=3 uid="uid://txfh4g1j8jnp"]
+
+[ext_resource type="PackedScene" uid="uid://cgopx88ltc3vv" path="res://interactable/health_up/Pickup_Health.fbx" id="1_5tkgt"]
+[ext_resource type="Script" uid="uid://jl07r77iqk1r" path="res://scripts/interactable/health_up.gd" id="1_57245"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_57245"]
+points = PackedVector3Array(-0.48471, -0.337787, -0.165622, -0.406424, -0.318042, -0.220082, -0.3567, -0.348397, -0.220082, -0.389153, -0.396042, -0.165622, -0.48471, -0.337787, 0.165579, -0.48471, 0.337686, -0.165622, -0.406424, 0.31794, -0.220082, 0.356605, -0.348397, -0.220082, -0.389153, -0.396042, 0.165579, 0.389058, -0.396042, -0.165622, -0.3567, -0.348397, 0.220082, -0.406424, -0.318042, 0.220082, -0.48471, 0.337686, 0.165579, -0.359642, 0.60312, -0.00689372, -0.389153, 0.396038, -0.165622, -0.371788, 0.339061, -0.220082, 0.406329, -0.318042, -0.220082, 0.48471, -0.337787, -0.165622, 0.389058, -0.396042, 0.165579, 0.356605, -0.348397, 0.220082, -0.162361, -0.262047, 0.220082, -0.371788, 0.339061, 0.220039, -0.406424, 0.31794, 0.220039, -0.359642, 0.60312, 0.0277042, -0.300239, 0.607541, -0.00732459, 0.371693, 0.339061, -0.220082, 0.406329, 0.31794, -0.220082, 0.48471, -0.337787, 0.165579, 0.48471, 0.337686, -0.165622, 0.406329, -0.318042, 0.220082, 0.162266, -0.262047, 0.220082, 0.371693, 0.339061, 0.220039, -0.300239, 0.607541, 0.028135, 0.300144, 0.607541, -0.00732459, 0.359547, 0.60312, -0.00689372, 0.389058, 0.396038, -0.165622, 0.48471, 0.337686, 0.165579, 0.406329, 0.31794, 0.220039, 0.359547, 0.60312, 0.0277042, 0.300144, 0.607541, 0.028135)
+
+[sub_resource type="Animation" id="Animation_7pxqw"]
+resource_name = "idle"
+length = 1.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pickup_Health:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 3.14159, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mg2jh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pickup_Health:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hf16h"]
+_data = {
+&"RESET": SubResource("Animation_mg2jh"),
+&"idle": SubResource("Animation_7pxqw")
+}
+
+[node name="HealthUp" type="Node3D"]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 0, 0, 0)
+script = ExtResource("1_57245")
+
+[node name="Pickup_Health" parent="." instance=ExtResource("1_5tkgt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.036, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="Pickup_Health"]
+transform = Transform3D(0.351128, 0, -0.936328, 0, 1, 0, 0.936328, 0, 0.351128, -0.0294179, 0, -0.0207506)
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pickup_Health/Area3D"]
+transform = Transform3D(0.351128, 4.09282e-08, 0.936327, 0, 1, -4.37114e-08, -0.936327, 1.53483e-08, 0.351128, 0.0297588, 0, -0.0202587)
+shape = SubResource("ConvexPolygonShape3D_57245")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_hf16h")
+}
+
+[connection signal="body_entered" from="Pickup_Health/Area3D" to="." method="_on_area_3d_body_entered"]
+
+[editable path="Pickup_Health"]

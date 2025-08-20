@@ -1,5 +1,11 @@
 extends CharacterBody3D
 
+const IMMUNE_TIME = 0.3
+const MAX_HEALTH = 200.0
+var health = 0: set = _set_health
+var can_take_damage = true 
+
+@onready var healthbar = $healthbar
 @onready var camera = %Camera
 @export var subviewport_camera: Camera3D
 @export var main_camera:Camera3D
@@ -67,6 +73,9 @@ func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	calculate_movement_parameters()
 	
+	health = MAX_HEALTH
+	healthbar.init_health(health)
+	
 	# Add player to Player group so enemies can find it
 	add_to_group("Player")
 	
@@ -117,6 +126,28 @@ func _input(event: InputEvent) -> void:
 		if Input.is_action_just_pressed("walk") and !crouched:
 			speed_modifier = walk_speed
 
+func take_damage(damage:int):
+	if can_take_damage:
+		health -= damage
+		immune_frames(IMMUNE_TIME)
+		
+		if health <= 0:
+			pass
+			#die()
+func _set_health(new_health):
+	health = min(MAX_HEALTH, new_health)
+	
+	healthbar.health = health
+	
+	if health <= 0:
+		return
+	
+func immune_frames(time):
+	# Prevent taking damage within this timer
+	can_take_damage = false
+	await get_tree().create_timer(time).timeout
+	can_take_damage = true
+		
 func calculate_movement_parameters() -> void:
 	jump_gravity = (2*jump_height)/pow(jump_peak_time,2)
 	fall_gravity = (2*jump_height)/pow(jump_fall_time,2)

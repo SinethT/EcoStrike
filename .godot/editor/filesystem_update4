@@ -7,3 +7,9 @@ res://scripts/UI/ui_manager.gd
 res://enemy/zombie/zombie.tscn
 res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd
+res://Player_Controller/player_character.tscn
+res://Player_Controller/scripts/Player_Character/player_character.gd
+res://interactable/health_up/health_up.tscn
+res://scripts/interactable/health_up.gd
+res://scripts/UI/healthbar.gd
+res://UI/healthbar/healthbar.tscn

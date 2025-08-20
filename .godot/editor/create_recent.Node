@@ -1,3 +1,9 @@
+Timer
+ProgressBar
+CollisionShape3D
+AnimationPlayer
+Area3D
+AnimatedSprite3D
 Label
 RichTextLabel
 TextureRect
@@ -7,8 +13,3 @@ StaticBody3D
 Node
 CSGBox3D
 Panel
-Sprite3D
-SubViewport
-ProgressBar
-CharacterBody3D
-DirectionalLight3D

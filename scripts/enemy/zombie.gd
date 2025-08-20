@@ -1,10 +1,10 @@
 extends CharacterBody3D
 # class_name Enemy
 
-
+const DAMAGE = 20.0
 const SPEED = 5.0
 const CHASE_SPEED = 0.7
-const ATTACK_RADIUS = 1.2
+const ATTACK_RADIUS = 1.1
 const DETECTION_RADIUS = 5.0
 const MELEE_DAMAGE = 1.5
 const IMMUNE_TIME = 0.3
@@ -59,17 +59,18 @@ func _physics_process(delta):
 			velocity.x = 0
 			velocity.z = 0
 		
-		if distance_to_player <= ATTACK_RADIUS:
-			attack()
+		if animation_player.current_animation != "Armature|Attack":
+			if distance_to_player <= ATTACK_RADIUS:
+				attack()
 
-		elif distance_to_player <= DETECTION_RADIUS:
-			move_towards_player()
-		else:
-			# Stop moving and play idle animation
-			velocity.x = 0
-			velocity.z = 0
-			if animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
-				animation_player.play("Armature|Idle")
+			elif distance_to_player <= DETECTION_RADIUS:
+				move_towards_player()
+			else:
+				# Stop moving and play idle animation
+				velocity.x = 0
+				velocity.z = 0
+				if animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
+					animation_player.play("Armature|Idle")
 		
 		if Input.is_action_just_pressed("Melee") and distance_to_player < ATTACK_RADIUS:
 			Hit_Successful(MELEE_DAMAGE)
@@ -90,7 +91,10 @@ func animation_stop(anim_player="b"):
 func attack():
 	animation_stop("motion")
 	animation_player.play("Armature|Attack")
-	await get_tree().create_timer(2.8).timeout
+	await get_tree().create_timer(1.2).timeout
+	if animation_player.current_animation == "Armature|Attack":
+		player.take_damage(DAMAGE)
+	await get_tree().create_timer(1.5).timeout
 	
 
 func move_towards_player():
@@ -121,7 +125,7 @@ func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_posi
 	# Apply damage
 	current_health -= damage
 	health_bar.value -= damage
-	immune_frames()
+	immune_frames(IMMUNE_TIME)
 	
 	# Check if zombie should die
 	if current_health <= 0:
@@ -134,10 +138,10 @@ func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_posi
 	animation_player.seek(0.3)
 	await get_tree().create_timer(1.7).timeout
 
-func immune_frames():
+func immune_frames(time):
 	# Prevent taking damage within this timer
 	can_take_damage = false
-	await get_tree().create_timer(IMMUNE_TIME).timeout
+	await get_tree().create_timer(time).timeout
 	can_take_damage = true
 
 func die():

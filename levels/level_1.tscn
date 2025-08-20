@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ru7w4yjomiqe"]
+[gd_scene load_steps=13 format=3 uid="uid://ru7w4yjomiqe"]
 
 [ext_resource type="PackedScene" uid="uid://b2fv0ant35w56" path="res://envs/Trailer_Park/Scenes/trailer_park.tscn" id="1_bt44k"]
 [ext_resource type="PackedScene" uid="uid://oc13h3au02ro" path="res://Player_Controller/player_character.tscn" id="2_jirdo"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://b388115d1uybs" path="res://scripts/UI/ui_manager.gd" id="5_gwceb"]
 [ext_resource type="Texture2D" uid="uid://bb4eh7h2w7usv" path="res://UI/kill_display/skull.jpg" id="5_n46q3"]
 [ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/kill_display/Moonhouse-yE5M.ttf" id="7_l53as"]
+[ext_resource type="PackedScene" uid="uid://txfh4g1j8jnp" path="res://interactable/health_up/health_up.tscn" id="8_l53as"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0srwa"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -100,3 +101,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 max_lines_visible = 1
 visible_characters = 1
+
+[node name="HealthUp" parent="." instance=ExtResource("8_l53as")]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 45.8402, 1.08352, -1.0516)
+
+[node name="HealthUp2" parent="." instance=ExtResource("8_l53as")]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, -6.9529, 1.02999, 9.86961)
