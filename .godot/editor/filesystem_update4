@@ -1,9 +1,8 @@
-res://levels/level_0.tscn
+res://UI/scenes/InputSettings.tscn
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
-res://levels/level_1.tscn
-res://scripts/enemy/zombie.gd
-res://Player_Controller/player_character.tscn
+res://scripts/UI/InputSettings.gd
 res://Player_Controller/scripts/Player_Character/player_character.gd
+res://levels/level_1.tscn
 res://scripts/core/game_manager.gd
+res://UI/scenes/InputButton.tscn
 res://scripts/UI/ui_manager.gd
-res://scripts/UI/healthbar.gd

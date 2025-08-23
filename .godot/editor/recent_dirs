@@ -1,5 +1,8 @@
-res://UI/healthbar
+res://UI
 res://scripts/UI
+res://UI/scenes
+res://scripts/ui
+res://cursor
 res://scripts/interactable
 res://interactable/health_up
 res://scripts/core

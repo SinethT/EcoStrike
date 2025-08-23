@@ -1,0 +1,128 @@
+[gd_scene load_steps=8 format=3 uid="uid://dqr5syhkghq70"]
+
+[ext_resource type="Script" uid="uid://cnxn4ysl8ncjc" path="res://scripts/UI/InputSettings.gd" id="1_m3ukk"]
+[ext_resource type="PackedScene" uid="uid://bwtp8b0fmojw2" path="res://UI/scenes/InputButton.tscn" id="1_u140r"]
+[ext_resource type="Texture2D" uid="uid://cgf8ae8subvab" path="res://bg.jpg" id="2_1fi3q"]
+[ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/Moonhouse-yE5M.ttf" id="3_rn0iw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1fi3q"]
+bg_color = Color(1, 1, 1, 0.0431373)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f8kvq"]
+bg_color = Color(0, 0.282353, 0, 0.784314)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hq2xd"]
+bg_color = Color(0, 0.282353, 0, 0.784314)
+
+[node name="InputSettings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m3ukk")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -684.0
+offset_top = -303.0
+offset_right = 2004.0
+offset_bottom = 1209.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_1fi3q")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -323.0
+offset_top = -545.0
+offset_right = 391.0
+offset_bottom = -126.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.5, 2.5)
+theme_override_styles/panel = SubResource("StyleBoxFlat_1fi3q")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.156
+anchor_bottom = 1.087
+offset_right = -113.384
+offset_bottom = -32.453
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ActionList" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="InputButton" parent="Panel/MarginContainer/VBoxContainer/ScrollContainer/ActionList" instance=ExtResource("1_u140r")]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_rn0iw")
+theme_override_font_sizes/font_size = 0
+
+[node name="InputButton2" parent="Panel/MarginContainer/VBoxContainer/ScrollContainer/ActionList" instance=ExtResource("1_u140r")]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_rn0iw")
+
+[node name="InputButton3" parent="Panel/MarginContainer/VBoxContainer/ScrollContainer/ActionList" instance=ExtResource("1_u140r")]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_rn0iw")
+
+[node name="InputButton4" parent="Panel/MarginContainer/VBoxContainer/ScrollContainer/ActionList" instance=ExtResource("1_u140r")]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_rn0iw")
+
+[node name="InputButton5" parent="Panel/MarginContainer/VBoxContainer/ScrollContainer/ActionList" instance=ExtResource("1_u140r")]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_rn0iw")
+
+[node name="ResetButton" type="Button" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("3_rn0iw")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_f8kvq")
+text = "RESET TO DEFAULT"
+
+[node name="back_to_level" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -46.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_rn0iw")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxFlat_hq2xd")
+text = "  <<< BACK "
+alignment = 2
+
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="back_to_level" to="." method="_on_back_to_mainmenu_pressed"]

@@ -259,7 +259,7 @@ func _physics_process(_delta: float) -> void:
 			jump()
 			jump_buffer = false
 	# Handle Jump.
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("jump"):
 		if jump_available:
 			if crouched:
 				crouch()
