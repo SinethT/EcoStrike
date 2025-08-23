@@ -130,17 +130,15 @@ func take_damage(damage:int):
 	if can_take_damage:
 		health -= damage
 		immune_frames(IMMUNE_TIME)
-		
-		if health <= 0:
-			pass
-			#die()
+
 func _set_health(new_health):
 	health = min(MAX_HEALTH, new_health)
 	
-	healthbar.health = health
-
 	if health <= 0:
-		return
+		health = 0
+		GameManager.die()
+		
+	healthbar.health = health
 	
 func immune_frames(time):
 	# Prevent taking damage within this timer

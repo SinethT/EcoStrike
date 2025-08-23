@@ -1,11 +1,11 @@
-Node
+Label
 Timer
+Node
 ProgressBar
 CollisionShape3D
 AnimationPlayer
 Area3D
 AnimatedSprite3D
-Label
 RichTextLabel
 TextureRect
 CanvasLayer

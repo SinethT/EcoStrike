@@ -1,15 +1,25 @@
-[gd_scene load_steps=96 format=4 uid="uid://oc13h3au02ro"]
+[gd_scene load_steps=98 format=4 uid="uid://oc13h3au02ro"]
 
 [ext_resource type="Script" uid="uid://cp4va87ory710" path="res://Player_Controller/scripts/Player_Character/player_character.gd" id="1_h0t42"]
 [ext_resource type="Script" uid="uid://2268d7k2nrfu" path="res://Player_Controller/scripts/Player_Character/HUD.gd" id="2_tvwwj"]
 [ext_resource type="Texture2D" uid="uid://bjh5ic6qy4jtl" path="res://Player_Controller/HUD ASSETS/crosshair001.png" id="3_7f0mw"]
-[ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/kill_display/Moonhouse-yE5M.ttf" id="3_n3ia4"]
+[ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/Moonhouse-yE5M.ttf" id="3_n3ia4"]
 [ext_resource type="Texture2D" uid="uid://uidicgaojgdi" path="res://Player_Controller/HUD ASSETS/crosshair046.png" id="4_l32wb"]
 [ext_resource type="Script" uid="uid://k583cvioy4da" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd" id="5_wuueu"]
 [ext_resource type="Resource" uid="uid://yc1f2j7pl4vr" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres" id="6_tpjp5"]
 [ext_resource type="Script" uid="uid://br4s165quwlyu" path="res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd" id="6_wj0qi"]
 [ext_resource type="PackedScene" uid="uid://dktkia2orxk4l" path="res://UI/healthbar/healthbar.tscn" id="9_giihu"]
 [ext_resource type="AnimationLibrary" uid="uid://uybino34n0sj" path="res://Player_Controller/weapon_animation.res" id="13_lmhsg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aiyg7"]
+bg_color = Color(0, 0, 0, 0.0980392)
+expand_margin_right = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n3ia4"]
+bg_color = Color(0, 0, 0, 0.0980392)
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+expand_margin_right = 5.0
 
 [sub_resource type="ImageTexture" id="ImageTexture_rj3p7"]
 
@@ -2105,6 +2115,7 @@ anchor_bottom = 1.0
 grow_vertical = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/debug_hud"]
+visible = false
 layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/debug_hud/HBoxContainer"]
@@ -2122,13 +2133,18 @@ layout_mode = 2
 [node name="Label" type="Label" parent="CanvasLayer/debug_hud/HBoxContainer2"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_n3ia4")
-text = "Ammo:"
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_aiyg7")
+text = "Ammo: "
 
 [node name="CurrentAmmo" type="Label" parent="CanvasLayer/debug_hud/HBoxContainer2"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_n3ia4")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_n3ia4")
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/debug_hud"]
+visible = false
 layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/debug_hud/HBoxContainer3"]

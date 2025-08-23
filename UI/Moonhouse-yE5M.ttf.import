@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://d0drjell1ufwq"
-path="res://.godot/imported/Moonhouse-yE5M.ttf-529780c04c5bec0b2067a81628cb4f7d.fontdata"
+path="res://.godot/imported/Moonhouse-yE5M.ttf-880a1059ba7ea169770f5303bc06763e.fontdata"
 
 [deps]
 
-source_file="res://UI/kill_display/Moonhouse-yE5M.ttf"
-dest_files=["res://.godot/imported/Moonhouse-yE5M.ttf-529780c04c5bec0b2067a81628cb4f7d.fontdata"]
+source_file="res://UI/Moonhouse-yE5M.ttf"
+dest_files=["res://.godot/imported/Moonhouse-yE5M.ttf-880a1059ba7ea169770f5303bc06763e.fontdata"]
 
 [params]
 

@@ -4,3 +4,6 @@ res://levels/level_1.tscn
 res://scripts/enemy/zombie.gd
 res://Player_Controller/player_character.tscn
 res://Player_Controller/scripts/Player_Character/player_character.gd
+res://scripts/core/game_manager.gd
+res://scripts/UI/ui_manager.gd
+res://scripts/UI/healthbar.gd

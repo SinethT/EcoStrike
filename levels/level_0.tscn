@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dwgt7gwe3gfyy" path="res://Player_Controller/Spawnable_Objects/Weapons/blasterQ.tscn" id="7_fj15s"]
 [ext_resource type="Script" uid="uid://b388115d1uybs" path="res://scripts/UI/ui_manager.gd" id="8_dm5o4"]
 [ext_resource type="Texture2D" uid="uid://bb4eh7h2w7usv" path="res://UI/kill_display/skull.jpg" id="9_obtcn"]
-[ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/kill_display/Moonhouse-yE5M.ttf" id="10_2ro2b"]
+[ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/Moonhouse-yE5M.ttf" id="10_2ro2b"]
 [ext_resource type="PackedScene" uid="uid://txfh4g1j8jnp" path="res://interactable/health_up/health_up.tscn" id="11_obtcn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jirdo"]
