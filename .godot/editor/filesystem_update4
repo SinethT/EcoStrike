@@ -1,8 +1,8 @@
-res://UI/scenes/InputSettings.tscn
-res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
-res://scripts/UI/InputSettings.gd
-res://Player_Controller/scripts/Player_Character/player_character.gd
 res://levels/level_1.tscn
-res://scripts/core/game_manager.gd
-res://UI/scenes/InputButton.tscn
-res://scripts/UI/ui_manager.gd
+res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
+res://Player_Controller/player_character.tscn
+res://UI/scenes/MainMenu.tscn
+res://UI/scenes/InputSettings.tscn
+res://UI/scenes/LoginMenu.tscn
+res://scripts/UI/LoginMenu.gd
+res://scripts/UI/InputSettings.gd

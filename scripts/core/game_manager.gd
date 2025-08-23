@@ -2,7 +2,7 @@ extends Node
 
 signal zombie_kill(int)
 
-const GAME_TIMER = 900
+const GAME_TIMER = 600
 const INPUT_MAP = "res://UI/scenes/InputSettings.tscn"
 
 var zombie_kills: int = 0

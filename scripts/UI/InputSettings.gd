@@ -1,6 +1,6 @@
 extends Control
 
-const LEVEL = "res://levels/level_1.tscn"
+const MAIN_MENU = "res://UI/scenes/MainMenu.tscn"
 
 var is_remapping = false
 var action_to_remap = null
@@ -102,4 +102,4 @@ func _on_reset_button_pressed():
 func _on_back_to_mainmenu_pressed():
 	pass
 	# Changes the current scene to the main menu scene.
-	get_tree().change_scene_to_file(LEVEL)
+	get_tree().change_scene_to_file(MAIN_MENU)

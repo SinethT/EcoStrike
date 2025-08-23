@@ -114,8 +114,8 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -46.0
-offset_top = -31.0
+offset_left = -264.0
+offset_top = -44.0
 grow_horizontal = 0
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("3_rn0iw")
@@ -123,6 +123,27 @@ theme_override_font_sizes/font_size = 35
 theme_override_styles/hover = SubResource("StyleBoxFlat_hq2xd")
 text = "  <<< BACK "
 alignment = 2
+
+[node name="Game Name" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1195.0
+offset_top = 90.0
+offset_right = -535.0
+offset_bottom = 190.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.984314, 0, 0.937255, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 13
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("3_rn0iw")
+theme_override_font_sizes/font_size = 100
+text = "EcoSTRIKE"
 
 [connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
 [connection signal="pressed" from="back_to_level" to="." method="_on_back_to_mainmenu_pressed"]

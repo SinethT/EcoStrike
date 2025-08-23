@@ -8,7 +8,7 @@
 [ext_resource type="Script" uid="uid://k583cvioy4da" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd" id="5_wuueu"]
 [ext_resource type="Resource" uid="uid://yc1f2j7pl4vr" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres" id="6_tpjp5"]
 [ext_resource type="Script" uid="uid://br4s165quwlyu" path="res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd" id="6_wj0qi"]
-[ext_resource type="PackedScene" uid="uid://dktkia2orxk4l" path="res://UI/healthbar/healthbar.tscn" id="9_giihu"]
+[ext_resource type="PackedScene" uid="uid://dktkia2orxk4l" path="res://UI/scenes/healthbar.tscn" id="9_giihu"]
 [ext_resource type="AnimationLibrary" uid="uid://uybino34n0sj" path="res://Player_Controller/weapon_animation.res" id="13_lmhsg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aiyg7"]
@@ -38,7 +38,7 @@ thickness = 10
 script = ExtResource("6_wj0qi")
 weapon = ExtResource("6_tpjp5")
 current_ammo = 30
-reserve_ammo = 60
+reserve_ammo = 100
 metadata/_custom_type_script = "uid://br4s165quwlyu"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0fswt"]
@@ -1551,26 +1551,26 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:position")
+tracks/8/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:rotation")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0, -1.54919, 0)]
+"values": [Vector3(0, 0, 0)]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:rotation")
+tracks/9/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0, 0, 0)]
+"values": [Vector3(0, -1.54919, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_wh4u2"]
@@ -1832,26 +1832,26 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:position")
+tracks/2/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(-0.4, -1.41, 0)]
+"values": [Vector3(0, 0, -0.261799)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:rotation")
+tracks/3/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0, 0, -0.261799)]
+"values": [Vector3(-0.4, -1.41, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_0c5qk"]
@@ -1910,26 +1910,26 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:position")
+tracks/2/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0, -1.54919, 0)]
+"values": [Vector3(0, 0, 0)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:rotation")
+tracks/3/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0, 0, 0)]
+"values": [Vector3(0, -1.54919, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_5n858"]
@@ -1961,26 +1961,26 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:position")
+tracks/2/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0.3, -1.549, 0)]
+"values": [Vector3(0, 0, 0.261799)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:rotation")
+tracks/3/path = NodePath("Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0, 0, 0.261799)]
+"values": [Vector3(0.3, -1.549, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_2fwsm"]

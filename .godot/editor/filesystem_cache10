@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1755926849
-bg.jpg::CompressedTexture2D::5206300240662562845::1755926838::1755926858::1::::<><><>0<>0<>87058ce92050354ef158c258a2985793<>res://.godot/imported/bg.jpg-be0bbb7afea23fe3e63b8f540e0adfdd.ctex::
+::res://::1755946659
+bg.jpg::CompressedTexture2D/CompressedTexture2D::5206300240662562845::1755926838::1755926858::1::::<><><>0<>0<>87058ce92050354ef158c258a2985793<>res://.godot/imported/bg.jpg-be0bbb7afea23fe3e63b8f540e0adfdd.ctex::
 ::res://addons/::1753087390
 ::res://cursor/::1755923609
 pointer_b.svg::CompressedTexture2D/CompressedTexture2D::816590527642639222::1717553832::1755923609::1::::<><><>0<>0<>69981d4e698056d0bda26331ff08ac2f<>res://.godot/imported/pointer_b.svg-fb1fe5d3a20c290fb169aed4145995c2.ctex::
@@ -141,13 +141,13 @@ WoodPlanksClean.jpg::CompressedTexture2D/CompressedTexture2D::655526259571553086
 health_up.tscn::PackedScene/PackedScene::1381386336627793349::1755686129::0::1::::<><><>0<>0<><>::uid://cgopx88ltc3vv::::res://interactable/health_up/Pickup_Health.fbx<>uid://jl07r77iqk1r::::res://scripts/interactable/health_up.gd
 Pickup_Health.fbx::PackedScene/PackedScene::5223829330696935087::1755644247::1755644265::1::::<><><>0<>0<>ca1556bf63803ced57abfbd65e45c3be<>res://.godot/imported/Pickup_Health.fbx-70473b89cf84a1f428c5e6910d5272e4.scn::uid://hm4wu5d7dvvm::::res://interactable/health_up/Pickup_Health_0.png
 Pickup_Health_0.png::CompressedTexture2D/CompressedTexture2D::517895615761426466::1755644252::1755644252::1::::<><><>0<>0<>e838b450ee2fbbdb013a280c195e3fe2<>res://.godot/imported/Pickup_Health_0.png-c477010354353021f93a3e8c75ade536.s3tc.ctex::
-::res://levels/::1755926468
-level_0.tscn::PackedScene::1236481688842749732::1755909086::0::1::::<><><>0<>0<><>::uid://1eyqjsdfdlms::::res://levels/level_geometry.tscn<>uid://oc13h3au02ro::::res://Player_Controller/player_character.tscn<>uid://cdmmp2fbmo4ks::::res://enemy/zombie/zombie.tscn<>uid://catx2kysw47d8::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_L.tscn<>uid://x8nhs2cer2to::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn<>uid://gtthejj2wmyj::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_n.tscn<>uid://dwgt7gwe3gfyy::::res://Player_Controller/Spawnable_Objects/Weapons/blasterQ.tscn<>uid://b388115d1uybs::::res://scripts/UI/ui_manager.gd<>uid://bb4eh7h2w7usv::::res://UI/kill_display/skull.jpg<>uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf<>uid://txfh4g1j8jnp::::res://interactable/health_up/health_up.tscn
-level_1.tscn::PackedScene::1236481688842749732::1755926468::0::1::::<><><>0<>0<><>::uid://b2fv0ant35w56::::res://envs/Trailer_Park/Scenes/trailer_park.tscn<>uid://oc13h3au02ro::::res://Player_Controller/player_character.tscn<>uid://cdmmp2fbmo4ks::::res://enemy/zombie/zombie.tscn<>uid://x8nhs2cer2to::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn<>uid://b388115d1uybs::::res://scripts/UI/ui_manager.gd<>uid://bb4eh7h2w7usv::::res://UI/kill_display/skull.jpg<>uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf<>uid://txfh4g1j8jnp::::res://interactable/health_up/health_up.tscn
+::res://levels/::1755946147
+level_0.tscn::PackedScene/PackedScene::1236481688842749732::1755909086::0::1::::<><><>0<>0<><>::uid://1eyqjsdfdlms::::res://levels/level_geometry.tscn<>uid://oc13h3au02ro::::res://Player_Controller/player_character.tscn<>uid://cdmmp2fbmo4ks::::res://enemy/zombie/zombie.tscn<>uid://catx2kysw47d8::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_L.tscn<>uid://x8nhs2cer2to::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn<>uid://gtthejj2wmyj::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_n.tscn<>uid://dwgt7gwe3gfyy::::res://Player_Controller/Spawnable_Objects/Weapons/blasterQ.tscn<>uid://b388115d1uybs::::res://scripts/UI/ui_manager.gd<>uid://bb4eh7h2w7usv::::res://UI/kill_display/skull.jpg<>uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf<>uid://txfh4g1j8jnp::::res://interactable/health_up/health_up.tscn
+level_1.tscn::PackedScene/PackedScene::1236481688842749732::1755946147::0::1::::<><><>0<>0<><>::uid://b2fv0ant35w56::::res://envs/Trailer_Park/Scenes/trailer_park.tscn<>uid://oc13h3au02ro::::res://Player_Controller/player_character.tscn<>uid://cdmmp2fbmo4ks::::res://enemy/zombie/zombie.tscn<>uid://x8nhs2cer2to::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn<>uid://b388115d1uybs::::res://scripts/UI/ui_manager.gd<>uid://bb4eh7h2w7usv::::res://UI/kill_display/skull.jpg<>uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf<>uid://txfh4g1j8jnp::::res://interactable/health_up/health_up.tscn
 level_geometry.tscn::PackedScene/PackedScene::1834653726793704350::1752353640::0::1::::<><><>0<>0<><>::
 skull.jpg::CompressedTexture2D/CompressedTexture2D::3912904122901997984::1755464127::1755464127::1::::<><><>0<>0<>b748e170aefd6753e37d6efc2c2cb2fd<>res://.godot/imported/skull.jpg-be92d4dd1900efb65cad4dfc54aca94a.ctex::
-::res://Player_Controller/::1755913886
-player_character.tscn::PackedScene::988401621427553860::1755913886::0::1::::<><><>0<>0<><>::uid://cp4va87ory710::::res://Player_Controller/scripts/Player_Character/player_character.gd<>uid://2268d7k2nrfu::::res://Player_Controller/scripts/Player_Character/HUD.gd<>uid://bjh5ic6qy4jtl::::res://Player_Controller/HUD ASSETS/crosshair001.png<>uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf<>uid://uidicgaojgdi::::res://Player_Controller/HUD ASSETS/crosshair046.png<>uid://k583cvioy4da::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd<>uid://yc1f2j7pl4vr::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres<>uid://br4s165quwlyu::::res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://dktkia2orxk4l::::res://UI/healthbar/healthbar.tscn<>uid://uybino34n0sj::::res://Player_Controller/weapon_animation.res
+::res://Player_Controller/::1755946147
+player_character.tscn::PackedScene/PackedScene::988401621427553860::1755946147::0::1::::<><><>0<>0<><>::uid://cp4va87ory710::::res://Player_Controller/scripts/Player_Character/player_character.gd<>uid://2268d7k2nrfu::::res://Player_Controller/scripts/Player_Character/HUD.gd<>uid://bjh5ic6qy4jtl::::res://Player_Controller/HUD ASSETS/crosshair001.png<>uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf<>uid://uidicgaojgdi::::res://Player_Controller/HUD ASSETS/crosshair046.png<>uid://k583cvioy4da::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd<>uid://yc1f2j7pl4vr::::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres<>uid://br4s165quwlyu::::res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd<>uid://dktkia2orxk4l::::res://UI/scenes/healthbar.tscn<>uid://uybino34n0sj::::res://Player_Controller/weapon_animation.res
 weapon_animation.res::AnimationLibrary/AnimationLibrary::1453397647944387721::1753057110::0::1::::<><><>0<>0<><>::
 world_environment.tres::Environment/Environment::3542282129581286666::1727904344::0::1::::<><><>0<>0<><>::
 ::res://Player_Controller/HUD ASSETS/::1752526840
@@ -157,7 +157,7 @@ crosshair046.png::CompressedTexture2D/CompressedTexture2D::1420488446457260718::
 ::res://Player_Controller/scripts/enemy/::1752407927
 ::res://Player_Controller/scripts/Player_Character/::1755924600
 HUD.gd::GDScript/GDScript::1952778343055868122::1754300299::0::1::::<>CanvasLayer<><>0<>0<><>::
-player_character.gd::GDScript::5886817817036608029::1755924600::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player_character.gd::GDScript/GDScript::5886817817036608029::1755924600::0::1::::<>CharacterBody3D<><>0<>0<><>::
 ::res://Player_Controller/scripts/Projectiles/::1752525106
 melee_weapon_projectile.gd::GDScript/GDScript::434844937024072670::1727904344::0::1::::<>Projectile<><>0<>0<><>::
 Projectile.gd::GDScript/GDScript::8133549283080390111::1752525106::0::1::::Projectile<>Node3D<><>0<>0<><>::
@@ -173,8 +173,8 @@ Weapon_State_Machine.gd::GDScript/GDScript::765873569863509562::1755485529::0::1
 ::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/::1752312902
 reload_clip.gd::GDScript/GDScript::3289242478169764498::1727904344::0::1::::<>RigidBody3D<><>0<>0<><>::
 Weapon_Pick_Up.gd::GDScript/GDScript::731345247009132480::1752704750::0::1::::WeaponPickUp<>RigidBody3D<><>0<>0<><>::
-::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/::1755924600
-blasterI.tres::Resource/WeaponResource::1690250007110488151::1755924600::0::1::::<><>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource_icon.svg<>0<>0<><>::uid://dug0epe7i1eoa::::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://dc48o4niy1mok::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/basic_hitscan_projectile.tscn<>uid://cvbk5bxenpxey::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_I.tscn<>uid://ciu0xkaw0ioef::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_1.tscn
+::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/::1755944768
+blasterI.tres::Resource/WeaponResource::1690250007110488151::1755944768::0::1::::<><>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource_icon.svg<>0<>0<><>::uid://dug0epe7i1eoa::::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://dc48o4niy1mok::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/basic_hitscan_projectile.tscn<>uid://cvbk5bxenpxey::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_I.tscn<>uid://ciu0xkaw0ioef::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_1.tscn
 blasterL.tres::Resource/WeaponResource::3966821733617405030::1752705884::0::1::::<><>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource_icon.svg<>0<>0<><>::uid://bpxa3je174q43::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/basic_rigid_body_projectile.tscn<>uid://dug0epe7i1eoa::::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://gtthejj2wmyj::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_n.tscn<>uid://3mb12hvruajh::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_2.tscn
 blasterM.tres::Resource/WeaponResource::5052294230396161601::1752710894::0::1::::<><>res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource_icon.svg<>0<>0<><>::uid://dug0epe7i1eoa::::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://brvfyahytwd8m::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/shotgun_projectile.tscn<>uid://x8nhs2cer2to::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn<>uid://ceuaamuau8pl8::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_3.tscn
 blasterM_slot.tres::::-1::1752525198::0::1::::<><><>0<>0<><>::
@@ -216,21 +216,27 @@ blasterL.glb::PackedScene/PackedScene::7658920681249816163::1727904344::17525268
 blasterN.glb::PackedScene/PackedScene::3883894984375497527::1727904344::1752526840::1::::<><><>0<>0<>43dc4871fb3d0733b69c32e34f21598e<>res://.godot/imported/blasterN.glb-c211cec0f10aaf19f2b09f0c9d4f0551.scn::
 foamBulletA.glb::PackedScene/PackedScene::5330692767018787457::1727904344::1752526840::1::::<><><>0<>0<>c5ecf45df3080e3a1886e088d9ef7066<>res://.godot/imported/foamBulletA.glb-fef335175d9691aee84d5702cd642f09.scn::
 ::res://scripts/::1755639831
-::res://scripts/core/::1755925152
-game_manager.gd::GDScript::147499238202875928::1755925152::0::1::::<>Node<><>0<>0<><>::
+::res://scripts/core/::1755932682
+game_manager.gd::GDScript/GDScript::147499238202875928::1755932682::0::1::::<>Node<><>0<>0<><>::
 ::res://scripts/enemy/::1755728036
-zombie.gd::GDScript::8243521811764306761::1755728036::0::1::::<>CharacterBody3D<><>0<>0<><>::
+zombie.gd::GDScript/GDScript::8243521811764306761::1755728036::0::1::::<>CharacterBody3D<><>0<>0<><>::
 ::res://scripts/interactable/::1755656599
 health_up.gd::GDScript/GDScript::655983762057026605::1755656599::0::1::::<>Node3D<><>0<>0<><>::
-::res://scripts/UI/::1755926184
-healthbar.gd::GDScript::4945419434802363428::1755913418::0::1::::<>ProgressBar<><>0<>0<><>::
-InputSettings.gd::GDScript::5733619420864489236::1755926184::0::1::::<>Control<><>0<>0<><>::
-ui_manager.gd::GDScript::4421884274967902132::1755923835::0::1::::<>CanvasLayer<><>0<>0<><>::
-::res://UI/::1755923994
+::res://scripts/UI/::1755945907
+healthbar.gd::GDScript/GDScript::4945419434802363428::1755913418::0::1::::<>ProgressBar<><>0<>0<><>::
+InputSettings.gd::GDScript/GDScript::5733619420864489236::1755927776::0::1::::<>Control<><>0<>0<><>::
+LoginMenu.gd::GDScript/GDScript::5818253010976826900::1755945907::0::1::::<>Control<><>0<>0<><>::
+MainMenu.gd::GDScript/GDScript::7693739925853458258::1755935719::0::1::::<>Control<><>0<>0<><>::
+ui_manager.gd::GDScript/GDScript::4421884274967902132::1755935874::0::1::::<>CanvasLayer<><>0<>0<><>::
+::res://UI/::1755946659
+LoadingBarAnimation-ezgif.com-gif-to-sprite-converter-2.png::CompressedTexture2D::6352324134365924069::1755946650::1755946659::1::::<><><>0<>0<>07a7061ebe2f359a02d1c2e55ed7b50c<>res://.godot/imported/LoadingBarAnimation-ezgif.com-gif-to-sprite-converter-2.png-07a7c236c3ba5e00d63acebc4c769d5b.ctex::
+LoadingBarAnimation-ezgif.com-gif-to-sprite-converter.png::CompressedTexture2D/CompressedTexture2D::7551665206141422480::1755946445::1755946466::1::::<><><>0<>0<>eb04bf181f18e79d40c001e568aff1ef<>res://.godot/imported/LoadingBarAnimation-ezgif.com-gif-to-sprite-converter.png-b105cb0a1630dcf2842150e637fe210d.ctex::
 Moonhouse-yE5M.ttf::FontFile/FontFile::8921224763936042224::1755470869::1755909090::1::::<><><>0<>0<>152f19c0d31dead50b2cf1a2cde33db9<>res://.godot/imported/Moonhouse-yE5M.ttf-880a1059ba7ea169770f5303bc06763e.fontdata::
 ::res://UI/kill_display/::1755909086
 skull.jpg::CompressedTexture2D/CompressedTexture2D::2516733543545539913::1755464155::1755464155::1::::<><><>0<>0<>dc31eaf18d4a19f8183e92111d62faac<>res://.godot/imported/skull.jpg-868543f820c10ba6cb4b9a446461f62b.ctex::
-::res://UI/scenes/::1755926468
-healthbar.tscn::PackedScene::7900995163435115989::1755684556::0::1::::<><><>0<>0<><>::uid://ccpuln5ycc11y::::res://scripts/UI/healthbar.gd
-InputButton.tscn::PackedScene::3970768198534542907::1755926439::0::1::::<><><>0<>0<><>::uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf
-InputSettings.tscn::PackedScene::8319232897016820913::1755926468::0::1::::<><><>0<>0<><>::uid://cnxn4ysl8ncjc::::res://scripts/UI/InputSettings.gd<>uid://bwtp8b0fmojw2::::res://UI/scenes/InputButton.tscn<>uid://bb4eh7h2w7usv::::res://UI/kill_display/skull.jpg<>uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf
+::res://UI/scenes/::1755946659
+healthbar.tscn::PackedScene/PackedScene::7900995163435115989::1755684556::0::1::::<><><>0<>0<><>::uid://ccpuln5ycc11y::::res://scripts/UI/healthbar.gd
+InputButton.tscn::PackedScene/PackedScene::3970768198534542907::1755927430::0::1::::<><><>0<>0<><>::uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf
+InputSettings.tscn::PackedScene/PackedScene::8319232897016820913::1755946147::0::1::::<><><>0<>0<><>::uid://cnxn4ysl8ncjc::::res://scripts/UI/InputSettings.gd<>uid://bwtp8b0fmojw2::::res://UI/scenes/InputButton.tscn<>uid://cgf8ae8subvab::::res://bg.jpg<>uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf
+LoginMenu.tscn::PackedScene/PackedScene::7010757571353120835::1755946147::0::1::::<><><>0<>0<><>::uid://co5n1oirxkp8w::::res://scripts/UI/LoginMenu.gd<>uid://cgf8ae8subvab::::res://bg.jpg<>uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf
+MainMenu.tscn::PackedScene/PackedScene::308806535112808619::1755946147::0::1::::<><><>0<>0<><>::uid://cgf8ae8subvab::::res://bg.jpg<>uid://dhu51jaybg75w::::res://scripts/UI/MainMenu.gd<>uid://d0drjell1ufwq::::res://UI/Moonhouse-yE5M.ttf
