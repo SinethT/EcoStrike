@@ -1,10 +1,11 @@
-[gd_scene load_steps=20 format=3 uid="uid://bf28y8puin1os"]
+[gd_scene load_steps=25 format=3 uid="uid://bf28y8puin1os"]
 
-[ext_resource type="Script" uid="uid://cdu3w81racdw6" path="res://scripts/UI/level_directory.gd" id="1_dvaki"]
+[ext_resource type="Script" uid="uid://cdu3w81racdw6" path="res://scripts/UI/LevelDirectory.gd" id="1_dvaki"]
 [ext_resource type="Texture2D" uid="uid://cgf8ae8subvab" path="res://bg.jpg" id="2_d6weh"]
 [ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/Moonhouse-yE5M.ttf" id="3_msrsg"]
 [ext_resource type="Texture2D" uid="uid://cejqpcpkuythd" path="res://UI/level_directory/trailer_park.png" id="4_yagqc"]
 [ext_resource type="Texture2D" uid="uid://bpflrlwlohagt" path="res://UI/level_directory/burger_piz.png" id="5_bftwq"]
+[ext_resource type="Texture2D" uid="uid://wpinl3ne4i42" path="res://UI/level_directory/star.png" id="5_d6weh"]
 [ext_resource type="Texture2D" uid="uid://cnt8mxjpyfbbk" path="res://UI/level_directory/abandoned_house.png" id="6_npypb"]
 [ext_resource type="Texture2D" uid="uid://b5aln3ac0q5rj" path="res://UI/level_directory/coming_soon.jpg" id="7_wcp6r"]
 
@@ -22,6 +23,163 @@ texture = ExtResource("4_yagqc")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n3l74"]
 texture = ExtResource("4_yagqc")
 modulate_color = Color(0.882353, 0.882353, 0.882353, 1)
+
+[sub_resource type="Animation" id="Animation_d6weh"]
+resource_name = "show"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StatDisplay/Star1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StatDisplay/Star1:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.03, 0.03)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StatDisplay/Star2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.03, 0.03)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StatDisplay/Star3:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.03, 0.03)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("StatDisplay/Star3:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("StatDisplay/Star2:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_msrsg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StatDisplay/Star1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StatDisplay/Star1:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.03, 0.03)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StatDisplay/Star2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.03, 0.03)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StatDisplay/Star3:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.03, 0.03)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("StatDisplay/Star3:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("StatDisplay/Star2:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yagqc"]
+_data = {
+&"RESET": SubResource("Animation_msrsg"),
+&"show": SubResource("Animation_d6weh")
+}
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6nylr"]
 texture = ExtResource("5_bftwq")
@@ -51,6 +209,9 @@ modulate_color = Color(0.666569, 0.666569, 0.666568, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tysjv"]
 texture = ExtResource("7_wcp6r")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d6weh"]
+bg_color = Color(0, 0.282353, 0, 0.784314)
 
 [node name="LevelDirectory" type="Control"]
 layout_mode = 3
@@ -101,6 +262,33 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_ixucr")
 theme_override_styles/normal = SubResource("StyleBoxTexture_n3l74")
 text = "Level 1"
 
+[node name="StatDisplay" type="Node2D" parent="LevelHolder1/Level1"]
+visible = false
+
+[node name="Star1" type="Sprite2D" parent="LevelHolder1/Level1/StatDisplay"]
+visible = false
+position = Vector2(143.333, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="Star2" type="Sprite2D" parent="LevelHolder1/Level1/StatDisplay"]
+visible = false
+position = Vector2(308.333, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="Star3" type="Sprite2D" parent="LevelHolder1/Level1/StatDisplay"]
+visible = false
+position = Vector2(456.667, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LevelHolder1/Level1/StatDisplay"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_yagqc")
+}
+
 [node name="Level2" type="Button" parent="LevelHolder1"]
 custom_minimum_size = Vector2(596, 395)
 layout_mode = 2
@@ -116,6 +304,33 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_tnov8")
 theme_override_styles/normal = SubResource("StyleBoxTexture_sg81d")
 disabled = true
 text = "Level 2"
+
+[node name="StatDisplay" type="Node2D" parent="LevelHolder1/Level2"]
+visible = false
+
+[node name="Star1" type="Sprite2D" parent="LevelHolder1/Level2/StatDisplay"]
+visible = false
+position = Vector2(143.333, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="Star2" type="Sprite2D" parent="LevelHolder1/Level2/StatDisplay"]
+visible = false
+position = Vector2(308.333, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="Star3" type="Sprite2D" parent="LevelHolder1/Level2/StatDisplay"]
+visible = false
+position = Vector2(456.667, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LevelHolder1/Level2/StatDisplay"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_yagqc")
+}
 
 [node name="LevelHolder2" type="HBoxContainer" parent="."]
 layout_mode = 1
@@ -149,6 +364,33 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_m1jav")
 disabled = true
 text = "Level 3"
 
+[node name="StatDisplay" type="Node2D" parent="LevelHolder2/Level3"]
+visible = false
+
+[node name="Star1" type="Sprite2D" parent="LevelHolder2/Level3/StatDisplay"]
+visible = false
+position = Vector2(143.333, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="Star2" type="Sprite2D" parent="LevelHolder2/Level3/StatDisplay"]
+visible = false
+position = Vector2(308.333, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="Star3" type="Sprite2D" parent="LevelHolder2/Level3/StatDisplay"]
+visible = false
+position = Vector2(456.667, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LevelHolder2/Level3/StatDisplay"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_yagqc")
+}
+
 [node name="Level4" type="Button" parent="LevelHolder2"]
 custom_minimum_size = Vector2(596, 395)
 layout_mode = 2
@@ -164,7 +406,52 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_tysjv")
 theme_override_styles/normal = SubResource("StyleBoxTexture_euo4k")
 text = "Level 4"
 
+[node name="StatDisplay" type="Node2D" parent="LevelHolder2/Level4"]
+visible = false
+
+[node name="Star1" type="Sprite2D" parent="LevelHolder2/Level4/StatDisplay"]
+visible = false
+position = Vector2(143.333, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="Star2" type="Sprite2D" parent="LevelHolder2/Level4/StatDisplay"]
+visible = false
+position = Vector2(308.333, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="Star3" type="Sprite2D" parent="LevelHolder2/Level4/StatDisplay"]
+visible = false
+position = Vector2(456.667, 445.833)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("5_d6weh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LevelHolder2/Level4/StatDisplay"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_yagqc")
+}
+
+[node name="back_to_mainmenu" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.0
+offset_top = -44.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_msrsg")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxFlat_d6weh")
+text = "  <<< BACK "
+alignment = 2
+
 [connection signal="pressed" from="LevelHolder1/Level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="LevelHolder1/Level2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="LevelHolder2/Level3" to="." method="_on_level_3_pressed"]
 [connection signal="pressed" from="LevelHolder2/Level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="back_to_mainmenu" to="." method="_on_back_to_mainmenu_pressed"]

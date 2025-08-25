@@ -1,4 +1,9 @@
 Label
+Node2D
+Node
+AnimationPlayer
+AnimationTree
+Sprite2D
 Control
 Button
 HBoxContainer
@@ -6,9 +11,4 @@ BoxContainer
 VBoxContainer
 ColorRect
 Timer
-Node
 ProgressBar
-CollisionShape3D
-AnimationPlayer
-Area3D
-AnimatedSprite3D

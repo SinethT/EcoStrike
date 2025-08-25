@@ -128,6 +128,7 @@ func _input(event: InputEvent) -> void:
 
 func take_damage(damage:int):
 	if can_take_damage:
+		GameManager.damage_taken += 1
 		health -= damage
 		immune_frames(IMMUNE_TIME)
 

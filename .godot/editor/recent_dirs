@@ -1,3 +1,4 @@
+res://levels
 res://scripts/UI
 res://envs/Scenes
 res://UI/scenes
@@ -10,4 +11,3 @@ res://scripts/interactable
 res://interactable/health_up
 res://scripts/enemy
 res://enemy/zombie
-res://levels

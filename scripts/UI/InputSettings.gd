@@ -100,6 +100,5 @@ func _on_reset_button_pressed():
 
 
 func _on_back_to_mainmenu_pressed():
-	pass
 	# Changes the current scene to the main menu scene.
 	get_tree().change_scene_to_file(MAIN_MENU)

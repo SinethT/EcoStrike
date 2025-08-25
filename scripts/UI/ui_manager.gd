@@ -4,14 +4,13 @@ extends CanvasLayer
 @onready var timer_display = $Timer_Display
 @onready var timer = $Timer
 
-var game_timer = GameManager.GAME_TIMER
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	GameManager.gameover_screen = $GameOverScreen
 	GameManager.pause_menu = $PauseMenu
 	GameManager.timer = $Timer
 	GameManager.zombie_kill.connect(update_zombie_kills)
-	timer.start(game_timer)
+	timer.start(GameManager.GAME_TIMER)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -37,6 +36,7 @@ func format_time(time):
 
 
 func _on_timer_timeout():
+	GameManager.time_over = true
 	GameManager.die()
 
 func _on_resume_pressed():
@@ -50,3 +50,6 @@ func _on_settings_pressed():
 
 func _on_quit_pressed():
 	GameManager.quit()
+
+func _on_continue_pressed():
+	GameManager.load_level_directory()
