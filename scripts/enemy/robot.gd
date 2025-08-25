@@ -27,7 +27,7 @@ func _ready():
 	health_bar.value = current_health
 	
 	animation_player.play("CharacterArmature|Idle")
-	# Add zombie to Target group so it can be hit by bullets
+	# Add robot to Target group so it can be hit by bullets
 	add_to_group("Target")
 
 func _physics_process(delta):
@@ -48,7 +48,7 @@ func attack():
 	if !player == null:
 		player.take_damage(DAMAGE)
 
-# Called by bullets/projectiles when they hit the zombie
+# Called by bullets/projectiles when they hit the robot
 func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_position: Vector3 = Vector3.ZERO):
 	print('h')
 	# Don't process hits if already dead
@@ -60,7 +60,7 @@ func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_posi
 	health_bar.value -= damage
 	await get_tree().create_timer(0.001).timeout
 	
-	# Check if zombie should die
+	# Check if the robot should die
 	if current_health <= 0:
 		die()
 		return
