@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://cdh0kytnnqrj8"]
+[gd_scene load_steps=20 format=3 uid="uid://cdh0kytnnqrj8"]
 
+[ext_resource type="AudioStream" uid="uid://vmw2cx6yr67k" path="res://sfx/Cruisin_bg.mp3" id="1_jq78i"]
 [ext_resource type="PackedScene" uid="uid://k4vxcpuid3m3" path="res://envs/Scenes/abandoned_house.tscn" id="1_ofchu"]
 [ext_resource type="PackedScene" uid="uid://oc13h3au02ro" path="res://Player_Controller/player_character.tscn" id="2_jq78i"]
 [ext_resource type="PackedScene" uid="uid://cdmmp2fbmo4ks" path="res://enemy/zombie/zombie.tscn" id="3_lsnkt"]
@@ -75,6 +76,12 @@ environment = SubResource("Environment_yafm2")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.498393, 0.0401003, 0, 0.0802001, 0.996779, -0.500003, 0.863234, -0.0694552, 0, 0, 0)
 shadow_enabled = true
+
+[node name="BGMusic" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("1_jq78i")
+volume_db = -10.0
+autoplay = true
+parameters/looping = true
 
 [node name="Abandoned_House" parent="." instance=ExtResource("1_ofchu")]
 

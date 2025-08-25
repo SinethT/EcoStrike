@@ -1,4 +1,4 @@
-[gd_scene load_steps=98 format=4 uid="uid://oc13h3au02ro"]
+[gd_scene load_steps=100 format=4 uid="uid://oc13h3au02ro"]
 
 [ext_resource type="Script" uid="uid://cp4va87ory710" path="res://Player_Controller/scripts/Player_Character/player_character.gd" id="1_h0t42"]
 [ext_resource type="Script" uid="uid://2268d7k2nrfu" path="res://Player_Controller/scripts/Player_Character/HUD.gd" id="2_tvwwj"]
@@ -9,6 +9,8 @@
 [ext_resource type="Resource" uid="uid://yc1f2j7pl4vr" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres" id="6_tpjp5"]
 [ext_resource type="Script" uid="uid://br4s165quwlyu" path="res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd" id="6_wj0qi"]
 [ext_resource type="PackedScene" uid="uid://dktkia2orxk4l" path="res://UI/scenes/healthbar.tscn" id="9_giihu"]
+[ext_resource type="AudioStream" uid="uid://bsjekdtff5dr2" path="res://sfx/shotgun.mp3" id="10_5oggu"]
+[ext_resource type="AudioStream" uid="uid://dlead7d1vlout" path="res://sfx/gunshot_sfx.mp3" id="10_aiyg7"]
 [ext_resource type="AnimationLibrary" uid="uid://uybino34n0sj" path="res://Player_Controller/weapon_animation.res" id="13_lmhsg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aiyg7"]
@@ -2362,6 +2364,14 @@ wait_time = 2.0
 one_shot = true
 
 [node name="CoyoteTimer" type="Timer" parent="."]
+
+[node name="shotgun_sfx" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("10_5oggu")
+doppler_tracking = 2
+
+[node name="gunshot_sfx" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("10_aiyg7")
+doppler_tracking = 2
 
 [node name="healthbar" parent="." instance=ExtResource("9_giihu")]
 anchors_preset = -1

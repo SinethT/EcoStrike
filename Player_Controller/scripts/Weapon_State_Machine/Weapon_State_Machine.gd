@@ -13,6 +13,8 @@ signal connect_weapon_to_hud
 @export var max_weapons: int = 6  # Maximum number of weapons player can carry
 @onready var bullet_point = get_node("%BulletPoint")
 @onready var debug_bullet = preload("res://Player_Controller/Spawnable_Objects/hit_debug.tscn")
+@onready var gunshot_sfx = $"../../../../gunshot_sfx"
+@onready var shotgun_sfx = $"../../../../shotgun_sfx"
 
 var next_weapon: WeaponSlot
 
@@ -141,6 +143,10 @@ func shoot() -> void:
 			animation_player.play(current_weapon_slot.weapon.shoot_animation)
 			if current_weapon_slot.weapon.has_ammo:
 				current_weapon_slot.current_ammo -= 1
+			if current_weapon_slot.weapon.weapon_name == "blasterI":
+				gunshot_sfx.play()
+			if current_weapon_slot.weapon.weapon_name == "blasterM":
+				shotgun_sfx.play()
 				
 			update_ammo.emit([current_weapon_slot.current_ammo, current_weapon_slot.reserve_ammo])
 			

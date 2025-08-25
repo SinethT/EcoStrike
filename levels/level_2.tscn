@@ -1,7 +1,8 @@
-[gd_scene load_steps=20 format=3 uid="uid://btxr1picog6xh"]
+[gd_scene load_steps=21 format=3 uid="uid://btxr1picog6xh"]
 
 [ext_resource type="Script" uid="uid://d2yfhkye2wg3j" path="res://scripts/core/run_time_level.gd" id="1_at1ld"]
 [ext_resource type="PackedScene" uid="uid://brd3wjrj522dh" path="res://envs/Scenes/burger_piz.tscn" id="1_mi4ay"]
+[ext_resource type="AudioStream" uid="uid://vmw2cx6yr67k" path="res://sfx/Cruisin_bg.mp3" id="2_sd18g"]
 [ext_resource type="PackedScene" uid="uid://oc13h3au02ro" path="res://Player_Controller/player_character.tscn" id="3_sd18g"]
 [ext_resource type="PackedScene" uid="uid://cdmmp2fbmo4ks" path="res://enemy/zombie/zombie.tscn" id="4_vm7no"]
 [ext_resource type="PackedScene" uid="uid://x8nhs2cer2to" path="res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn" id="5_hbb88"]
@@ -77,6 +78,12 @@ environment = SubResource("Environment_0srwa")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.498393, 0.0401003, 0, 0.0802001, 0.996779, -0.500003, 0.863234, -0.0694552, 0, 0, 0)
 shadow_enabled = true
+
+[node name="BGMusic" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_sd18g")
+volume_db = -10.0
+autoplay = true
+parameters/looping = true
 
 [node name="BurgerPiz" parent="." instance=ExtResource("1_mi4ay")]
 

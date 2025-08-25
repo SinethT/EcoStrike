@@ -1,7 +1,8 @@
-[gd_scene load_steps=20 format=3 uid="uid://ru7w4yjomiqe"]
+[gd_scene load_steps=21 format=3 uid="uid://ru7w4yjomiqe"]
 
 [ext_resource type="Script" uid="uid://d2yfhkye2wg3j" path="res://scripts/core/run_time_level.gd" id="1_3sk1a"]
 [ext_resource type="PackedScene" uid="uid://b2fv0ant35w56" path="res://envs/Scenes/trailer_park.tscn" id="1_bt44k"]
+[ext_resource type="AudioStream" uid="uid://vmw2cx6yr67k" path="res://sfx/Cruisin_bg.mp3" id="2_08mmt"]
 [ext_resource type="PackedScene" uid="uid://oc13h3au02ro" path="res://Player_Controller/player_character.tscn" id="2_jirdo"]
 [ext_resource type="PackedScene" uid="uid://cdmmp2fbmo4ks" path="res://enemy/zombie/zombie.tscn" id="3_bt44k"]
 [ext_resource type="PackedScene" uid="uid://x8nhs2cer2to" path="res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn" id="4_kx6l7"]
@@ -77,6 +78,12 @@ environment = SubResource("Environment_5722l")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
+
+[node name="BGMusic" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_08mmt")
+volume_db = -10.0
+autoplay = true
+parameters/looping = true
 
 [node name="Trailer_Park" parent="." instance=ExtResource("1_bt44k")]
 
