@@ -25,3 +25,7 @@ res://levels/level_3.tscn
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_State_Machine.gd
 res://interactable/health_up/health_up.tscn
 res://scripts/interactable/health_up.gd
+res://enemy/robot/robot.tscn
+res://scripts/enemy/robot.gd
+res://enemy/zombie/zombie.tscn
+res://Player_Controller/scripts/Projectiles/Projectile.gd

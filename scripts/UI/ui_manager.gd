@@ -3,10 +3,12 @@ extends CanvasLayer
 @onready var kill_display = $Kill_Display
 @onready var timer_display = $Timer_Display
 @onready var timer = $Timer
+@onready var score_label = $GameOverScreen/score
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	GameManager.gameover_screen = $GameOverScreen
+	GameManager.score_label = $GameOverScreen/score
 	GameManager.pause_menu = $PauseMenu
 	GameManager.timer = $Timer
 	GameManager.zombie_kill.connect(update_zombie_kills)

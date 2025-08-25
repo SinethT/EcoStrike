@@ -1,3 +1,5 @@
+res://scripts/enemy
+res://enemy/robot
 res://levels
 res://scripts/UI
 res://envs/Scenes
@@ -9,5 +11,4 @@ res://scripts/ui
 res://cursor
 res://scripts/interactable
 res://interactable/health_up
-res://scripts/enemy
 res://enemy/zombie

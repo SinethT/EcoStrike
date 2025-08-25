@@ -2,22 +2,26 @@ extends Node
 
 signal zombie_kill(int)
 signal level_beaten()
+signal game_over()
 
 const GAME_TIMER = 35
 const INPUT_MAP = "res://UI/scenes/InputSettings.tscn"
 const LEVEL_DIRECTORY = "res://UI/scenes/LevelDirectory.tscn"
 
-var max_zombie_kills: int = 0
+var score: int = 0
 var zombie_kills: int = 0
+var max_zombie_kills: int = 0
 var damage_taken = 0
 var time_over = false
 var paused = false
 var pause_menu
 var gameover_screen
+var score_label
 var timer
 
-func kill():
+func kill(kill_score):
 	zombie_kills += 1
+	score += kill_score
 	emit_signal("zombie_kill")
 	if zombie_kills == max_zombie_kills:
 		die()
@@ -25,6 +29,7 @@ func kill():
 func die():
 	timer.stop()
 	gameover_screen.visible = true
+	score_label.text = "Your Score: " + str(score)
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	if !time_over or timer.time_left < (GAME_TIMER * 75/100):
 		win()

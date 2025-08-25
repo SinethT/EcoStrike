@@ -35,7 +35,8 @@ func show_stats():
 			levels[i].get_node(STAT_DISPLAY).get_node("AnimationPlayer").play("show")
 			
 		if (
-			((LevelData.level_dic[level]["zombie_kills"]) > (LevelData.level_dic[level]["max_zombie_kills"] * 75 / 100))
+			((LevelData.level_dic[level]["score"]) > (LevelData.level_dic[level]["max_score"] * 75 / 100))
+			and ((LevelData.level_dic[level]["zombie_kills"]) > (LevelData.level_dic[level]["max_zombie_kills"] * 75 / 100))
 			and (LevelData.level_dic[level]["time_over"] == false 
 			and LevelData.level_dic[level]["damage_taken"] == 0)
 			):
@@ -51,7 +52,7 @@ func show_stats():
 				levels[i].get_node(STAT_DISPLAY).get_node("Star1").visible = true
 				levels[i].get_node(STAT_DISPLAY).get_node("Star2").visible = true
 				
-		elif (LevelData.level_dic[level]["zombie_kills"]) > (LevelData.level_dic[level]["max_zombie_kills"] * 75 / 100):
+		elif (LevelData.level_dic[level]["score"]) > (LevelData.level_dic[level]["max_score"] * 75 / 100):
 			levels[i].get_node(STAT_DISPLAY).get_node("Star1").visible = true
 		
 		else:

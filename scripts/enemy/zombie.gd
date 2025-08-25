@@ -2,11 +2,12 @@ extends CharacterBody3D
 class_name Zombie
 
 const DAMAGE = 20.0
+const SCORE = 10
 const SPEED = 5.0
 const CHASE_SPEED = 0.7
 const ATTACK_RADIUS = 1.1
 const DETECTION_RADIUS = 5.0
-const MELEE_DAMAGE = 1.5
+const MELEE_DAMAGE = 2
 const IMMUNE_TIME = 0.3
 
 # Health system variables
@@ -151,7 +152,7 @@ func die():
 	
 	is_dead = true
 	current_health = 0
-	GameManager.kill()
+	GameManager.kill(SCORE)
 	#print (GameManager.zombie_kills)
 	
 	health_bar.queue_free()

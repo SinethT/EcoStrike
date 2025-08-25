@@ -1,0 +1,123 @@
+[gd_scene load_steps=8 format=3 uid="uid://5rh0qdwgenwg"]
+
+[ext_resource type="Script" uid="uid://u25dlskt1boh" path="res://scripts/enemy/robot.gd" id="1_2am07"]
+[ext_resource type="PackedScene" uid="uid://c3yt4akif61bs" path="res://enemy/robot/robot.fbx" id="1_hih2f"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2am07"]
+points = PackedVector3Array(0.000617917, 0.000898049, 0.00711905, -0.00660317, -0.000339097, -0.000103175, -0.00660317, 0.000485512, -0.000103175, 0.00660317, -0.000339097, -0.000103175, -0.000617917, -0.00240317, 0.0060869, 0.000617917, 0.00234286, 0.00381687, -0.00639634, 0.000279244, 0.00340543, 0.00639634, 0.000279244, 0.00340543, 0.000617917, -0.00240317, 0.00340543, 0.00639634, 0.00069178, -0.000103175, -0.000412375, 0.00234286, 0.00567333, 0.00123713, -0.00240317, 0.00546761, -0.00144396, 0.000485512, 0.00691262, 0.00103158, -0.00116464, 0.00691262, -0.00639634, -0.000545366, 0.003199, 0.00639634, -0.000545366, 0.003199, 0.00144396, 0.00213612, 0.00546761, -0.00639634, -0.000545366, -0.000103175, -0.00639634, 0.00069178, -0.000103175, 0.00639634, -0.000545366, -0.000103175, -0.00144396, -0.00240317, 0.00443546, -0.00103158, -0.000545366, 0.00711905, -0.00660317, 0.00069178, 0.00216685, -0.00103158, 0.00192986, 0.00629333, 0.00660317, 0.00069178, 0.00216685, -0.000205541, 0.00234286, 0.00361044, -0.00103158, 0.00234286, 0.00505545, 0.00103158, 0.00172359, 0.00649976, 0.00144396, 0.000485512, 0.00691262, 0.00144396, -0.00240317, 0.00443546, 0.00103158, 0.00234286, 0.00422973, -0.00165079, -0.00116464, 0.00649976)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bakqy"]
+bg_color = Color(0.345098, 0, 0, 0.509804)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hda05"]
+bg_color = Color(0.753389, 4.64462e-06, 2.5028e-06, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+anti_aliasing = false
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_650c0"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_h73xk"]
+radius = 5.0
+
+[node name="robot" type="CharacterBody3D"]
+collision_mask = 3
+script = ExtResource("1_2am07")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_2am07")
+
+[node name="robot" parent="." instance=ExtResource("1_hih2f")]
+
+[node name="Skeleton3D" parent="robot/CharacterArmature" index="0"]
+bones/1/position = Vector3(4.5321e-06, 0.00375034, -7.34646e-05)
+bones/1/rotation = Quaternion(0, 2.38419e-07, 0, 1)
+bones/2/position = Vector3(-7.96941e-06, 3.16452e-05, -0.000599036)
+bones/2/rotation = Quaternion(-0.00815039, -2.67665e-07, -3.6628e-09, 0.999967)
+bones/2/scale = Vector3(1, 1, 1)
+bones/4/position = Vector3(0.00263495, -9.26975e-05, -0.000649421)
+bones/4/rotation = Quaternion(0.70315, 0.196653, -0.658055, 0.184041)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/position = Vector3(-2.59115e-12, 0.00134405, -3.44983e-10)
+bones/5/rotation = Quaternion(-0.462385, 0.492092, -0.464188, 0.573215)
+bones/5/scale = Vector3(1, 1, 1)
+bones/6/position = Vector3(1.53379e-10, 0.00222032, -6.96954e-12)
+bones/6/rotation = Quaternion(0.28584, -0.199766, 0.727032, 0.59145)
+bones/6/scale = Vector3(1, 1, 1)
+bones/8/position = Vector3(-0.00264402, -9.26975e-05, -0.000649424)
+bones/8/rotation = Quaternion(0.70315, -0.196653, 0.658056, 0.184041)
+bones/8/scale = Vector3(1, 1, 1)
+bones/9/position = Vector3(-5.45296e-11, 0.00134405, 3.89595e-11)
+bones/9/rotation = Quaternion(-0.462384, -0.492092, 0.464188, 0.573215)
+bones/9/scale = Vector3(1, 1, 1)
+bones/10/position = Vector3(-8.00568e-11, 0.00222033, -2.33782e-11)
+bones/10/rotation = Quaternion(0.28584, 0.199767, -0.727032, 0.59145)
+bones/10/scale = Vector3(1, 1, 1)
+bones/12/position = Vector3(-4.53313e-06, 0.000959637, 0.00115276)
+bones/12/rotation = Quaternion(0.0139373, -0.00244674, -0.00244673, 0.999897)
+bones/12/scale = Vector3(1, 1, 1)
+bones/14/position = Vector3(-7.96941e-06, 0.00275196, -0.000599036)
+bones/14/rotation = Quaternion(-0.0137123, -2.67649e-07, -6.16235e-09, 0.999906)
+bones/14/scale = Vector3(1, 1, 1)
+bones/16/position = Vector3(0.00595662, 0.000227518, -0.000656491)
+bones/16/rotation = Quaternion(0.496002, 0.498662, -0.501306, 0.503994)
+bones/16/scale = Vector3(1, 1, 1)
+bones/18/rotation = Quaternion(-1.09674e-07, 4.10131e-05, 0.00267411, 0.999996)
+bones/18/scale = Vector3(1, 1, 1)
+bones/20/position = Vector3(-0.00595662, 0.000227518, -0.000656493)
+bones/20/rotation = Quaternion(0.496002, -0.498662, 0.501306, 0.503994)
+bones/20/scale = Vector3(1, 1, 1)
+bones/22/position = Vector3(-0.00569745, 0.00249279, 0.00541352)
+bones/22/rotation = Quaternion(-1.10311e-07, -4.12515e-05, -0.00267411, 0.999996)
+bones/22/scale = Vector3(1, 1, 1)
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+size = Vector2i(150, 25)
+
+[node name="health_bar" type="ProgressBar" parent="SubViewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_right = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/background = SubResource("StyleBoxFlat_bakqy")
+theme_override_styles/fill = SubResource("StyleBoxFlat_hda05")
+value = 50.0
+show_percentage = false
+
+[node name="health_bar_sprite" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.07143, 0)
+texture_filter = 0
+texture = SubResource("ViewportTexture_650c0")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.45, 0)
+target_position = Vector3(0, -5, 1.5)
+collision_mask = 3
+hit_from_inside = true
+debug_shape_thickness = 5
+
+[node name="PlayerDetect" type="Area3D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerDetect"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0)
+shape = SubResource("SphereShape3D_h73xk")
+
+[connection signal="body_entered" from="PlayerDetect" to="." method="_on_player_detect_body_entered"]
+[connection signal="body_exited" from="PlayerDetect" to="." method="_on_player_detect_body_exited"]
+
+[editable path="robot"]
