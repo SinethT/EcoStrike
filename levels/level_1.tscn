@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://ru7w4yjomiqe"]
+[gd_scene load_steps=17 format=3 uid="uid://ru7w4yjomiqe"]
 
-[ext_resource type="PackedScene" uid="uid://b2fv0ant35w56" path="res://envs/Trailer_Park/Scenes/trailer_park.tscn" id="1_bt44k"]
+[ext_resource type="Script" uid="uid://d2yfhkye2wg3j" path="res://scripts/core/run_time_level.gd" id="1_3sk1a"]
+[ext_resource type="PackedScene" uid="uid://b2fv0ant35w56" path="res://envs/Scenes/trailer_park.tscn" id="1_bt44k"]
 [ext_resource type="PackedScene" uid="uid://oc13h3au02ro" path="res://Player_Controller/player_character.tscn" id="2_jirdo"]
 [ext_resource type="PackedScene" uid="uid://cdmmp2fbmo4ks" path="res://enemy/zombie/zombie.tscn" id="3_bt44k"]
 [ext_resource type="PackedScene" uid="uid://x8nhs2cer2to" path="res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn" id="4_kx6l7"]
@@ -47,6 +48,7 @@ border_color = Color(1, 1, 1, 1)
 bg_color = Color(1, 1, 1, 1)
 
 [node name="Level1" type="Node3D"]
+script = ExtResource("1_3sk1a")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_5722l")

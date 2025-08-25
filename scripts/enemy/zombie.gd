@@ -1,5 +1,5 @@
 extends CharacterBody3D
-# class_name Enemy
+class_name Zombie
 
 const DAMAGE = 20.0
 const SPEED = 5.0

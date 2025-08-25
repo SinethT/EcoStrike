@@ -1,0 +1,170 @@
+[gd_scene load_steps=20 format=3 uid="uid://bf28y8puin1os"]
+
+[ext_resource type="Script" uid="uid://cdu3w81racdw6" path="res://scripts/UI/level_directory.gd" id="1_dvaki"]
+[ext_resource type="Texture2D" uid="uid://cgf8ae8subvab" path="res://bg.jpg" id="2_d6weh"]
+[ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/Moonhouse-yE5M.ttf" id="3_msrsg"]
+[ext_resource type="Texture2D" uid="uid://cejqpcpkuythd" path="res://UI/level_directory/trailer_park.png" id="4_yagqc"]
+[ext_resource type="Texture2D" uid="uid://bpflrlwlohagt" path="res://UI/level_directory/burger_piz.png" id="5_bftwq"]
+[ext_resource type="Texture2D" uid="uid://cnt8mxjpyfbbk" path="res://UI/level_directory/abandoned_house.png" id="6_npypb"]
+[ext_resource type="Texture2D" uid="uid://b5aln3ac0q5rj" path="res://UI/level_directory/coming_soon.jpg" id="7_wcp6r"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bog3q"]
+texture = ExtResource("2_d6weh")
+modulate_color = Color(0.206914, 0.206914, 0.206914, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d4bcf"]
+texture = ExtResource("4_yagqc")
+modulate_color = Color(0.470588, 0.470588, 0.470588, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ixucr"]
+texture = ExtResource("4_yagqc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n3l74"]
+texture = ExtResource("4_yagqc")
+modulate_color = Color(0.882353, 0.882353, 0.882353, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6nylr"]
+texture = ExtResource("5_bftwq")
+modulate_color = Color(0.472025, 0.472025, 0.472025, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tnov8"]
+texture = ExtResource("5_bftwq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sg81d"]
+texture = ExtResource("5_bftwq")
+modulate_color = Color(0.864675, 0.864675, 0.864675, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i6xrq"]
+texture = ExtResource("6_npypb")
+modulate_color = Color(0.470588, 0.470588, 0.470588, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xoi7q"]
+texture = ExtResource("6_npypb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m1jav"]
+texture = ExtResource("6_npypb")
+modulate_color = Color(0.864675, 0.864675, 0.864675, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_euo4k"]
+texture = ExtResource("7_wcp6r")
+modulate_color = Color(0.666569, 0.666569, 0.666568, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tysjv"]
+texture = ExtResource("7_wcp6r")
+
+[node name="LevelDirectory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dvaki")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_bog3q")
+
+[node name="LevelHolder1" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1026.0
+offset_top = -609.0
+offset_right = 666.0
+offset_bottom = -214.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+theme_override_constants/separation = 500
+
+[node name="Level1" type="Button" parent="LevelHolder1"]
+custom_minimum_size = Vector2(596, 395)
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.783523, 0.783523, 0.783523, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_msrsg")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/disabled = SubResource("StyleBoxTexture_d4bcf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ixucr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n3l74")
+text = "Level 1"
+
+[node name="Level2" type="Button" parent="LevelHolder1"]
+custom_minimum_size = Vector2(596, 395)
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.783523, 0.783523, 0.783523, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_msrsg")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/disabled = SubResource("StyleBoxTexture_6nylr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tnov8")
+theme_override_styles/normal = SubResource("StyleBoxTexture_sg81d")
+disabled = true
+text = "Level 2"
+
+[node name="LevelHolder2" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1021.0
+offset_top = 162.0
+offset_right = 671.0
+offset_bottom = 557.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+theme_override_constants/separation = 500
+
+[node name="Level3" type="Button" parent="LevelHolder2"]
+custom_minimum_size = Vector2(596, 395)
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.783523, 0.783523, 0.783523, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_msrsg")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/disabled = SubResource("StyleBoxTexture_i6xrq")
+theme_override_styles/hover = SubResource("StyleBoxTexture_xoi7q")
+theme_override_styles/normal = SubResource("StyleBoxTexture_m1jav")
+disabled = true
+text = "Level 3"
+
+[node name="Level4" type="Button" parent="LevelHolder2"]
+custom_minimum_size = Vector2(596, 395)
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.784314, 0.784314, 0.784314, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.784314, 0.784314, 0.784314, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_msrsg")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/disabled = SubResource("StyleBoxTexture_euo4k")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tysjv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_euo4k")
+text = "Level 4"
+
+[connection signal="pressed" from="LevelHolder1/Level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="LevelHolder1/Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="LevelHolder2/Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="LevelHolder2/Level4" to="." method="_on_level_4_pressed"]

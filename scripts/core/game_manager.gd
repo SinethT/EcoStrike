@@ -1,6 +1,7 @@
 extends Node
 
 signal zombie_kill(int)
+signal level_beaten()
 
 const GAME_TIMER = 600
 const INPUT_MAP = "res://UI/scenes/InputSettings.tscn"
@@ -10,7 +11,7 @@ var damage_taken = 0
 var paused = false
 var pause_menu
 var timer
-	
+
 func kill():
 	zombie_kills += 1
 	emit_signal("zombie_kill")
@@ -37,3 +38,6 @@ func load_settings():
 
 func quit():
 	get_tree().quit()
+
+func win():
+	emit_signal("level_beaten")

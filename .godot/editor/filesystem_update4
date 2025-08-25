@@ -1,8 +1,6 @@
-res://levels/level_1.tscn
-res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
-res://Player_Controller/player_character.tscn
+res://UI/scenes/LevleDirectory.tscn
 res://UI/scenes/MainMenu.tscn
-res://UI/scenes/InputSettings.tscn
+res://scripts/UI/levle_directory.gd
 res://UI/scenes/LoginMenu.tscn
 res://scripts/UI/LoginMenu.gd
-res://scripts/UI/InputSettings.gd
+res://UI/scenes/LevelDirectory.tscn

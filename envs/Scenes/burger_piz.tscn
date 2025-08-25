@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://brd3wjrj522dh"]
+
+[ext_resource type="PackedScene" uid="uid://msu5s37ff8nd" path="res://envs/BurgerPiz/Models/BurgerPiz.fbx" id="1_drh66"]
+
+[node name="BurgerPiz" instance=ExtResource("1_drh66")]

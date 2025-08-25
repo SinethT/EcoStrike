@@ -24,6 +24,10 @@ LevelData="*res://scripts/core/level_data.gd"
 window/size/mode=2
 mouse_cursor/custom_image="uid://lvtekphum2cg"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 ui_left={

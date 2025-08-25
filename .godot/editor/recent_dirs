@@ -1,13 +1,13 @@
+res://scripts/UI
+res://envs/Scenes
+res://UI/scenes
 res://scripts/core
 res://UI
-res://UI/scenes
 res://
 res://scripts/ui
-res://scripts/UI
 res://cursor
 res://scripts/interactable
 res://interactable/health_up
-res://envs/Trailer_Park/Scenes
 res://scripts/enemy
 res://enemy/zombie
 res://levels

@@ -1,6 +1,6 @@
 extends Control
 
-const LEVEL1 = "res://levels/level_1.tscn"
+const LEVEL_DIRECTORY = "res://UI/scenes/LevelDirectory.tscn"
 const MAIN_MENU = "res://UI/scenes/MainMenu.tscn"
 
 var player_name = ""
@@ -53,8 +53,8 @@ func _on_continue_pressed():
 				loading_bar.play()
 				greeter.visible = true
 				await loading_bar.animation_finished
-				# Opens the level 1
-				get_tree().change_scene_to_file(LEVEL1)
+				# Opens the level directory
+				get_tree().change_scene_to_file(LEVEL_DIRECTORY)
 			else:
 				# Outputting InputError
 				input_error.visible = false

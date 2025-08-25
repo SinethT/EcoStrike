@@ -12,28 +12,28 @@ modulate_color = Color(0.206914, 0.206914, 0.206914, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s6bta"]
 bg_color = Color(0.821789, 0.821789, 0.821789, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 shadow_size = 5
 shadow_offset = Vector2(2.08165e-12, 3.41)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lvlym"]
 bg_color = Color(0.627635, 0.627635, 0.627635, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 shadow_size = 5
 shadow_offset = Vector2(2.08165e-12, 3.41)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_avjxe"]
 bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 shadow_size = 5
 shadow_offset = Vector2(2.08165e-12, 3.41)
 

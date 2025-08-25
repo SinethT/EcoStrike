@@ -1,6 +1,8 @@
 Label
+Control
 Button
 HBoxContainer
+BoxContainer
 VBoxContainer
 ColorRect
 Timer
@@ -10,5 +12,3 @@ CollisionShape3D
 AnimationPlayer
 Area3D
 AnimatedSprite3D
-RichTextLabel
-TextureRect
