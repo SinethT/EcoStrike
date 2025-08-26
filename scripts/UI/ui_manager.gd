@@ -11,7 +11,7 @@ func _ready():
 	GameManager.score_label = $GameOverScreen/score
 	GameManager.pause_menu = $PauseMenu
 	GameManager.timer = $Timer
-	GameManager.zombie_kill.connect(update_zombie_kills)
+	GameManager.enemy_kill.connect(update_enemy_kills)
 	timer.start(GameManager.GAME_TIMER)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -20,8 +20,8 @@ func _process(_delta):
 	if Input.is_action_just_pressed("pause"):
 		GameManager.pause_play()
 
-func update_zombie_kills():
-	kill_display.text = str(GameManager.zombie_kills)
+func update_enemy_kills():
+	kill_display.text = str(GameManager.enemy_kills)
 
 func update_timer_display(time):
 	if time <= 120:

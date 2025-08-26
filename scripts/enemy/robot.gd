@@ -1,4 +1,5 @@
 extends CharacterBody3D
+class_name Robot
 
 const DAMAGE = 2.0
 const SCORE = 2
@@ -7,7 +8,7 @@ const IMMUNE_TIME = 0.3
 
 # Health system variables
 @export var look_speed: float = 5.0
-@export var max_health: float = 100.0
+@export var max_health: float = 20
 var current_health: float
 var is_dead: bool = false
 var can_take_damage = true
@@ -50,7 +51,6 @@ func attack():
 
 # Called by bullets/projectiles when they hit the robot
 func Hit_Successful(damage: float, _direction: Vector3 = Vector3.ZERO, _hit_position: Vector3 = Vector3.ZERO):
-	print('h')
 	# Don't process hits if already dead
 	if is_dead or !can_take_damage:
 		return

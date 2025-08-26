@@ -1,6 +1,6 @@
 extends Node
 
-signal zombie_kill(int)
+signal enemy_kill(int)
 signal level_beaten()
 signal game_over()
 
@@ -9,8 +9,8 @@ const INPUT_MAP = "res://UI/scenes/InputSettings.tscn"
 const LEVEL_DIRECTORY = "res://UI/scenes/LevelDirectory.tscn"
 
 var score: int = 0
-var zombie_kills: int = 0
-var max_zombie_kills: int = 0
+var enemy_kills: int = 0
+var max_enemy_kills: int = 0
 var damage_taken = 0
 var time_over = false
 var paused = false
@@ -20,10 +20,10 @@ var score_label
 var timer
 
 func kill(kill_score):
-	zombie_kills += 1
+	enemy_kills += 1
 	score += kill_score
-	emit_signal("zombie_kill")
-	if zombie_kills == max_zombie_kills:
+	emit_signal("enemy_kill")
+	if enemy_kills == max_enemy_kills:
 		die()
 	
 func die():
