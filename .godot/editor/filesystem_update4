@@ -29,3 +29,5 @@ res://enemy/robot/robot.tscn
 res://scripts/enemy/robot.gd
 res://enemy/zombie/zombie.tscn
 res://Player_Controller/scripts/Projectiles/Projectile.gd
+res://levels/level_0.tscn
+res://envs/Scenes/burger_piz.tscn

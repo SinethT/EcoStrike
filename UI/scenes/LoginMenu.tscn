@@ -1,7 +1,7 @@
 [gd_scene load_steps=111 format=3 uid="uid://c65cfg1g0ax2b"]
 
 [ext_resource type="Script" uid="uid://co5n1oirxkp8w" path="res://scripts/UI/LoginMenu.gd" id="1_ypieh"]
-[ext_resource type="Texture2D" uid="uid://cgf8ae8subvab" path="res://bg.jpg" id="2_fvdmj"]
+[ext_resource type="Texture2D" uid="uid://cgf8ae8subvab" path="res://UI/bg.jpg" id="2_fvdmj"]
 [ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/Moonhouse-yE5M.ttf" id="3_23wx6"]
 [ext_resource type="Texture2D" uid="uid://dfuc2771fvtw7" path="res://UI/loading_bar/LoadingBarAnimation-ezgif.com-gif-to-sprite-converter.png" id="4_rvrv0"]
 

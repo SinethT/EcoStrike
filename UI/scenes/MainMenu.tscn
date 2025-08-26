@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://ent87jxa06cd"]
 
-[ext_resource type="Texture2D" uid="uid://cgf8ae8subvab" path="res://bg.jpg" id="1_dqkls"]
+[ext_resource type="Texture2D" uid="uid://cgf8ae8subvab" path="res://UI/bg.jpg" id="1_dqkls"]
 [ext_resource type="Script" uid="uid://dhu51jaybg75w" path="res://scripts/UI/MainMenu.gd" id="1_i64r5"]
 [ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/Moonhouse-yE5M.ttf" id="2_dx6vy"]
 

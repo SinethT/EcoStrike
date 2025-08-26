@@ -32,7 +32,271 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:Armchair": {
+"generate/physics": true
+},
+"PATH:Armchair_001": {
+"generate/physics": true
+},
+"PATH:Armchair_002": {
+"generate/physics": true
+},
+"PATH:Armchair_003": {
+"generate/physics": true
+},
+"PATH:Armchair_004": {
+"generate/physics": true
+},
+"PATH:Armchair_005": {
+"generate/physics": true
+},
+"PATH:Armchair_006": {
+"generate/physics": true
+},
+"PATH:Armchair_007": {
+"generate/physics": true
+},
+"PATH:Armchair_008": {
+"generate/physics": true
+},
+"PATH:Armchair_009": {
+"generate/physics": true
+},
+"PATH:Armchair_010": {
+"generate/physics": true
+},
+"PATH:Armchair_011": {
+"generate/physics": true
+},
+"PATH:Armchair_012": {
+"generate/physics": true
+},
+"PATH:Armchair_013": {
+"generate/physics": true
+},
+"PATH:Armchair_014": {
+"generate/physics": true
+},
+"PATH:Armchair_015": {
+"generate/physics": true
+},
+"PATH:AsphaltDamaged": {
+"generate/physics": true
+},
+"PATH:Background": {
+"generate/physics": true
+},
+"PATH:Building": {
+"generate/physics": true
+},
+"PATH:Building_001": {
+"generate/physics": true
+},
+"PATH:Building_002": {
+"generate/physics": true
+},
+"PATH:Building_003": {
+"generate/physics": true
+},
+"PATH:Building_01": {
+"generate/physics": true
+},
+"PATH:Building_01_001": {
+"generate/physics": true
+},
+"PATH:Building_02": {
+"generate/physics": true
+},
+"PATH:Building_02_001": {
+"generate/physics": true
+},
+"PATH:Building_02_002": {
+"generate/physics": true
+},
+"PATH:Building_02_003": {
+"generate/physics": true
+},
+"PATH:Building_02_004": {
+"generate/physics": true
+},
+"PATH:Building_02_005": {
+"generate/physics": true
+},
+"PATH:BurgerPiz": {
+"generate/physics": true
+},
+"PATH:Cash_register": {
+"generate/physics": true
+},
+"PATH:Cash_register_01": {
+"generate/physics": true
+},
+"PATH:Cash_register_02": {
+"generate/physics": true
+},
+"PATH:Ceiling": {
+"generate/physics": true
+},
+"PATH:Ceiling_A": {
+"generate/physics": true
+},
+"PATH:Chair": {
+"generate/physics": true
+},
+"PATH:Chair_001": {
+"generate/physics": true
+},
+"PATH:Chair_002": {
+"generate/physics": true
+},
+"PATH:Chair_003": {
+"generate/physics": true
+},
+"PATH:Chair_004": {
+"generate/physics": true
+},
+"PATH:Chair_005": {
+"generate/physics": true
+},
+"PATH:Chair_006": {
+"generate/physics": true
+},
+"PATH:Floor": {
+"generate/physics": true
+},
+"PATH:Grass": {
+"generate/physics": true
+},
+"PATH:Grill_001": {
+"generate/physics": true
+},
+"PATH:Grill_002": {
+"generate/physics": true
+},
+"PATH:Grill_003": {
+"generate/physics": true
+},
+"PATH:Mirror": {
+"generate/physics": true
+},
+"PATH:Mirror_001": {
+"generate/physics": true
+},
+"PATH:Mirror_002": {
+"generate/physics": true
+},
+"PATH:Refrijerator_M_001": {
+"generate/physics": true
+},
+"PATH:RooftilesMetal": {
+"generate/physics": true
+},
+"PATH:Shelf_B_001": {
+"generate/physics": true
+},
+"PATH:Shelving_001": {
+"generate/physics": true
+},
+"PATH:Shelving_002": {
+"generate/physics": true
+},
+"PATH:Shelving_003": {
+"generate/physics": true
+},
+"PATH:Shelving_004": {
+"generate/physics": true
+},
+"PATH:Wall_W_001": {
+"generate/physics": true
+},
+"PATH:Wall_W_002": {
+"generate/physics": true
+},
+"PATH:Wall_W_007": {
+"generate/physics": true
+},
+"PATH:Wall_W_008": {
+"generate/physics": true
+},
+"PATH:Wall_W_009": {
+"generate/physics": true
+},
+"PATH:Wall_W_010": {
+"generate/physics": true
+},
+"PATH:Wall_W_011": {
+"generate/physics": true
+},
+"PATH:Wall_W_012": {
+"generate/physics": true
+},
+"PATH:Wall_W_D_001": {
+"generate/physics": true
+},
+"PATH:Wall_W_D_005": {
+"generate/physics": true
+},
+"PATH:Wall_W_D_006": {
+"generate/physics": true
+},
+"PATH:Wall_W_D_007": {
+"generate/physics": true
+},
+"PATH:Wall_W_D_008": {
+"generate/physics": true
+},
+"PATH:Wall_W_D_009": {
+"generate/physics": true
+},
+"PATH:Washbasin_001": {
+"generate/physics": true
+},
+"PATH:Washbasin_002": {
+"generate/physics": true
+},
+"PATH:Washbasin_003": {
+"generate/physics": true
+},
+"PATH:WoodPlanksFloors0": {
+"generate/physics": true
+},
+"PATH:Wood_Base": {
+"generate/physics": true
+},
+"PATH:Wood_Base_001": {
+"generate/physics": true
+},
+"PATH:Wood_Base_002": {
+"generate/physics": true
+},
+"PATH:air-conditioning_001": {
+"generate/physics": true
+},
+"PATH:counter": {
+"generate/physics": true
+},
+"PATH:counter_01": {
+"generate/physics": true
+},
+"PATH:garden": {
+"generate/physics": true
+},
+"PATH:kitchen_hood": {
+"generate/physics": true
+},
+"PATH:kitchen_hood_001": {
+"generate/physics": true
+},
+"PATH:sidewalk": {
+"generate/physics": true
+},
+"PATH:sidewalk_001": {
+"generate/physics": true
+}
+}
+}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

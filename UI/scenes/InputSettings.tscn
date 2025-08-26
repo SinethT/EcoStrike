@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cnxn4ysl8ncjc" path="res://scripts/UI/InputSettings.gd" id="1_m3ukk"]
 [ext_resource type="PackedScene" uid="uid://bwtp8b0fmojw2" path="res://UI/scenes/InputButton.tscn" id="1_u140r"]
-[ext_resource type="Texture2D" uid="uid://cgf8ae8subvab" path="res://bg.jpg" id="2_1fi3q"]
+[ext_resource type="Texture2D" uid="uid://cgf8ae8subvab" path="res://UI/bg.jpg" id="2_1fi3q"]
 [ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/Moonhouse-yE5M.ttf" id="3_rn0iw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1fi3q"]

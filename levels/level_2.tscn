@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://btxr1picog6xh"]
+[gd_scene load_steps=22 format=3 uid="uid://btxr1picog6xh"]
 
 [ext_resource type="Script" uid="uid://d2yfhkye2wg3j" path="res://scripts/core/run_time_level.gd" id="1_at1ld"]
 [ext_resource type="PackedScene" uid="uid://brd3wjrj522dh" path="res://envs/Scenes/burger_piz.tscn" id="1_mi4ay"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://oc13h3au02ro" path="res://Player_Controller/player_character.tscn" id="3_sd18g"]
 [ext_resource type="PackedScene" uid="uid://cdmmp2fbmo4ks" path="res://enemy/zombie/zombie.tscn" id="4_vm7no"]
 [ext_resource type="PackedScene" uid="uid://x8nhs2cer2to" path="res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn" id="5_hbb88"]
+[ext_resource type="PackedScene" uid="uid://5rh0qdwgenwg" path="res://enemy/robot/robot.tscn" id="6_vm7no"]
 [ext_resource type="PackedScene" uid="uid://txfh4g1j8jnp" path="res://interactable/health_up/health_up.tscn" id="6_wcjpl"]
 [ext_resource type="Script" uid="uid://b388115d1uybs" path="res://scripts/UI/ui_manager.gd" id="7_5orea"]
 [ext_resource type="Texture2D" uid="uid://bb4eh7h2w7usv" path="res://UI/kill_display/skull.jpg" id="8_0ourt"]
@@ -88,61 +89,94 @@ parameters/looping = true
 [node name="BurgerPiz" parent="." instance=ExtResource("1_mi4ay")]
 
 [node name="Player_Character" parent="." instance=ExtResource("3_sd18g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42498, 3.18079, 4.85397)
+transform = Transform3D(-0.999965, 0, -0.00832515, 0, 1, 0, 0.00832515, 0, -0.999965, 5.26871, 1.04756, 4.85397)
 
 [node name="zombie" parent="." instance=ExtResource("4_vm7no")]
-transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.44, -7.86692, -0.753471, 0)
+transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.44, 25.2684, -0.155303, 13.5459)
 
 [node name="zombie2" parent="." instance=ExtResource("4_vm7no")]
-transform = Transform3D(-0.44, 0, -3.8466e-08, 0, 0.44, 0, 3.8466e-08, 0, -0.44, -7.86692, -0.753471, 39.6488)
+transform = Transform3D(-0.000744891, 0, -0.439999, 0, 0.44, 0, 0.439999, 0, -0.000744891, 25.2684, -0.155303, 26.1315)
 
 [node name="zombie3" parent="." instance=ExtResource("4_vm7no")]
-transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.44, 15.8412, -0.753471, 0)
+transform = Transform3D(-0.000744891, 0, -0.439999, 0, 0.44, 0, 0.439999, 0, -0.000744891, 25.2684, -0.155303, -2.04396)
 
 [node name="zombie4" parent="." instance=ExtResource("4_vm7no")]
-transform = Transform3D(-0.44, 0, -3.8466e-08, 0, 0.44, 0, 3.8466e-08, 0, -0.44, 13.406, -0.753471, 41.0165)
+transform = Transform3D(-0.437674, 0, -0.0451829, 0, 0.44, 0, 0.0451829, 0, -0.437674, 4.44692, -0.155303, 11.9513)
 
 [node name="zombie5" parent="." instance=ExtResource("4_vm7no")]
-transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.44, 39.4858, -0.753471, 0)
+transform = Transform3D(-0.437674, 0, -0.0451829, 0, 0.44, 0, 0.0451829, 0, -0.437674, -73.7448, -0.155303, 31.7913)
 
 [node name="zombie6" parent="." instance=ExtResource("4_vm7no")]
-transform = Transform3D(-0.44, 0, -3.8466e-08, 0, 0.44, 0, 3.8466e-08, 0, -0.44, 38.4515, -0.753471, 44.3445)
+transform = Transform3D(-0.437674, 0, -0.0451829, 0, 0.44, 0, 0.0451829, 0, -0.437674, -73.7448, -0.155303, 9.69638)
 
 [node name="zombie7" parent="." instance=ExtResource("4_vm7no")]
-transform = Transform3D(-1.9233e-08, 0, -0.44, 0, 0.44, 0, 0.44, 0, -1.9233e-08, 45.4947, -0.753471, 19.3228)
+transform = Transform3D(-0.437674, 0, -0.0451829, 0, 0.44, 0, 0.0451829, 0, -0.437674, -101.195, -0.155303, -14.8725)
 
 [node name="zombie8" parent="." instance=ExtResource("4_vm7no")]
-transform = Transform3D(-1.9233e-08, 0, -0.44, 0, 0.44, 0, 0.44, 0, -1.9233e-08, 38.8208, -0.753471, 23.8003)
+transform = Transform3D(-0.0986343, 0, 0.428802, 0, 0.44, 0, -0.428802, 0, -0.0986343, -101.195, -0.155303, 30.8617)
 
 [node name="zombie9" parent="." instance=ExtResource("4_vm7no")]
-transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.44, -27.5658, -0.753471, -5.79655)
+transform = Transform3D(-0.0986343, 0, 0.428802, 0, 0.44, 0, -0.428802, 0, -0.0986343, -123.556, -0.155303, 12.8016)
 
 [node name="zombie10" parent="." instance=ExtResource("4_vm7no")]
-transform = Transform3D(-0.44, 0, -3.8466e-08, 0, 0.44, 0, 3.8466e-08, 0, -0.44, -27.5658, -0.753471, 49.7053)
+transform = Transform3D(-0.0986343, 0, 0.428802, 0, 0.44, 0, -0.428802, 0, -0.0986343, -131.793, -0.155303, -19.3812)
+
+[node name="robot" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(0.286207, 0, 0.958168, 0, 1, 0, -0.958168, 0, 0.286207, 0.47215, -0.00301862, 11.1069)
+
+[node name="robot2" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(0.986524, 0, 0.163619, 0, 1, 0, -0.163619, 0, 0.986524, -30.3328, -0.00301862, 11.1069)
+
+[node name="robot3" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(0.986524, 0, 0.163619, 0, 1, 0, -0.163619, 0, 0.986524, -30.3328, -0.00301862, -6.69619)
+
+[node name="robot4" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(0.986524, 0, 0.163619, 0, 1, 0, -0.163619, 0, 0.986524, -30.3328, -0.00301862, -31.2524)
+
+[node name="robot5" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(0.986524, 0, 0.163619, 0, 1, 0, -0.163619, 0, 0.986524, -30.3328, -0.00301862, 26.5815)
+
+[node name="robot6" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(0.986524, 0, 0.163619, 0, 1, 0, -0.163619, 0, 0.986524, -76.4651, -0.00301862, -18.6299)
+
+[node name="robot7" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(0.986524, 0, 0.163619, 0, 1, 0, -0.163619, 0, 0.986524, -102.923, -0.00301862, -18.6299)
+
+[node name="robot8" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(0.986524, 0, 0.163619, 0, 1, 0, -0.163619, 0, 0.986524, -136.311, -0.00301862, -18.6299)
+
+[node name="robot9" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(0.418311, 0, 0.908304, 0, 1, 0, -0.908304, 0, 0.418311, -106.63, -0.00301862, 14.1529)
+
+[node name="robot10" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(0.655334, 0, -0.755339, 0, 1, 0, 0.755339, 0, 0.655334, 29.5914, -0.00301862, 1.48815)
+
+[node name="robot11" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(0.655334, 0, -0.755339, 0, 1, 0, 0.755339, 0, 0.655334, 29.5914, -0.00301862, 19.7034)
+
+[node name="robot12" parent="." instance=ExtResource("6_vm7no")]
+transform = Transform3D(-0.130267, 0, -0.991479, 0, 1, 0, 0.991479, 0, -0.130267, 29.5914, -0.00301862, 33.6182)
+
+[node name="HealthUp" parent="." instance=ExtResource("6_wcjpl")]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 5.703, 0.985962, 17.4183)
+
+[node name="HealthUp2" parent="." instance=ExtResource("6_wcjpl")]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 35.1212, 0.985962, 17.4183)
+
+[node name="HealthUp3" parent="." instance=ExtResource("6_wcjpl")]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 35.1212, 0.985962, 90.4915)
+
+[node name="HealthUp4" parent="." instance=ExtResource("6_wcjpl")]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 35.1212, 0.985962, 121.79)
+
+[node name="HealthUp5" parent="." instance=ExtResource("6_wcjpl")]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, -42.7946, 0.985962, 121.79)
+
+[node name="HealthUp6" parent="." instance=ExtResource("6_wcjpl")]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, -42.7946, 0.985962, 91.5703)
 
 [node name="blasterM" parent="." instance=ExtResource("5_hbb88")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4703, -0.363989, 7.32788)
-
-[node name="HealthUp" parent="." instance=ExtResource("6_wcjpl")]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 1.91297, 1.43124, 7.9392)
-
-[node name="HealthUp2" parent="." instance=ExtResource("6_wcjpl")]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 22.8, 0.882587, -0.032093)
-
-[node name="HealthUp3" parent="." instance=ExtResource("6_wcjpl")]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 46.1941, 0.557872, 4.83227)
-
-[node name="HealthUp4" parent="." instance=ExtResource("6_wcjpl")]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 46.1941, 0.557872, 35.4368)
-
-[node name="HealthUp5" parent="." instance=ExtResource("6_wcjpl")]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 22.8, 0.882587, 46.5212)
-
-[node name="HealthUp6" parent="." instance=ExtResource("6_wcjpl")]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 1.91297, 1.43124, 35.595)
-
-[node name="HealthUp7" parent="." instance=ExtResource("6_wcjpl")]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 27.5479, 1.12656, -38.839)
 
 [node name="UIManager" type="CanvasLayer" parent="."]
 script = ExtResource("7_5orea")
@@ -339,6 +373,26 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("9_w200a")
 theme_override_font_sizes/font_size = 70
 text = "GAME OVER!"
+
+[node name="score" type="Label" parent="UIManager/GameOverScreen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -98.8
+offset_top = 16.5
+offset_right = 99.2
+offset_bottom = 39.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_w200a")
+theme_override_font_sizes/font_size = 18
+text = "Your Score: 00"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
 
 [node name="Continue" type="Button" parent="UIManager/GameOverScreen"]
 layout_mode = 1

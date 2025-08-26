@@ -12,7 +12,7 @@ func _ready():
 	GameManager.pause_menu = $PauseMenu
 	GameManager.timer = $Timer
 	GameManager.enemy_kill.connect(update_enemy_kills)
-	timer.start(GameManager.GAME_TIMER)
+	timer.start()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):

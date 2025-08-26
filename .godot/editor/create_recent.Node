@@ -1,5 +1,9 @@
-CollisionShape3D
 Label
+CanvasLayer
+Panel
+Control
+TextureRect
+CollisionShape3D
 RayCast3D
 CharacterBody3D
 AnimationPlayer
@@ -8,7 +12,3 @@ Node3D
 AudioStreamPlayer3D
 AudioListener3D
 Node2D
-Node
-AnimationTree
-Sprite2D
-Control

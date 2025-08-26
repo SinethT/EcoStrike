@@ -3,7 +3,6 @@ extends Node
 signal enemy_kill(int)
 signal level_beaten()
 
-const GAME_TIMER = 35
 const INPUT_MAP = "res://UI/scenes/InputSettings.tscn"
 const LEVEL_DIRECTORY = "res://UI/scenes/LevelDirectory.tscn"
 
@@ -30,7 +29,7 @@ func die():
 	gameover_screen.visible = true
 	score_label.text = "Your Score: " + str(score)
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	if !time_over or timer.time_left < (GAME_TIMER * 75/100):
+	if !time_over or timer.time_left < (timer.wait_time * 75/100):
 		win()
 
 func pause_play():

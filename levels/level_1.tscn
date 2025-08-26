@@ -121,8 +121,44 @@ transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.44, -27.5658, -0.753471,
 [node name="zombie10" parent="." instance=ExtResource("3_bt44k")]
 transform = Transform3D(-0.44, 0, -3.8466e-08, 0, 0.44, 0, 3.8466e-08, 0, -0.44, -27.5658, -0.753471, 49.7053)
 
-[node name="blasterM" parent="." instance=ExtResource("4_kx6l7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4703, -0.363989, 7.32788)
+[node name="robot" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.64897, -0.790033, 10.1213)
+
+[node name="robot2" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6827, -0.790033, 3.10709)
+
+[node name="robot3" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.3941, -0.790033, 2.0575)
+
+[node name="robot4" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.4792, -0.790033, 21.7684)
+
+[node name="robot5" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.8721, -0.790033, 37.8689)
+
+[node name="robot6" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.3992, -0.790033, 37.8689)
+
+[node name="robot7" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.37067, -0.790033, 37.8689)
+
+[node name="robot8" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.65235, -0.790033, 37.8689)
+
+[node name="robot9" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.8916, -0.790033, 37.8689)
+
+[node name="robot10" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.8916, -0.790033, 7.66943)
+
+[node name="robot11" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.37372, -0.790033, 22.5497)
+
+[node name="robot12" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.471, -0.790033, 22.5497)
+
+[node name="robot13" parent="." instance=ExtResource("11_5ot28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.3506, -0.790033, 22.5497)
 
 [node name="HealthUp" parent="." instance=ExtResource("8_l53as")]
 transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 1.91297, 1.43124, 7.9392)
@@ -144,6 +180,9 @@ transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 1.91297, 1.43124, 35
 
 [node name="HealthUp7" parent="." instance=ExtResource("8_l53as")]
 transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 27.5479, 1.12656, -38.839)
+
+[node name="blasterM" parent="." instance=ExtResource("4_kx6l7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4703, -0.363989, 7.32788)
 
 [node name="UIManager" type="CanvasLayer" parent="."]
 script = ExtResource("5_gwceb")
@@ -387,9 +426,6 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_5ot28")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_aerfg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_nmsli")
 text = "Continue"
-
-[node name="robot" parent="." instance=ExtResource("11_5ot28")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.64897, -0.790033, 8.01137)
 
 [connection signal="timeout" from="UIManager/Timer" to="UIManager" method="_on_timer_timeout"]
 [connection signal="pressed" from="UIManager/PauseMenu/VBoxContainer/HBoxContainer/Resume" to="UIManager" method="_on_resume_pressed"]

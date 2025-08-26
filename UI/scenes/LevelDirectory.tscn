@@ -1,7 +1,7 @@
 [gd_scene load_steps=25 format=3 uid="uid://bf28y8puin1os"]
 
 [ext_resource type="Script" uid="uid://cdu3w81racdw6" path="res://scripts/UI/LevelDirectory.gd" id="1_dvaki"]
-[ext_resource type="Texture2D" uid="uid://cgf8ae8subvab" path="res://bg.jpg" id="2_d6weh"]
+[ext_resource type="Texture2D" uid="uid://cgf8ae8subvab" path="res://UI/bg.jpg" id="2_d6weh"]
 [ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/Moonhouse-yE5M.ttf" id="3_msrsg"]
 [ext_resource type="Texture2D" uid="uid://cejqpcpkuythd" path="res://UI/level_directory/trailer_park.png" id="4_yagqc"]
 [ext_resource type="Texture2D" uid="uid://bpflrlwlohagt" path="res://UI/level_directory/burger_piz.png" id="5_bftwq"]
