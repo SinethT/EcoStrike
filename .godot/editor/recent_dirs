@@ -1,3 +1,5 @@
+/Users/sineth/Programming/Godot/EcoStrike/Release
+res://UI
 res://
 res://scripts/core
 res://saves/
@@ -7,7 +9,6 @@ res://levels
 res://scripts/UI
 res://envs/Scenes
 res://UI/scenes
-res://UI
 res://scripts/ui
 res://cursor
 res://scripts/interactable

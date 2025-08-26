@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdqd38m611pvf"
-path.s3tc="res://.godot/imported/Radio.png-1c8070c09800a32758ffc6089a949123.s3tc.ctex"
+path.s3tc="res://.godot/imported/Radio.png-d3aea23788de47cdf272177461f5ccf3.s3tc.ctex"
+path.etc2="res://.godot/imported/Radio.png-d3aea23788de47cdf272177461f5ccf3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://envs/Trailer_Park/textures/Radio.png"
-dest_files=["res://.godot/imported/Radio.png-1c8070c09800a32758ffc6089a949123.s3tc.ctex"]
+source_file="res://envs/Trailer_Park/Textures/Radio.png"
+dest_files=["res://.godot/imported/Radio.png-d3aea23788de47cdf272177461f5ccf3.s3tc.ctex", "res://.godot/imported/Radio.png-d3aea23788de47cdf272177461f5ccf3.etc2.ctex"]
 
 [params]
 

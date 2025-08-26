@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddsbp71x0pnox"
 path.s3tc="res://.godot/imported/Wall_W.png-6a55d5e3982d1b8ee6f1549204e3039d.s3tc.ctex"
+path.etc2="res://.godot/imported/Wall_W.png-6a55d5e3982d1b8ee6f1549204e3039d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://envs/BurgerPiz/Textures/Wall_W.png"
-dest_files=["res://.godot/imported/Wall_W.png-6a55d5e3982d1b8ee6f1549204e3039d.s3tc.ctex"]
+dest_files=["res://.godot/imported/Wall_W.png-6a55d5e3982d1b8ee6f1549204e3039d.s3tc.ctex", "res://.godot/imported/Wall_W.png-6a55d5e3982d1b8ee6f1549204e3039d.etc2.ctex"]
 
 [params]
 

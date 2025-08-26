@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bs84uqth12tj5"
 path.s3tc="res://.godot/imported/BurgerPiz_WoodFloor.png-538ae28728f88eed90af1ef30b785e7a.s3tc.ctex"
+path.etc2="res://.godot/imported/BurgerPiz_WoodFloor.png-538ae28728f88eed90af1ef30b785e7a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://envs/BurgerPiz/Models/BurgerPiz_WoodFloor.png"
-dest_files=["res://.godot/imported/BurgerPiz_WoodFloor.png-538ae28728f88eed90af1ef30b785e7a.s3tc.ctex"]
+dest_files=["res://.godot/imported/BurgerPiz_WoodFloor.png-538ae28728f88eed90af1ef30b785e7a.s3tc.ctex", "res://.godot/imported/BurgerPiz_WoodFloor.png-538ae28728f88eed90af1ef30b785e7a.etc2.ctex"]
 
 [params]
 

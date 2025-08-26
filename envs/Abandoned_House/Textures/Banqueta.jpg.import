@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx1uvmsi5hh0f"
-path.s3tc="res://.godot/imported/Banqueta.jpg-e16b60220f1f05fc665fa93a9a24c3fa.s3tc.ctex"
+path.s3tc="res://.godot/imported/Banqueta.jpg-c0cb708441fa8dfc3bb6a7eb79eda9a1.s3tc.ctex"
+path.etc2="res://.godot/imported/Banqueta.jpg-c0cb708441fa8dfc3bb6a7eb79eda9a1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://envs/Abandoned_House/textures/Banqueta.jpg"
-dest_files=["res://.godot/imported/Banqueta.jpg-e16b60220f1f05fc665fa93a9a24c3fa.s3tc.ctex"]
+source_file="res://envs/Abandoned_House/Textures/Banqueta.jpg"
+dest_files=["res://.godot/imported/Banqueta.jpg-c0cb708441fa8dfc3bb6a7eb79eda9a1.s3tc.ctex", "res://.godot/imported/Banqueta.jpg-c0cb708441fa8dfc3bb6a7eb79eda9a1.etc2.ctex"]
 
 [params]
 

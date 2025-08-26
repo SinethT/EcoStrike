@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://de531nhxs1uxn"
 path.s3tc="res://.godot/imported/Shelf_B.png-ce9047804c52a2a654b5753153ca39db.s3tc.ctex"
+path.etc2="res://.godot/imported/Shelf_B.png-ce9047804c52a2a654b5753153ca39db.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://envs/BurgerPiz/Textures/Shelf_B.png"
-dest_files=["res://.godot/imported/Shelf_B.png-ce9047804c52a2a654b5753153ca39db.s3tc.ctex"]
+dest_files=["res://.godot/imported/Shelf_B.png-ce9047804c52a2a654b5753153ca39db.s3tc.ctex", "res://.godot/imported/Shelf_B.png-ce9047804c52a2a654b5753153ca39db.etc2.ctex"]
 
 [params]
 

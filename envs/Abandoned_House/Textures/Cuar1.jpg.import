@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clycxhfnlcvfw"
-path.s3tc="res://.godot/imported/Cuar1.jpg-92ba91975efc4bdd85f160ca8c9228fb.s3tc.ctex"
+path.s3tc="res://.godot/imported/Cuar1.jpg-274865e66555a458be5f422a00fa1635.s3tc.ctex"
+path.etc2="res://.godot/imported/Cuar1.jpg-274865e66555a458be5f422a00fa1635.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://envs/Abandoned_House/textures/Cuar1.jpg"
-dest_files=["res://.godot/imported/Cuar1.jpg-92ba91975efc4bdd85f160ca8c9228fb.s3tc.ctex"]
+source_file="res://envs/Abandoned_House/Textures/Cuar1.jpg"
+dest_files=["res://.godot/imported/Cuar1.jpg-274865e66555a458be5f422a00fa1635.s3tc.ctex", "res://.godot/imported/Cuar1.jpg-274865e66555a458be5f422a00fa1635.etc2.ctex"]
 
 [params]
 

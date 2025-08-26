@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://hh3u4ukc7n7u"
 path.s3tc="res://.godot/imported/Chair.png-f9abf0bce32591dab6e83e2dcd2f1f02.s3tc.ctex"
+path.etc2="res://.godot/imported/Chair.png-f9abf0bce32591dab6e83e2dcd2f1f02.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://envs/Trailer_Park/Textures/Chair.png"
-dest_files=["res://.godot/imported/Chair.png-f9abf0bce32591dab6e83e2dcd2f1f02.s3tc.ctex"]
+dest_files=["res://.godot/imported/Chair.png-f9abf0bce32591dab6e83e2dcd2f1f02.s3tc.ctex", "res://.godot/imported/Chair.png-f9abf0bce32591dab6e83e2dcd2f1f02.etc2.ctex"]
 
 [params]
 

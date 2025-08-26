@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bs3x5d2hxj2a7"
 path.s3tc="res://.godot/imported/Character_Male.png-6b04f2262309838daee783c0d6151390.s3tc.ctex"
+path.etc2="res://.godot/imported/Character_Male.png-6b04f2262309838daee783c0d6151390.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://envs/Trailer_Park/Characters/Character_Male.png"
-dest_files=["res://.godot/imported/Character_Male.png-6b04f2262309838daee783c0d6151390.s3tc.ctex"]
+dest_files=["res://.godot/imported/Character_Male.png-6b04f2262309838daee783c0d6151390.s3tc.ctex", "res://.godot/imported/Character_Male.png-6b04f2262309838daee783c0d6151390.etc2.ctex"]
 
 [params]
 

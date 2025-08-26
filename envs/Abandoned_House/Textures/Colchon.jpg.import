@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvcvm6ib0rwhe"
-path.s3tc="res://.godot/imported/Colchon.jpg-5c6400325966f06200d974e8476af73e.s3tc.ctex"
+path.s3tc="res://.godot/imported/Colchon.jpg-8e21b349235c902ada1f053a048e066e.s3tc.ctex"
+path.etc2="res://.godot/imported/Colchon.jpg-8e21b349235c902ada1f053a048e066e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://envs/Abandoned_House/textures/Colchon.jpg"
-dest_files=["res://.godot/imported/Colchon.jpg-5c6400325966f06200d974e8476af73e.s3tc.ctex"]
+source_file="res://envs/Abandoned_House/Textures/Colchon.jpg"
+dest_files=["res://.godot/imported/Colchon.jpg-8e21b349235c902ada1f053a048e066e.s3tc.ctex", "res://.godot/imported/Colchon.jpg-8e21b349235c902ada1f053a048e066e.etc2.ctex"]
 
 [params]
 

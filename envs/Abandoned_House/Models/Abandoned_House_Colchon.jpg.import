@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvjw4mnk2q10n"
 path.s3tc="res://.godot/imported/Abandoned_House_Colchon.jpg-9ca88343af7bcfe8401a090e7ea8f1a4.s3tc.ctex"
+path.etc2="res://.godot/imported/Abandoned_House_Colchon.jpg-9ca88343af7bcfe8401a090e7ea8f1a4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://envs/Abandoned_House/Models/Abandoned_House_Colchon.jpg"
-dest_files=["res://.godot/imported/Abandoned_House_Colchon.jpg-9ca88343af7bcfe8401a090e7ea8f1a4.s3tc.ctex"]
+dest_files=["res://.godot/imported/Abandoned_House_Colchon.jpg-9ca88343af7bcfe8401a090e7ea8f1a4.s3tc.ctex", "res://.godot/imported/Abandoned_House_Colchon.jpg-9ca88343af7bcfe8401a090e7ea8f1a4.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0wegkrvp1iw7"
 path.s3tc="res://.godot/imported/urinary.png-5295415ea4ab9cfb87d3fb1ebb9f4f71.s3tc.ctex"
+path.etc2="res://.godot/imported/urinary.png-5295415ea4ab9cfb87d3fb1ebb9f4f71.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://envs/BurgerPiz/Models/urinary.png"
-dest_files=["res://.godot/imported/urinary.png-5295415ea4ab9cfb87d3fb1ebb9f4f71.s3tc.ctex"]
+dest_files=["res://.godot/imported/urinary.png-5295415ea4ab9cfb87d3fb1ebb9f4f71.s3tc.ctex", "res://.godot/imported/urinary.png-5295415ea4ab9cfb87d3fb1ebb9f4f71.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnxnhounqsnn0"
 path.s3tc="res://.godot/imported/Table.png-128ff41bde81ea47b92ce0210b3ec7bb.s3tc.ctex"
+path.etc2="res://.godot/imported/Table.png-128ff41bde81ea47b92ce0210b3ec7bb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://envs/BurgerPiz/Textures/Table.png"
-dest_files=["res://.godot/imported/Table.png-128ff41bde81ea47b92ce0210b3ec7bb.s3tc.ctex"]
+dest_files=["res://.godot/imported/Table.png-128ff41bde81ea47b92ce0210b3ec7bb.s3tc.ctex", "res://.godot/imported/Table.png-128ff41bde81ea47b92ce0210b3ec7bb.etc2.ctex"]
 
 [params]
 

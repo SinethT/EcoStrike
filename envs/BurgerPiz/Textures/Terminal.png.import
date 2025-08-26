@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://orf53fafbjp"
 path.s3tc="res://.godot/imported/Terminal.png-4c02ca15a8de2095cac8eee9fa1fdd91.s3tc.ctex"
+path.etc2="res://.godot/imported/Terminal.png-4c02ca15a8de2095cac8eee9fa1fdd91.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://envs/BurgerPiz/Textures/Terminal.png"
-dest_files=["res://.godot/imported/Terminal.png-4c02ca15a8de2095cac8eee9fa1fdd91.s3tc.ctex"]
+dest_files=["res://.godot/imported/Terminal.png-4c02ca15a8de2095cac8eee9fa1fdd91.s3tc.ctex", "res://.godot/imported/Terminal.png-4c02ca15a8de2095cac8eee9fa1fdd91.etc2.ctex"]
 
 [params]
 

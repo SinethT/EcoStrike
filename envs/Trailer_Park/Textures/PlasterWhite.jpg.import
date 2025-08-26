@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://crva1awyqjcqo"
 path.s3tc="res://.godot/imported/PlasterWhite.jpg-7e2d8184559179ef240dff4678d13bfe.s3tc.ctex"
+path.etc2="res://.godot/imported/PlasterWhite.jpg-7e2d8184559179ef240dff4678d13bfe.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://envs/Trailer_Park/Textures/PlasterWhite.jpg"
-dest_files=["res://.godot/imported/PlasterWhite.jpg-7e2d8184559179ef240dff4678d13bfe.s3tc.ctex"]
+dest_files=["res://.godot/imported/PlasterWhite.jpg-7e2d8184559179ef240dff4678d13bfe.s3tc.ctex", "res://.godot/imported/PlasterWhite.jpg-7e2d8184559179ef240dff4678d13bfe.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dymbv8n355tbq"
 path.s3tc="res://.godot/imported/Watering_can.png-b9256d1be1a4c2299e81b9e6995d0c4b.s3tc.ctex"
+path.etc2="res://.godot/imported/Watering_can.png-b9256d1be1a4c2299e81b9e6995d0c4b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://envs/Trailer_Park/Textures/Watering_can.png"
-dest_files=["res://.godot/imported/Watering_can.png-b9256d1be1a4c2299e81b9e6995d0c4b.s3tc.ctex"]
+dest_files=["res://.godot/imported/Watering_can.png-b9256d1be1a4c2299e81b9e6995d0c4b.s3tc.ctex", "res://.godot/imported/Watering_can.png-b9256d1be1a4c2299e81b9e6995d0c4b.etc2.ctex"]
 
 [params]
 
