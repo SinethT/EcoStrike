@@ -2,7 +2,6 @@ extends Node
 
 signal enemy_kill(int)
 signal level_beaten()
-signal game_over()
 
 const GAME_TIMER = 35
 const INPUT_MAP = "res://UI/scenes/InputSettings.tscn"
