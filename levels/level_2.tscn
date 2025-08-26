@@ -176,7 +176,7 @@ transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, -42.7946, 0.985962, 
 transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, -42.7946, 0.985962, 91.5703)
 
 [node name="blasterM" parent="." instance=ExtResource("5_hbb88")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4703, -0.363989, 7.32788)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.1557, 0.143395, -48.9264)
 
 [node name="UIManager" type="CanvasLayer" parent="."]
 script = ExtResource("7_5orea")

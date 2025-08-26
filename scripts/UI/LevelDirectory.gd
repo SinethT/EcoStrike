@@ -14,6 +14,7 @@ var levels = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	SaveManager.load_game()
 	levels = level_holder_1.get_children() + level_holder_2.get_children()
 	update_levels()
 	show_stats()

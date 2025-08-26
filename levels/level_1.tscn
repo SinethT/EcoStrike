@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://ru7w4yjomiqe"]
+[gd_scene load_steps=25 format=3 uid="uid://ru7w4yjomiqe"]
 
 [ext_resource type="Script" uid="uid://d2yfhkye2wg3j" path="res://scripts/core/run_time_level.gd" id="1_3sk1a"]
 [ext_resource type="PackedScene" uid="uid://b2fv0ant35w56" path="res://envs/Scenes/trailer_park.tscn" id="1_bt44k"]
@@ -10,7 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://bb4eh7h2w7usv" path="res://UI/kill_display/skull.jpg" id="5_n46q3"]
 [ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/Moonhouse-yE5M.ttf" id="7_l53as"]
 [ext_resource type="PackedScene" uid="uid://txfh4g1j8jnp" path="res://interactable/health_up/health_up.tscn" id="8_l53as"]
+[ext_resource type="Resource" uid="uid://cd8msvjysh2uv" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterM.tres" id="10_nmsli"]
 [ext_resource type="PackedScene" uid="uid://5rh0qdwgenwg" path="res://enemy/robot/robot.tscn" id="11_5ot28"]
+[ext_resource type="Script" uid="uid://br4s165quwlyu" path="res://Player_Controller/scripts/Weapon_State_Machine/WeaponSlot.gd" id="13_betor"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0srwa"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -24,6 +26,13 @@ background_mode = 2
 sky = SubResource("Sky_v5uil")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="Resource" id="Resource_betor"]
+script = ExtResource("13_betor")
+weapon = ExtResource("10_nmsli")
+current_ammo = 9
+reserve_ammo = 15
+metadata/_custom_type_script = "uid://br4s165quwlyu"
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3sk1a"]
 bg_color = Color(0, 0, 0, 1)
@@ -182,7 +191,8 @@ transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 1.91297, 1.43124, 35
 transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 27.5479, 1.12656, -38.839)
 
 [node name="blasterM" parent="." instance=ExtResource("4_kx6l7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4703, -0.363989, 7.32788)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1583, -0.363989, 2.57536)
+weapon = SubResource("Resource_betor")
 
 [node name="UIManager" type="CanvasLayer" parent="."]
 script = ExtResource("5_gwceb")
@@ -244,7 +254,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="UIManager"]
-wait_time = 900.0
+wait_time = 600.0
 one_shot = true
 
 [node name="PauseMenu" type="ColorRect" parent="UIManager"]

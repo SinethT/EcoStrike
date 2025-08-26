@@ -31,3 +31,6 @@ res://enemy/zombie/zombie.tscn
 res://Player_Controller/scripts/Projectiles/Projectile.gd
 res://levels/level_0.tscn
 res://envs/Scenes/burger_piz.tscn
+res://scripts/core/save_data.gd
+res://saves/save1.tres
+res://scripts/core/save_manager.gd

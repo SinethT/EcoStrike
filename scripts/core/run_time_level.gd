@@ -31,3 +31,4 @@ func beat_level():
 
 	# Updates the level data for the stat screen & data mesh (for saving)
 	LevelData.update_level(level, GameManager.score, max_score, GameManager.enemy_kills, max_enemy_kills, GameManager.damage_taken, GameManager.time_over, true)
+	SaveManager.save_game()

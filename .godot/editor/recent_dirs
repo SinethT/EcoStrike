@@ -1,12 +1,13 @@
+res://
+res://scripts/core
+res://saves/
 res://scripts/enemy
 res://enemy/robot
 res://levels
 res://scripts/UI
 res://envs/Scenes
 res://UI/scenes
-res://scripts/core
 res://UI
-res://
 res://scripts/ui
 res://cursor
 res://scripts/interactable
