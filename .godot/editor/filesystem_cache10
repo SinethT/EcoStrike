@@ -1,6 +1,6 @@
 bdbec74c6e5bd72edee867077d70896c
-::res://::1756194242
-export_presets.cfg::TextFile::-1::1756194071::0::1::::<><><>0<>0<><>::
+::res://::1756238075
+export_presets.cfg::TextFile/TextFile::-1::1756194362::0::1::::<><><>0<>0<><>::
 ::res://addons/::1756161961
 ::res://cursor/::1755923609
 pointer_b.svg::CompressedTexture2D/CompressedTexture2D::816590527642639222::1717553832::1755923609::1::::<><><>0<>0<>69981d4e698056d0bda26331ff08ac2f<>res://.godot/imported/pointer_b.svg-fb1fe5d3a20c290fb169aed4145995c2.ctex::
@@ -480,8 +480,8 @@ Weapon_State_Machine.gd::GDScript/GDScript::765873569863509562::1756134769::0::1
 ::res://Player_Controller/scripts/Weapon_State_Machine/PickUp Weapons/::1752312902
 reload_clip.gd::GDScript/GDScript::3289242478169764498::1727904344::0::1::::<>RigidBody3D<><>0<>0<><>::
 Weapon_Pick_Up.gd::GDScript/GDScript::731345247009132480::1752704750::0::1::::WeaponPickUp<>RigidBody3D<><>0<>0<><>::
-::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/::1756191940
-blasterI.tres::Resource/WeaponResource::1690250007110488151::1756156882::0::1::::<><><>0<>0<><>::uid://dug0epe7i1eoa::::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://dc48o4niy1mok::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/basic_hitscan_projectile.tscn<>uid://cvbk5bxenpxey::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_I.tscn<>uid://ciu0xkaw0ioef::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_1.tscn
+::res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/::1756238058
+blasterI.tres::Resource/WeaponResource::1690250007110488151::1756238058::0::1::::<><><>0<>0<><>::uid://dug0epe7i1eoa::::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://dc48o4niy1mok::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/basic_hitscan_projectile.tscn<>uid://cvbk5bxenpxey::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_I.tscn<>uid://ciu0xkaw0ioef::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_1.tscn
 blasterL.tres::Resource/WeaponResource::3966821733617405030::1756191858::0::1::::<><><>0<>0<><>::uid://bpxa3je174q43::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/basic_rigid_body_projectile.tscn<>uid://dug0epe7i1eoa::::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://gtthejj2wmyj::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_n.tscn<>uid://3mb12hvruajh::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_2.tscn
 blasterM.tres::Resource/WeaponResource::5052294230396161601::1756191940::0::1::::<><><>0<>0<><>::uid://dug0epe7i1eoa::::res://Player_Controller/scripts/Weapon_State_Machine/weapon_resource.gd<>uid://brvfyahytwd8m::::res://Player_Controller/Spawnable_Objects/Projectiles_To_Load/shotgun_projectile.tscn<>uid://x8nhs2cer2to::::res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn<>uid://ceuaamuau8pl8::::res://Player_Controller/Spawnable_Objects/SprayProfiles/spray_profile_3.tscn
 blasterM_slot.tres::::-1::1752525198::0::1::::<><><>0<>0<><>::
@@ -522,7 +522,7 @@ blasterD.glb::PackedScene/PackedScene::7057011685208720596::1727904344::17525268
 blasterL.glb::PackedScene/PackedScene::7658920681249816163::1727904344::1752526840::1::::<><><>0<>0<>69efaad7909c7d0e3dec71c354eb92a9<>res://.godot/imported/blasterL.glb-59ddd6860bd693709182dc70ee92e810.scn::
 blasterN.glb::PackedScene/PackedScene::3883894984375497527::1727904344::1752526840::1::::<><><>0<>0<>43dc4871fb3d0733b69c32e34f21598e<>res://.godot/imported/blasterN.glb-c211cec0f10aaf19f2b09f0c9d4f0551.scn::
 foamBulletA.glb::PackedScene/PackedScene::5330692767018787457::1727904344::1752526840::1::::<><><>0<>0<>c5ecf45df3080e3a1886e088d9ef7066<>res://.godot/imported/foamBulletA.glb-fef335175d9691aee84d5702cd642f09.scn::
-::res://Release/::1756194099
+::res://Release/::1756194362
 ::res://saves/::1756191639
 save1.tres::Resource/SaveData::4009610844372219473::1756191639::0::1::::<><><>0<>0<><>::uid://ci830jisaoc8u::::res://scripts/core/save_data.gd
 ::res://scripts/::1755639831

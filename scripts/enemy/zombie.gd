@@ -6,7 +6,7 @@ const SCORE = 10
 const SPEED = 5.0
 const CHASE_SPEED = 0.7
 const ATTACK_RADIUS = 1.1
-const DETECTION_RADIUS = 5.0
+const DETECTION_RADIUS = 20.0
 const MELEE_DAMAGE = 2
 const IMMUNE_TIME = 0.3
 
@@ -15,6 +15,8 @@ const IMMUNE_TIME = 0.3
 var current_health: float
 var is_dead: bool = false
 var can_take_damage = true
+var player_in_area = false
+var player_in_attack = false
 
 # AI movement variables
 @onready var player = get_tree().get_first_node_in_group("Player")
@@ -23,6 +25,8 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var animation_player = $zombie/AnimationPlayer
 @onready var motion_player = $zombie/AnimationPlayer2
 @onready var health_bar = $SubViewport/health_bar
+@onready var detection_area = $DetectionArea/CollisionShape3D
+@onready var attack_area = $AttackArea/CollisionShape3D
 
 func _ready():
 	current_health = max_health
@@ -31,6 +35,8 @@ func _ready():
 	health_bar.value = current_health
 	
 	animation_player.play("Armature|Idle")
+	detection_area.shape.radius = DETECTION_RADIUS
+	attack_area.shape.radius = ATTACK_RADIUS
 	# Add zombie to Target group so it can be hit by bullets
 	add_to_group("Target")
 	
@@ -43,14 +49,20 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 	
-	# Check if player is within detection radius and move towards them
-	if player and is_instance_valid(player):
-		var distance_to_player = global_position.distance_to(player.global_position)
+	if player_in_area:
+		#var distance_to_player
+		#if player and is_instance_valid(player):
+			#distance_to_player = global_position.distance_to(player.global_position)
+		if animation_player.current_animation != "Armature|Attack":
+			if player_in_attack:
+				attack()
+			else: 
+				move_towards_player()
+		if Input.is_action_just_pressed("Melee") and player_in_attack:
+			Hit_Successful(MELEE_DAMAGE)
 		
-		
-
-		if distance_to_player > DETECTION_RADIUS and animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
-			# If player is out of range, stop moving and play idle animation
+	else:
+		if animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
 			velocity.x = 0
 			velocity.z = 0
 			if animation_player.current_animation != "Armature|Idle":
@@ -59,22 +71,38 @@ func _physics_process(delta):
 			# If player is not detected, stop moving
 			velocity.x = 0
 			velocity.z = 0
-		
-		if animation_player.current_animation != "Armature|Attack":
-			if distance_to_player <= ATTACK_RADIUS:
-				attack()
-
-			elif distance_to_player <= DETECTION_RADIUS:
-				move_towards_player()
-			else:
-				# Stop moving and play idle animation
-				velocity.x = 0
-				velocity.z = 0
-				if animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
-					animation_player.play("Armature|Idle")
-		
-		if Input.is_action_just_pressed("Melee") and distance_to_player < ATTACK_RADIUS:
-			Hit_Successful(MELEE_DAMAGE)
+	# Check if player is within detection radius and move towards them
+	#if player and is_instance_valid(player):
+		#var distance_to_player = global_position.distance_to(player.global_position)
+		#
+		#
+#
+		#if distance_to_player > DETECTION_RADIUS and animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
+			## If player is out of range, stop moving and play idle animation
+			#velocity.x = 0
+			#velocity.z = 0
+			#if animation_player.current_animation != "Armature|Idle":
+				#animation_player.play("Armature|Idle")
+		#else:
+			## If player is not detected, stop moving
+			#velocity.x = 0
+			#velocity.z = 0
+		#
+		#if animation_player.current_animation != "Armature|Attack":
+			#if distance_to_player <= ATTACK_RADIUS:
+				#attack()
+#
+			#elif distance_to_player <= DETECTION_RADIUS:
+				#move_towards_player()
+			#else:
+				## Stop moving and play idle animation
+				#velocity.x = 0
+				#velocity.z = 0
+				#if animation_player.current_animation != "Armature|Idle" and animation_player.current_animation != "Armature|Hit_reaction":
+					#animation_player.play("Armature|Idle")
+		#
+		#if Input.is_action_just_pressed("Melee") and distance_to_player < ATTACK_RADIUS:
+			#Hit_Successful(MELEE_DAMAGE)
 	
 	move_and_slide()
 
@@ -169,3 +197,23 @@ func die():
 	# Queue for deletion after a delay
 	await get_tree().create_timer(3.5).timeout
 	queue_free()
+
+
+func _on_detection_area_body_entered(body):
+	if body == player:
+		player_in_area = true
+
+
+func _on_detection_area_body_exited(body):
+	if body == player:
+		player_in_area = false
+
+
+func _on_attack_area_body_entered(body):
+	if body == player:
+		player_in_attack = true
+
+
+func _on_attack_area_body_exited(body):
+	if body == player:
+		player_in_attack = false

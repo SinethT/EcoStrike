@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://cdmmp2fbmo4ks"]
+[gd_scene load_steps=31 format=3 uid="uid://cdmmp2fbmo4ks"]
 
 [ext_resource type="Script" uid="uid://dpphunomadbfd" path="res://scripts/enemy/zombie.gd" id="1_32ick"]
 [ext_resource type="PackedScene" uid="uid://3xf1vrisg2pj" path="res://enemy/zombie/zombie.fbx" id="1_fo461"]
@@ -3856,6 +3856,12 @@ _data = {
 &"RESET": SubResource("Animation_32ick")
 }
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_32ick"]
+radius = 20.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_6dvuw"]
+radius = 1.1
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_32ick"]
 bg_color = Color(0.345098, 0, 0, 0.509804)
 corner_radius_top_left = 10
@@ -3916,10 +3922,10 @@ shape = SubResource("ConvexPolygonShape3D_26n12")
 [node name="zombie" parent="." instance=ExtResource("1_fo461")]
 
 [node name="Skeleton3D" parent="zombie/Armature" index="0"]
-bones/0/position = Vector3(0.021316, 2.3185, -0.0598201)
-bones/0/rotation = Quaternion(0.100777, -0.164302, -0.0160411, 0.981117)
+bones/0/position = Vector3(0.0109204, 2.29247, -0.0667492)
+bones/0/rotation = Quaternion(0.102119, -0.170915, -0.00507103, 0.979966)
 bones/1/position = Vector3(0, 0.2001, -0.0111497)
-bones/1/rotation = Quaternion(-0.00697445, -0.00519095, 0.0179784, 0.999801)
+bones/1/rotation = Quaternion(-0.00697444, -0.00519095, 0.0179784, 0.999801)
 bones/2/position = Vector3(0, 0.233812, -1.37916e-08)
 bones/2/rotation = Quaternion(0.0650032, -0.0117162, 0.011564, 0.997749)
 bones/3/position = Vector3(0, 0.267214, 1.42904e-08)
@@ -3965,13 +3971,13 @@ bones/18/position = Vector3(0.000586741, 0.0813231, -2.43357e-07)
 bones/18/rotation = Quaternion(0.177064, -0.00324174, -0.0300002, 0.983737)
 bones/18/scale = Vector3(1, 1, 1)
 bones/19/position = Vector3(-0.000434363, 0.080035, -1.47895e-07)
-bones/19/rotation = Quaternion(0.341688, -0.000172356, -0.0440525, 0.938781)
+bones/19/rotation = Quaternion(0.341688, -0.000172356, -0.0440525, 0.93878)
 bones/19/scale = Vector3(1, 1, 1)
 bones/20/position = Vector3(-0.000152468, 0.0676531, 1.78636e-07)
 bones/20/rotation = Quaternion(-0.000286678, 0.0544646, -0.00299996, 0.998511)
 bones/20/scale = Vector3(1, 1, 1)
 bones/22/position = Vector3(0.0537568, 0.313186, 3.64784e-07)
-bones/22/rotation = Quaternion(0.00147042, -0.00333968, -0.0545295, 0.998506)
+bones/22/rotation = Quaternion(0.00147043, -0.00333968, -0.0545295, 0.998506)
 bones/22/scale = Vector3(1, 1, 1)
 bones/23/position = Vector3(0.00169281, 0.0773111, -4.58423e-08)
 bones/23/rotation = Quaternion(0.452379, -0.0119782, -0.0659381, 0.889304)
@@ -3992,7 +3998,7 @@ bones/29/position = Vector3(1.89972e-08, 0.593163, -4.85016e-09)
 bones/29/rotation = Quaternion(-0.0216741, 0.00216804, -0.695966, 0.717744)
 bones/29/scale = Vector3(1, 1, 1)
 bones/30/position = Vector3(-2.86001e-08, 0.609619, 6.0771e-08)
-bones/30/rotation = Quaternion(0.0457136, -0.198723, -0.158083, 0.966142)
+bones/30/rotation = Quaternion(0.0457136, -0.198723, -0.158083, 0.966141)
 bones/30/scale = Vector3(1, 1, 1)
 bones/31/position = Vector3(0.0123343, 0.0897738, 0.0511626)
 bones/31/rotation = Quaternion(0.0743453, 0.0287891, -0.269765, 0.95962)
@@ -4037,7 +4043,7 @@ bones/47/position = Vector3(-2.54318e-08, 0.99895, -9.1001e-09)
 bones/47/rotation = Quaternion(-0.397664, -0.0702539, 0.0736497, 0.911868)
 bones/47/scale = Vector3(1, 1, 1)
 bones/48/position = Vector3(1.54286e-07, 1.12087, 3.1118e-08)
-bones/48/rotation = Quaternion(0.503044, -0.0518074, -0.0491097, 0.861307)
+bones/48/rotation = Quaternion(0.503044, -0.0518074, -0.0491097, 0.861308)
 bones/48/scale = Vector3(1, 1, 1)
 bones/49/position = Vector3(-3.72316e-08, 0.509122, -1.07719e-08)
 bones/49/rotation = Quaternion(0.363021, -0.0406139, 0.0161677, 0.930755)
@@ -4072,6 +4078,18 @@ libraries = {
 }
 autoplay = "Armature|Idle"
 
+[node name="DetectionArea" type="Area3D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DetectionArea"]
+shape = SubResource("SphereShape3D_32ick")
+
+[node name="AttackArea" type="Area3D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AttackArea"]
+shape = SubResource("SphereShape3D_6dvuw")
+
 [node name="SubViewport" type="SubViewport" parent="."]
 transparent_bg = true
 size = Vector2i(150, 25)
@@ -4092,5 +4110,10 @@ show_percentage = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.8, 0)
 texture_filter = 0
 texture = SubResource("ViewportTexture_5r16j")
+
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
+[connection signal="body_exited" from="AttackArea" to="." method="_on_attack_area_body_exited"]
 
 [editable path="zombie"]

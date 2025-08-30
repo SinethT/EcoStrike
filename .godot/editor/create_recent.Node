@@ -1,14 +1,14 @@
+CollisionShape3D
+Area3D
+Timer
 Label
 CanvasLayer
 Panel
 Control
 TextureRect
-CollisionShape3D
 RayCast3D
 CharacterBody3D
 AnimationPlayer
-Area3D
 Node3D
 AudioStreamPlayer3D
 AudioListener3D
-Node2D

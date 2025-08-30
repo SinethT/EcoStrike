@@ -1,0 +1,11 @@
+res://levels/level_0.tscn
+res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
+res://UI/scenes/MainMenu.tscn
+res://Player_Controller/player_character.tscn
+res://Player_Controller/Spawnable_Objects/Weapons/blaster_I.tscn
+res://UI/scenes/InputSettings.tscn
+res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterM.tres
+res://enemy/zombie/zombie.tscn
+res://levels/level_1.tscn
+res://scripts/enemy/zombie.gd
+res://saves/save1.tres
