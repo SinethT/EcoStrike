@@ -24,7 +24,7 @@ func update_enemy_kills():
 	kill_display.text = str(GameManager.enemy_kills)
 
 func update_timer_display(time):
-	if time <= 120:
+	if time <= timer.wait_time * 20/100:
 		timer_display.add_theme_color_override("font_color", Color(1.0,0,0,1.0))
 	else:
 		#timer_display.add_theme_color_override("font_color", Color(1.0,1.0,1.0,1.0))
