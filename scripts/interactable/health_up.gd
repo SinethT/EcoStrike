@@ -1,6 +1,6 @@
 extends Node3D
 
-const HEALTH_UP = 10
+const HEALTH_UP = 15
 
 @onready var animation_player = $AnimationPlayer
 @onready var health_up_sfx = $"health-up_sfx"

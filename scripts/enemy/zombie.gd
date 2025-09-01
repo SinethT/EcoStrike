@@ -7,7 +7,7 @@ const SPEED = 5.0
 const CHASE_SPEED = 0.7
 const ATTACK_RADIUS = 1.1
 const DETECTION_RADIUS = 20.0
-const MELEE_DAMAGE = 2
+const MELEE_DAMAGE = 5.0
 const IMMUNE_TIME = 0.3
 
 # Health system variables
