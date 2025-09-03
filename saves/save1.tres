@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="SaveData" load_steps=2 format=3 uid="uid://40uyi251ucu4"]
+[gd_resource type="Resource" script_class="SaveData" load_steps=2 format=3 uid="uid://dpiv44txlon71"]
 
 [ext_resource type="Script" uid="uid://ci830jisaoc8u" path="res://scripts/core/save_data.gd" id="1_m00ra"]
 

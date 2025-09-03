@@ -9,3 +9,7 @@ res://UI/scenes/InputSettings.tscn
 res://scripts/interactable/health_up.gd
 res://enemy/robot/robot.tscn
 res://scripts/enemy/robot.gd
+res://levels/level_2.tscn
+res://UI/scenes/LevelDirectory.tscn
+res://scripts/core/game_manager.gd
+res://scripts/core/run_time_level.gd
