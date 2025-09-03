@@ -40,7 +40,7 @@ func _physics_process(delta):
 		# Add 180-degree rotation around Y axis to correct model facing direction
 		rotation.y += deg_to_rad(180)
 		
-		if ray_cast.is_colliding() and ray_cast.get_collider() == player:
+		if !is_dead and ray_cast.is_colliding() and ray_cast.get_collider() == player:
 			attack()
 
 func attack():

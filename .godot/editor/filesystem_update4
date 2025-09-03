@@ -2,11 +2,10 @@ res://UI/scenes/MainMenu.tscn
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterM.tres
 res://levels/level_1.tscn
-res://Player_Controller/player_character.tscn
-res://UI/scenes/healthbar.tscn
-res://enemy/robot/robot.tscn
-res://enemy/zombie/zombie.tscn
-res://saves/save1.tres
-res://scripts/enemy/zombie.gd
 res://interactable/health_up/health_up.tscn
+res://saves/save1.tres
+res://scripts/UI/ui_manager.gd
+res://UI/scenes/InputSettings.tscn
 res://scripts/interactable/health_up.gd
+res://enemy/robot/robot.tscn
+res://scripts/enemy/robot.gd

@@ -69,5 +69,6 @@ libraries = {
 stream = ExtResource("3_7pxqw")
 
 [connection signal="body_entered" from="Pickup_Health/Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="finished" from="health-up_sfx" to="." method="_on_healthup_sfx_finished"]
 
 [editable path="Pickup_Health"]
