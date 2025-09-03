@@ -1,15 +1,4 @@
-res://UI/scenes/MainMenu.tscn
+res://levels/level_2.tscn
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterM.tres
-res://levels/level_1.tscn
-res://interactable/health_up/health_up.tscn
 res://saves/save1.tres
-res://scripts/UI/ui_manager.gd
-res://UI/scenes/InputSettings.tscn
-res://scripts/interactable/health_up.gd
-res://enemy/robot/robot.tscn
-res://scripts/enemy/robot.gd
-res://levels/level_2.tscn
-res://UI/scenes/LevelDirectory.tscn
-res://scripts/core/game_manager.gd
-res://scripts/core/run_time_level.gd
