@@ -24,52 +24,52 @@ var timer               # Reference to level timer
 
 # Called when an enemy is killed - updates score and kill count
 func kill(kill_score):
-    enemy_kills += 1                    # Increment the kill counter
-    score += kill_score                 # Add points to player's score
-    emit_signal("enemy_kill")           # Notify other systems of the kill
-    if enemy_kills == max_enemy_kills:  # Check if all enemies are defeated
-        die()                           # End the game (player won)
+	enemy_kills += 1                    # Increment the kill counter
+	score += kill_score                 # Add points to player's score
+	emit_signal("enemy_kill")           # Notify other systems of the kill
+	if enemy_kills == max_enemy_kills:  # Check if all enemies are defeated
+		die()                           # End the game (player won)
 
 # Called when the game ends (either by winning, losing, or time running out)
 func die():
-    timer.stop()                                        # Stop the level timer
-    gameover_screen.visible = true                      # Show the game over screen
-    score_label.text = "Your Score: " + str(score)     # Display the final score
-    Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)      # Make cursor visible for UI interaction
-    # Check if player won (either time remaining or completed within time limit)
-    if !time_over or timer.time_left < (timer.wait_time * 75/100):
-        win()                                           # Player achieved victory
+	timer.stop()                                        # Stop the level timer
+	gameover_screen.visible = true                      # Show the game over screen
+	score_label.text = "Your Score: " + str(score)     # Display the final score
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)      # Make cursor visible for UI interaction
+	# Check if player won (either time remaining or completed within time limit)
+	if !time_over or timer.time_left < (timer.wait_time * 75/100):
+		win()                                           # Player achieved victory
 
 # Toggle the pause state of the game
 func pause_play():
-    paused = !paused                                # Toggle the pause flag
-    pause_menu.visible = paused                     # Show/hide pause menu accordingly
-    timer.paused = paused                           # Pause/unpause the level timer
-    # Show cursor when paused for menu interaction
-    if paused:
-        Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	paused = !paused                                # Toggle the pause flag
+	pause_menu.visible = paused                     # Show/hide pause menu accordingly
+	timer.paused = paused                           # Pause/unpause the level timer
+	# Show cursor when paused for menu interaction
+	if paused:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 # Resume game from paused state
 func resume():
-    pause_play()                                    # Unpause the game
-    Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) # Hide cursor for gameplay
+	pause_play()                                    # Unpause the game
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) # Hide cursor for gameplay
 
 # Restart the current level from the beginning
 func restart():
-    get_tree().reload_current_scene()               # Reload the current scene
+	get_tree().reload_current_scene()               # Reload the current scene
 
 # Load the input settings/controls configuration scene
 func load_settings():
-    get_tree().change_scene_to_file(INPUT_MAP)      # Switch to input settings scene
+	get_tree().change_scene_to_file(INPUT_MAP)      # Switch to input settings scene
 
 # Load the level selection screen
 func load_level_directory():
-    get_tree().change_scene_to_file(LEVEL_DIRECTORY) # Switch to level directory scene
+	get_tree().change_scene_to_file(LEVEL_DIRECTORY) # Switch to level directory scene
 
 # Exit the application completely
 func quit():
-    get_tree().quit()                               # Terminate the game
+	get_tree().quit()                               # Terminate the game
 
 # Called when the player successfully completes the level
 func win():
-    emit_signal("level_beaten")                     # Notify other systems that level is complete
+	emit_signal("level_beaten")                     # Notify other systems that level is complete
