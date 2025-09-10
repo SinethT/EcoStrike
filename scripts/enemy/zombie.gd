@@ -2,8 +2,8 @@ extends CharacterBody3D
 class_name Zombie
 
 # Constants defining zombie characteristics and behaviors
-const DAMAGE = 20.0           # Damage zombie deals to player when attacking
 const SCORE = 10              # Points player gets for killing this zombie
+const DAMAGE = 20.0           # Damage zombie deals to player when attacking
 const SPEED = 5.0             # Maximum movement speed (currently unused)
 const CHASE_SPEED = 0.7       # Speed when chasing the player
 const ATTACK_RADIUS = 1.1     # Distance at which zombie can attack player
@@ -13,6 +13,7 @@ const IMMUNE_TIME = 0.3       # Time zombie is immune to damage after being hit
 
 # Health system variables
 @export var max_health: float = 100.0  # Maximum health of the zombie
+
 var current_health: float              # Current health of the zombie
 var is_dead: bool = false              # Flag to track if zombie is dead
 var can_take_damage = true             # Flag for damage immunity frames
@@ -20,8 +21,8 @@ var player_in_area = false             # Flag for player detection area
 var player_in_attack = false           # Flag for player in attack range
 
 # AI movement and targeting variables
-@onready var player = get_tree().get_first_node_in_group("Player")  # Reference to player
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")  # Gravity value
+@onready var player = get_tree().get_first_node_in_group("Player")  # Reference to player
 
 # Node references for zombie functionality
 @onready var animation_player = $zombie/AnimationPlayer      # Main animation player
