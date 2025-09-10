@@ -2,6 +2,8 @@ extends Control
 
 const LEVEL_DIRECTORY = "res://UI/scenes/LevelDirectory.tscn"
 const MAIN_MENU = "res://UI/scenes/MainMenu.tscn"
+const AGE_LIMIT = 12
+const AGE_BOUNDARY = 100
 
 var player_name = ""
 var birth_year = 0
@@ -71,7 +73,7 @@ func check_age(year):
 	# Obtaines current year from the system's date
 	var current_year = Time.get_date_dict_from_system()["year"]
 	# If valid, return true
-	if current_year - year > 7 and current_year - year < 100:
+	if current_year - year > AGE_LIMIT and current_year - year < AGE_BOUNDARY:
 		return true
 
 
