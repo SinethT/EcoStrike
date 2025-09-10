@@ -58,7 +58,7 @@ func _create_action_list():
 
 
 func _on_input_button_pressed(button, action):
-	if !is_remapping:
+	if not is_remapping:
 		is_remapping = true
 		# Stores the action and button to be remapped
 		action_to_remap = action
