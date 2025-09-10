@@ -45,7 +45,16 @@ func generate_level_id(level):
 	return "Level" + str(level_id)
 
 # Updates all the statistics for a completed level
-func update_level(level: String, score: int, max_score: int, enemy_kills: int, max_enemy_kills: int, damage_taken: int, time_over: bool, beaten: bool):
+func update_level(
+	level: String, 
+	score: int, 
+	max_score: int, 
+	enemy_kills: int, 
+	max_enemy_kills: int, 
+	damage_taken: int, 
+	time_over: bool, 
+	beaten: bool
+):
 	level_dic[level]["score"] = score                    # Update player's score
 	level_dic[level]["max_score"] = max_score            # Update maximum possible score
 	level_dic[level]["enemy_kills"] = enemy_kills        # Update enemies killed
