@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://btxr1picog6xh"]
 
-[ext_resource type="Script" uid="uid://d2yfhkye2wg3j" path="res://scripts/core/run_time_level.gd" id="1_at1ld"]
+[ext_resource type="Script" uid="uid://d2yfhkye2wg3j" path="res://scripts/core/RunTimeLevel.gd" id="1_at1ld"]
 [ext_resource type="PackedScene" uid="uid://brd3wjrj522dh" path="res://envs/Scenes/burger_piz.tscn" id="1_mi4ay"]
 [ext_resource type="AudioStream" uid="uid://vmw2cx6yr67k" path="res://sfx/Cruisin_bg.mp3" id="2_sd18g"]
 [ext_resource type="PackedScene" uid="uid://oc13h3au02ro" path="res://Player_Controller/player_character.tscn" id="3_sd18g"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://x8nhs2cer2to" path="res://Player_Controller/Spawnable_Objects/Weapons/blaster_m.tscn" id="5_hbb88"]
 [ext_resource type="PackedScene" uid="uid://5rh0qdwgenwg" path="res://enemy/robot/robot.tscn" id="6_vm7no"]
 [ext_resource type="PackedScene" uid="uid://txfh4g1j8jnp" path="res://interactable/health_up/health_up.tscn" id="6_wcjpl"]
-[ext_resource type="Script" uid="uid://b388115d1uybs" path="res://scripts/UI/ui_manager.gd" id="7_5orea"]
+[ext_resource type="Script" uid="uid://b388115d1uybs" path="res://scripts/UI/UIManager.gd" id="7_5orea"]
 [ext_resource type="Texture2D" uid="uid://bb4eh7h2w7usv" path="res://UI/kill_display/skull.jpg" id="8_0ourt"]
 [ext_resource type="FontFile" uid="uid://d0drjell1ufwq" path="res://UI/Moonhouse-yE5M.ttf" id="9_w200a"]
 

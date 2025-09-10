@@ -1,6 +1,6 @@
 [gd_scene load_steps=31 format=3 uid="uid://cdmmp2fbmo4ks"]
 
-[ext_resource type="Script" uid="uid://dpphunomadbfd" path="res://scripts/enemy/zombie.gd" id="1_32ick"]
+[ext_resource type="Script" uid="uid://dpphunomadbfd" path="res://scripts/enemy/Zombie.gd" id="1_32ick"]
 [ext_resource type="PackedScene" uid="uid://3xf1vrisg2pj" path="res://enemy/zombie/zombie.fbx" id="1_fo461"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_32ick"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://txfh4g1j8jnp"]
 
 [ext_resource type="PackedScene" uid="uid://cgopx88ltc3vv" path="res://interactable/health_up/Pickup_Health.fbx" id="1_5tkgt"]
-[ext_resource type="Script" uid="uid://jl07r77iqk1r" path="res://scripts/interactable/health_up.gd" id="1_57245"]
+[ext_resource type="Script" uid="uid://jl07r77iqk1r" path="res://scripts/interactable/HealthUp.gd" id="1_57245"]
 [ext_resource type="AudioStream" uid="uid://ckbm8xpjp5y7d" path="res://sfx/health-up_sfx.mp3" id="3_7pxqw"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_57245"]

@@ -1,9 +1,4 @@
 res://levels/level_1.tscn
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterI.tres
 res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterM.tres
-res://levels/level_2.tscn
-res://Player_Controller/player_character.tscn
-res://enemy/robot/robot.tscn
-res://enemy/zombie/zombie.tscn
-res://interactable/health_up/health_up.tscn
-res://UI/scenes/LoginMenu.tscn
+res://scripts/UI/ui_manager.gd

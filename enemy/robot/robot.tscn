@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://5rh0qdwgenwg"]
 
-[ext_resource type="Script" uid="uid://u25dlskt1boh" path="res://scripts/enemy/robot.gd" id="1_2am07"]
+[ext_resource type="Script" uid="uid://u25dlskt1boh" path="res://scripts/enemy/Robot.gd" id="1_2am07"]
 [ext_resource type="PackedScene" uid="uid://c3yt4akif61bs" path="res://enemy/robot/robot.fbx" id="1_hih2f"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2am07"]

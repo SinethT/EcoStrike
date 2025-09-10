@@ -16,9 +16,9 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 
 [autoload]
 
-GameManager="*res://scripts/core/game_manager.gd"
-LevelData="*res://scripts/core/level_data.gd"
-SaveManager="*res://scripts/core/save_manager.gd"
+GameManager="*res://scripts/core/GameManager.gd"
+LevelData="*res://scripts/core/LevelData.gd"
+SaveManager="*res://scripts/core/SaveManager.gd"
 
 [display]
 
