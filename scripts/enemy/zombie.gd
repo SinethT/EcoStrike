@@ -13,7 +13,6 @@ const IMMUNE_TIME = 0.3       # Time zombie is immune to damage after being hit
 
 # Health system variables
 @export var max_health: float = 100.0  # Maximum health of the zombie
-
 var current_health: float              # Current health of the zombie
 var is_dead: bool = false              # Flag to track if zombie is dead
 var can_take_damage = true             # Flag for damage immunity frames
@@ -21,8 +20,8 @@ var player_in_area = false             # Flag for player detection area
 var player_in_attack = false           # Flag for player in attack range
 
 # AI movement and targeting variables
-var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")  # Gravity value
 @onready var player = get_tree().get_first_node_in_group("Player")  # Reference to player
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")  # Gravity value
 
 # Node references for zombie functionality
 @onready var animation_player = $zombie/AnimationPlayer      # Main animation player
